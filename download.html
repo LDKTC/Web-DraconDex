@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Download DraconDex</title>
+    <meta
+      name="description"
+      content="Download DraconDex for Windows — NSIS installer, single-file portable exe, or a zipped portable folder. Every release, with SHA-256 checksums."
+    />
+    <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
+    <link rel="canonical" href="https://ldktc.github.io/Web-DraconDex/download.html" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/theme.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="./">
+          <img src="assets/brand/DraconDex_Color-64.png" alt="" />
+          <span>DraconDex</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="./">Home</a>
+          <a href="download.html" aria-current="page">Download</a>
+          <a href="plugins.html">Plugins</a>
+          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme">Docs</a>
+          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex">GitHub</a>
+          <button class="icon-btn" type="button" data-theme-toggle>☀</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section section--plain" style="padding-top: 48px">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Download</span>
+            <h1 style="font-size: clamp(1.9rem, 5vw, 2.7rem)">
+              Get DraconDex
+            </h1>
+            <p>
+              Free and offline. Pick the flavour that suits you — all three are
+              the same app, they only differ in where they keep your data and
+              whether anything is installed.
+            </p>
+            <p class="th small">
+              ทั้งสามแบบคือแอปตัวเดียวกัน ต่างกันแค่ว่าเก็บข้อมูลไว้ที่ไหน
+              และต้องติดตั้งหรือไม่
+            </p>
+            <p class="small" data-latest-meta hidden>
+              Latest release <strong data-latest-version></strong> ·
+              published <span data-latest-date></span> ·
+              <a
+                href="https://github.com/LDKTC/App-DraconDex/releases/latest"
+                data-latest-notes
+                >read the release notes</a
+              >
+            </p>
+          </div>
+
+          <div data-latest-assets>
+            <p class="is-loading">Loading the latest release from GitHub…</p>
+            <noscript>
+              <p class="muted">
+                This list is built from the GitHub API in your browser. With
+                JavaScript off, go straight to the
+                <a href="https://github.com/LDKTC/App-DraconDex/releases/latest"
+                  >latest release page</a
+                >.
+              </p>
+            </noscript>
+          </div>
+
+          <p class="small muted" style="margin-top: 16px">
+            Release assets are Windows builds only. On another OS you can still
+            run the app from source — see
+            <a href="https://github.com/LDKTC/App-DraconDex#getting-started-desktop--dev"
+              >Getting started</a
+            >
+            in the repository.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ which one -->
+      <section class="section" id="which">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Which one</span>
+            <h2>Installer, portable exe, or portable folder</h2>
+          </div>
+
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Build</th>
+                  <th scope="col">Installs?</th>
+                  <th scope="col">Your data lives in</th>
+                  <th scope="col">Best for</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">🪄 <code>DraconDex-Setup-&lt;version&gt;.exe</code></th>
+                  <td>Yes — pick a folder, get shortcuts</td>
+                  <td><code>%APPDATA%/DraconDex/</code>, survives uninstall and updates</td>
+                  <td>Your own PC, the normal choice</td>
+                </tr>
+                <tr>
+                  <th scope="row">🥾 <code>DraconDex-Portable-&lt;version&gt;.exe</code></th>
+                  <td>No — one file, just run it</td>
+                  <td><code>novel-manager-data</code> next to the exe</td>
+                  <td>A quick try, or a locked-down machine</td>
+                </tr>
+                <tr>
+                  <th scope="row">🗂 <code>DraconDex-&lt;version&gt;-win-x64.zip</code></th>
+                  <td>No — unzip and run <code>DraconDex.exe</code></td>
+                  <td><code>novel-manager-data</code> inside the folder</td>
+                  <td>USB sticks; the whole project travels with the folder</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout" style="margin-top: 24px">
+            <strong>The portable builds are around 200–220 MB.</strong> That is
+            Electron — the app bundles its own browser engine so it never needs
+            a runtime installed, and never needs the network.
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ verify -->
+      <section class="section" id="verify">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Verify</span>
+            <h2>Check what you downloaded</h2>
+            <p>
+              Every release ships a <code>checksums-sha256.txt</code> covering
+              the three Windows builds. Compare before you run anything.
+            </p>
+          </div>
+          <pre><code># PowerShell
+Get-FileHash .\DraconDex-Setup-&lt;version&gt;.exe -Algorithm SHA256
+
+# then compare against the matching line in checksums-sha256.txt</code></pre>
+          <div class="callout callout--warn">
+            <strong>The builds are not code-signed.</strong> Windows SmartScreen
+            will warn you the first time you run one. That warning is expected
+            for an unsigned open-source build — checking the SHA-256 above is
+            the real verification.
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ android -->
+      <section class="section" id="android">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Android</span>
+            <h2>The mobile port</h2>
+            <p>
+              A Flutter front-end lives in <code>flutter/</code> in the app
+              repository. It shares the desktop app's SQLite schema, so a
+              database can move between the two — but it is developed
+              independently and is currently behind on features.
+            </p>
+            <p class="th small">
+              ฝั่งมือถือยังพัฒนาตามหลังเวอร์ชัน Desktop อยู่ —
+              ฟีเจอร์บางส่วนยังไม่มี
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card card--pad-lg">
+              <h3>From GitHub Actions</h3>
+              <p class="muted small">
+                APKs are not attached to releases. Run the
+                <strong>Build Flutter APK</strong> workflow in the app
+                repository and download the <code>release-apks</code> artifact.
+              </p>
+              <p>
+                <a
+                  class="btn btn--sm"
+                  href="https://github.com/LDKTC/App-DraconDex/actions/workflows/build-apk.yml"
+                  >Open the workflow</a
+                >
+              </p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3>Build it yourself</h3>
+              <p class="muted small">
+                Flutter SDK 3.44.4+ and the Android toolchain:
+              </p>
+              <pre style="margin-bottom: 0"><code>cd flutter
+flutter pub get
+flutter build apk --release --split-per-abi</code></pre>
+            </article>
+          </div>
+
+          <p class="small muted" style="margin-top: 18px">
+            To move a project across: export <code>novel-manager.db</code> from
+            the desktop app's data folder, copy it to the phone, then use
+            <strong>Settings → Import Database</strong> in the Android app.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ npm -->
+      <section class="section" id="npm">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">For developers</span>
+            <h2>The source, as a package</h2>
+            <p>
+              The app is also published as
+              <code>@ldktc/dracondex</code> on GitHub Packages. It is the app
+              itself, not a library — there is nothing to import. Most people
+              want the installer above.
+            </p>
+          </div>
+          <pre><code># ~/.npmrc — GitHub Packages needs a token even for public packages
+@ldktc:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN</code></pre>
+          <pre><code>npm install @ldktc/dracondex</code></pre>
+          <p class="small muted">
+            The token only needs the <code>read:packages</code> scope. Electron
+            is a dev dependency, so running the app from that install still
+            needs <code>npm install</code> in a full checkout.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ history -->
+      <section class="section" id="history">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">History</span>
+            <h2>Earlier releases</h2>
+          </div>
+          <div data-release-history>
+            <p class="is-loading">Loading…</p>
+          </div>
+          <p style="margin-top: 20px">
+            <a href="https://github.com/LDKTC/App-DraconDex/releases"
+              >Every release on GitHub →</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__bottom">
+          <span>
+            <a href="./">DraconDex</a> · Built by LDKTC · MIT licensed
+          </span>
+          <span>
+            <a href="https://github.com/LDKTC/App-DraconDex">App repository</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/releases.js"></script>
+  </body>
+</html>

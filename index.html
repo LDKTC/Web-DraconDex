@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DraconDex — offline world-building for novelists</title>
+    <meta
+      name="description"
+      content="DraconDex is a free, offline desktop app for organizing novel world-building data — characters, places, timelines, relationships and wikilinked notes — in a local SQLite database. Windows downloads and official plugins."
+    />
+    <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
+    <link rel="apple-touch-icon" href="assets/brand/DraconDex_Color-512.png" />
+    <link rel="canonical" href="https://ldktc.github.io/Web-DraconDex/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DraconDex" />
+    <meta
+      property="og:description"
+      content="Offline world-building for novelists, game designers and DMs. Characters, places, timelines, relationships and wikilinked notes in a local SQLite database."
+    />
+    <meta
+      property="og:image"
+      content="https://ldktc.github.io/Web-DraconDex/assets/brand/DraconDex_Color-512.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/theme.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="./">
+          <img src="assets/brand/DraconDex_Color-64.png" alt="" />
+          <span>DraconDex</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="./" aria-current="page">Home</a>
+          <a href="download.html">Download</a>
+          <a href="plugins.html">Plugins</a>
+          <a
+            class="nav--wide"
+            href="https://github.com/LDKTC/App-DraconDex#readme"
+            >Docs</a
+          >
+          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex"
+            >GitHub</a
+          >
+          <button class="icon-btn" type="button" data-theme-toggle>☀</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ================================================ hero -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero__grid">
+            <div>
+              <span class="pill pill--accent">
+                <span class="dot"></span>
+                Free · open source · works offline
+              </span>
+              <h1>Your whole world, kept on your own disk.</h1>
+              <p class="hero__lead">
+                DraconDex is a desktop app for organizing the data behind a
+                story — characters, places, timelines, relationships, and
+                free-form notes — for novelists, story-game designers, and
+                D&amp;D DMs.
+              </p>
+              <p class="th">
+                แอปจัดการข้อมูลโลกในนิยาย — ตัวละคร, สถานที่, ไทม์ไลน์,
+                ความสัมพันธ์ และโน้ตอิสระ สำหรับนักเขียน นักออกแบบเกม
+                และ DM (ภาษาไทยเป็นภาษาหลักของแอป)
+              </p>
+
+              <div class="btn-row" style="margin-top: 26px">
+                <a
+                  class="btn btn--primary btn--lg"
+                  href="https://github.com/LDKTC/App-DraconDex/releases/latest"
+                  data-latest-download
+                >
+                  <span data-download-label>Get the latest release</span>
+                  <span class="small" style="opacity: 0.75" data-download-sub
+                  ></span>
+                </a>
+                <a class="btn btn--lg" href="plugins.html">Browse plugins</a>
+              </div>
+
+              <div class="hero__meta">
+                <span data-latest-meta hidden>
+                  Latest <strong data-latest-version></strong> ·
+                  <span data-latest-date></span> ·
+                  <a href="https://github.com/LDKTC/App-DraconDex/releases/latest" data-latest-notes>release notes</a>
+                </span>
+                <span>Windows · portable or installer</span>
+                <span>No account, no cloud, no internet required</span>
+              </div>
+            </div>
+
+            <div class="hero__art">
+              <img
+                src="assets/brand/DraconDex_Color-512.png"
+                alt="The DraconDex mark: a twelve-pointed compass rose"
+                width="512"
+                height="512"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ features -->
+      <section class="section" id="features">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">What it does</span>
+            <h2>Built for the messy middle of world-building</h2>
+            <p>
+              Everything lives in one local SQLite database. Nothing is
+              uploaded, nothing phones home, and the whole project folder can
+              travel on a flash drive.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🧭</div>
+              <h3>Two module systems, side by side</h3>
+              <p class="muted small">
+                Seven fixed legacy modules — Director, Navigator, Hero, Writer,
+                Scribe, Sage, Artisan — alongside the v3 "Nexus nest": an
+                unlimited tree of modules you build yourself.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🔗</div>
+              <h3>Obsidian-style wikilinks</h3>
+              <p class="muted small">
+                Write <code>[[a link]]</code> anywhere in your notes and get
+                backlinks across every piece of content in the project.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🗺️</div>
+              <h3>Maps, timelines, canvases</h3>
+              <p class="muted small">
+                Dialogue graphs, sketching and diagramming surfaces built on
+                vendored D3 and Konva — bundled with the app, so they work with
+                the network off.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🌏</div>
+              <h3>18 languages, 3 themes</h3>
+              <p class="muted small">
+                Thai by default, with English, Japanese, Korean, Chinese,
+                Vietnamese, Indonesian and eleven more — plus midnight,
+                daylight and moonlight themes.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🥾</div>
+              <h3>Portable by design</h3>
+              <p class="muted small">
+                The portable build keeps your data next to the executable. Copy
+                the folder to a USB stick and your project comes with it.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">💾</div>
+              <h3>Backups you own</h3>
+              <p class="muted small">
+                Export the whole database, a single Nexus, or one module
+                subtree to a file. Optional Google Drive backup uses the
+                <code>drive.appdata</code> scope and your own OAuth client — no
+                DraconDex server in the loop.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ module kinds -->
+      <section class="section" id="modules">
+        <div class="wrap">
+          <div class="grid grid--2" style="align-items: start; gap: 40px">
+            <div>
+              <span class="eyebrow">The v3 module tree</span>
+              <h2>Fifteen kinds, nested however you want</h2>
+              <p class="muted">
+                Instead of a fixed set of screens, DraconDex v3 lets you grow a
+                tree of modules. Each node picks one of fifteen kinds, and the
+                kind decides what the module can do — collect records, draw a
+                map, track a timeline, sketch, or write prose.
+              </p>
+              <p class="th small">
+                สร้างโมดูลซ้อนกันได้ไม่จำกัด แต่ละโหนดเลือก "ชนิด" ได้ 1 จาก 15
+                ชนิด — ชนิดเป็นตัวกำหนดว่าโมดูลนั้นทำอะไรได้บ้าง
+              </p>
+              <p>
+                <a href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/Architec.md"
+                  >Read the architecture notes →</a
+                >
+              </p>
+            </div>
+            <div class="card card--pad-lg">
+              <ul class="kinds">
+                <li>collector</li>
+                <li>manager</li>
+                <li>inspector</li>
+                <li>classifier</li>
+                <li>locator</li>
+                <li>chronicler</li>
+                <li>wanderer</li>
+                <li>narrator</li>
+                <li>author</li>
+                <li>scribe</li>
+                <li>drafter</li>
+                <li>viewer</li>
+                <li>connector</li>
+                <li>sketcher</li>
+                <li>designer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ plugins -->
+      <section class="section" id="plugins">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Plugins</span>
+            <h2>
+              <span data-plugin-count>4</span> official plugins, installed from
+              a link
+            </h2>
+            <p>
+              Paste a repository link into Settings → Plugins. DraconDex shows
+              you exactly which files it will fetch, which tables it will
+              create and which hosts it may talk to — then runs the plugin in a
+              separate sandboxed window with no access to your main data.
+            </p>
+          </div>
+
+          <div class="grid grid--4" data-plugin-teaser>
+            <p class="muted">
+              <a href="plugins.html">See all DraconDex plugins →</a>
+            </p>
+          </div>
+
+          <p style="margin-top: 24px">
+            <a class="btn" href="plugins.html">All plugins and how to build one</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ platforms -->
+      <section class="section" id="platforms">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Platforms</span>
+            <h2>Where it runs</h2>
+          </div>
+          <div class="grid grid--2">
+            <article class="card card--pad-lg">
+              <h3>🪟 Windows desktop</h3>
+              <p class="muted small">
+                The main app, built on Electron. Ships three ways every
+                release: an NSIS installer, a single-file portable
+                <code>.exe</code>, and a zipped portable folder.
+              </p>
+              <p><a href="download.html">Downloads →</a></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3>🤖 Android <span class="pill">in progress</span></h3>
+              <p class="muted small">
+                A Flutter port shares the same SQLite schema, so databases move
+                between desktop and phone. It is developed independently and is
+                currently behind the desktop app in features.
+              </p>
+              <p><a href="download.html#android">How to get an APK →</a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ docs -->
+      <section class="section" id="docs">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Documentation</span>
+            <h2>Docs live in the app repository</h2>
+            <p>
+              The project keeps detailed, actively-maintained docs — written in
+              Thai, the project's primary language.
+            </p>
+          </div>
+          <div class="grid grid--3">
+            <a
+              class="card card--link"
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/Architec.md"
+            >
+              <h3>Architec.md</h3>
+              <p class="muted small">
+                The v3 module-tree architecture, and how each kind maps to
+                files and IPC channels.
+              </p>
+            </a>
+            <a
+              class="card card--link"
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/SYSTEMS.md"
+            >
+              <h3>SYSTEMS.md</h3>
+              <p class="muted small">
+                How each system behaves — Director, Navigator, Hero, Writer,
+                Scribe, Sage, Artisan, wikilinks, the IDE shell.
+              </p>
+            </a>
+            <a
+              class="card card--link"
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md"
+            >
+              <h3>PLUGINS.md</h3>
+              <p class="muted small">
+                The plugin runtime: manifest format, the sandbox, and an honest
+                account of what it does and does not protect against.
+              </p>
+            </a>
+            <a
+              class="card card--link"
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/DRIVE.md"
+            >
+              <h3>DRIVE.md</h3>
+              <p class="muted small">
+                Setting up optional Google Drive backup with your own OAuth
+                client.
+              </p>
+            </a>
+            <a
+              class="card card--link"
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/FILES.md"
+            >
+              <h3>FILES.md</h3>
+              <p class="muted small">
+                A per-file reference of what lives where in the codebase.
+              </p>
+            </a>
+            <a
+              class="card card--link"
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/CHANGELOG.md"
+            >
+              <h3>CHANGELOG.md</h3>
+              <p class="muted small">
+                What changed and why, session to session.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ cta -->
+      <section class="section" id="get">
+        <div class="wrap">
+          <div class="card card--pad-lg" style="text-align: center">
+            <h2>Start writing your world</h2>
+            <p class="muted">
+              No account. No subscription. Download it, run it, and your data
+              stays where you put it.
+            </p>
+            <div class="btn-row" style="justify-content: center">
+              <a class="btn btn--primary btn--lg" href="download.html"
+                >Download DraconDex</a
+              >
+              <a
+                class="btn btn--lg"
+                href="https://github.com/LDKTC/App-DraconDex"
+                >View the source</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="./" style="margin-bottom: 10px">
+              <img src="assets/brand/DraconDex_Color-64.png" alt="" />
+              <span>DraconDex</span>
+            </a>
+            <p class="small">
+              Offline world-building for novelists, game designers and DMs.
+            </p>
+          </div>
+          <div>
+            <h4>Get it</h4>
+            <ul>
+              <li><a href="download.html">Downloads</a></li>
+              <li>
+                <a href="https://github.com/LDKTC/App-DraconDex/releases"
+                  >All releases</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/LDKTC/App-DraconDex/packages"
+                  >npm package</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Plugins</h4>
+            <ul>
+              <li><a href="plugins.html">Official plugins</a></li>
+              <li>
+                <a href="https://github.com/LDKTC/DraconDex-Plugin-Template"
+                  >Plugin template</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md"
+                  >Plugin docs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Project</h4>
+            <ul>
+              <li>
+                <a href="https://github.com/LDKTC/App-DraconDex">App repository</a>
+              </li>
+              <li>
+                <a href="https://github.com/LDKTC/App-DraconDex/issues"
+                  >Issues</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/LDKTC/Web-DraconDex"
+                  >This website's source</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>Built by LDKTC · MIT licensed</span>
+          <span>Not affiliated with any of the AI providers its plugins connect to.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/releases.js"></script>
+    <script src="assets/js/plugins.js"></script>
+  </body>
+</html>

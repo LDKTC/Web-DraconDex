@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DraconDex plugins</title>
+    <meta
+      name="description"
+      content="Every official DraconDex plugin — Claude Chat, Codex Chat, Ollama Chat and the plugin template — with the permissions each one asks for, how to install them from a link, and how to write your own."
+    />
+    <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
+    <link rel="canonical" href="https://ldktc.github.io/Web-DraconDex/plugins.html" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/theme.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="./">
+          <img src="assets/brand/DraconDex_Color-64.png" alt="" />
+          <span>DraconDex</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="./">Home</a>
+          <a href="download.html">Download</a>
+          <a href="plugins.html" aria-current="page">Plugins</a>
+          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme">Docs</a>
+          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex">GitHub</a>
+          <button class="icon-btn" type="button" data-theme-toggle>☀</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section section--plain" style="padding-top: 48px">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Plugins</span>
+            <h1 style="font-size: clamp(1.9rem, 5vw, 2.7rem)">
+              Extend DraconDex with a link
+            </h1>
+            <p>
+              A plugin is a git repository with a manifest. Paste its link into
+              the app, look at what it says it will do, and confirm. Each
+              plugin gets its own database tables and runs in a separate
+              sandboxed window — it cannot read your novel data.
+            </p>
+            <p class="th small">
+              ปลั๊กอินคือ git repo ที่มี manifest ของตัวเอง —
+              วางลิงก์ในแอป ดูว่ามันจะทำอะไรบ้าง แล้วกดยืนยัน
+              แต่ละปลั๊กอินมีตารางของตัวเองและรันในหน้าต่างแยกที่ถูกจำกัดสิทธิ์
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ install -->
+      <section class="section" id="install">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Installing</span>
+            <h2>Four steps, one link</h2>
+            <p class="small muted">Requires DraconDex 4.2.0 or newer.</p>
+          </div>
+
+          <ol class="steps">
+            <li>
+              Open <strong>Settings → Plugins</strong> in DraconDex.
+            </li>
+            <li>
+              <strong>Paste the repository link</strong> into the single field.
+              A bare <code>owner/repo</code>, an HTTPS URL, an SSH URL or a
+              <code>/tree/&lt;branch&gt;</code> link all work. GitHub and
+              GitLab are supported; other hosts are rejected.
+            </li>
+            <li>
+              <strong>Read the preview.</strong> The app fetches the manifest
+              and shows the plugin's name and version, every file it will
+              download, every table it will create, and every host it may talk
+              to. The preview touches neither disk nor database.
+            </li>
+            <li>
+              <strong>Confirm.</strong> The installer resolves and validates
+              everything again from scratch — it does not trust the preview —
+              then writes the files and creates the tables.
+            </li>
+          </ol>
+
+          <div class="callout" style="margin-top: 28px">
+            <strong>Plugins are code from the internet.</strong> The sandbox
+            keeps a plugin out of your novel data and off any host it did not
+            declare, but it cannot make a badly-written or hostile plugin safe.
+            The app's
+            <a
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md"
+              >PLUGINS.md</a
+            >
+            has an honest section on what the sandbox does and does not
+            protect against — worth reading before you install anything you did
+            not write.
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ the plugins -->
+      <section class="section" id="official">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Official</span>
+            <h2>
+              <span data-plugin-count>4</span> plugins published under
+              github.com/LDKTC
+            </h2>
+            <p>
+              Versions and permissions below are read from each repository's
+              live <code>dracondex-plugin.json</code> when this page loads.
+            </p>
+          </div>
+
+          <div class="grid grid--plugins" data-plugin-grid>
+            <p class="muted">
+              Plugin details load from GitHub. Without JavaScript, browse them
+              directly:
+              <a href="https://github.com/LDKTC/DraconDex-Plugin-Claude">Claude</a>,
+              <a href="https://github.com/LDKTC/DraconDex-Plugin-Codex">Codex</a>,
+              <a href="https://github.com/LDKTC/DraconDex-Plugin-Ollama">Ollama</a>,
+              <a href="https://github.com/LDKTC/DraconDex-Plugin-Template">Template</a>.
+            </p>
+          </div>
+
+          <p class="small muted" style="margin-top: 20px">
+            The three chat plugins each need their own credentials — DraconDex
+            never supplies or proxies any API key, and there is no DraconDex
+            server involved. Ollama is the fully local option: it only talks to
+            a model server running on your own machine.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ sandbox -->
+      <section class="section" id="sandbox">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">The sandbox</span>
+            <h2>What a plugin can and cannot reach</h2>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card card--pad-lg">
+              <h3>✅ It can</h3>
+              <ul class="ticks">
+                <li>
+                  Read and write <em>its own</em> tables through
+                  <code>window.pluginApi.table.*</code>
+                </li>
+                <li>
+                  Call hosts it declared in <code>permissions.net</code> —
+                  HTTPS only, with <code>Cookie</code>, <code>Host</code>,
+                  <code>Origin</code> and <code>Referer</code> stripped and no
+                  cookie jar
+                </li>
+                <li>
+                  Stream responses, and run an OAuth 2.0 + PKCE flow that opens
+                  the system browser
+                </li>
+                <li>
+                  Render as a panel docked in the main window, and ask for the
+                  open module's <code>id</code>, <code>name</code> and
+                  <code>kind</code> if it declared
+                  <code>permissions.context</code>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card card--pad-lg">
+              <h3>🚫 It cannot</h3>
+              <ul class="ticks">
+                <li>
+                  Touch <code>window.api</code> — the main app's IPC surface is
+                  simply not present in a plugin window
+                </li>
+                <li>
+                  Read your characters, notes, timelines, or any other app
+                  table
+                </li>
+                <li>
+                  Reach a host it did not declare, downgrade to plain
+                  <code>http://</code> (except a loopback address with an
+                  explicit port), or follow a redirect off its allowlist
+                </li>
+                <li>
+                  Widen what it asked for after install — the installer
+                  re-validates the manifest itself and ignores the preview
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="small muted" style="margin-top: 18px">
+            Plugin windows run with <code>contextIsolation: true</code>,
+            <code>nodeIntegration: false</code> and <code>sandbox: true</code>.
+            Table and column names from a manifest are checked against strict
+            regex whitelists before they are ever composed into SQL — no
+            identifier from a plugin reaches the database unchecked.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ build one -->
+      <section class="section" id="build">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow">Build your own</span>
+            <h2>A plugin is one JSON file and some HTML</h2>
+            <p>
+              Put <code>dracondex-plugin.json</code> at the root of a public
+              repository. Fork
+              <a href="https://github.com/LDKTC/DraconDex-Plugin-Template"
+                >DraconDex-Plugin-Template</a
+              >
+              to skip the boilerplate.
+            </p>
+          </div>
+
+          <pre><code>{
+  "id": "myplugin",
+  "name": "My Plugin",
+  "version": "1.0.0",
+  "entry": "index.html",
+  "files": ["index.html", "panel.html", "app.js"],
+  "panels": [
+    { "id": "chat", "title": "My Chat", "icon": "💬", "entry": "panel.html" }
+  ],
+  "permissions": {
+    "net": ["https://api.example.com"],
+    "context": ["module"]
+  },
+  "tables": [
+    { "name": "notes", "columns": [
+      { "name": "title", "type": "TEXT" },
+      { "name": "rating", "type": "INTEGER" }
+    ]}
+  ]
+}</code></pre>
+
+          <h3 style="margin-top: 32px">The limits</h3>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Field</th>
+                  <th scope="col">Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><code>id</code></th>
+                  <td>Lowercase <code>a–z</code>, <code>0–9</code> and <code>_</code>; 20 characters max</td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>entry</code></th>
+                  <td>An HTML file, and it must also appear in <code>files</code></td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>files</code></th>
+                  <td>Up to 30 files, 2 MB each. The app fetches exactly these — it never walks the repository</td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>tables</code></th>
+                  <td>Up to 10 tables, 25 columns each. Column types are <code>TEXT</code>, <code>INTEGER</code> or <code>REAL</code> only — no defaults, checks or foreign keys</td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>panels</code></th>
+                  <td>Up to 5. Each needs a unique id, a title of 40 characters or fewer, and an <code>entry</code> listed in <code>files</code></td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>permissions.net</code></th>
+                  <td>
+                    Up to 10 bare <code>https://</code> origins — no path,
+                    query or credentials. The one exception is a loopback
+                    address with an explicit port, e.g.
+                    <code>http://localhost:11434</code>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><code>permissions.context</code></th>
+                  <td>Only <code>"module"</code> today — the open module's identity, never its content</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout" style="margin-top: 26px">
+            <strong>Panels get reloaded.</strong> A docked panel is re-rendered
+            whenever the main window re-renders, so keep state in your own
+            tables and restore it on load — never in a plain variable.
+          </div>
+
+          <p style="margin-top: 24px">
+            <a
+              class="btn btn--primary"
+              href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md"
+              >Read the full plugin documentation</a
+            >
+            <a
+              class="btn"
+              href="https://github.com/LDKTC/DraconDex-Plugin-Template"
+              style="margin-left: 8px"
+              >Start from the template</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__bottom">
+          <span>
+            <a href="./">DraconDex</a> · Built by LDKTC · MIT licensed
+          </span>
+          <span>
+            <a href="https://github.com/LDKTC/App-DraconDex">App repository</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/plugins.js"></script>
+  </body>
+</html>
