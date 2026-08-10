@@ -29,8 +29,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # `enablement` provisions the Pages site (build type: GitHub Actions) on the
+      # first run, so the workflow does not fail before Pages is turned on in the
+      # repository settings. It is a no-op once Pages is already configured.
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
