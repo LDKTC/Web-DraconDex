@@ -970,6 +970,15 @@ th.h-icon .icon {
   margin-bottom: 6px;
 }
 
+.mod-slide__realname {
+  font-family: var(--font-sans);
+  font-size: 0.72em;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--t2);
+  margin-left: 0.45em;
+}
+
 .mod-slider__controls {
   display: flex;
   justify-content: center;

@@ -80,47 +80,62 @@ window.DDStrings = {
   "home.modslider.prev": "เลื่อนไปภาพก่อนหน้า",
   "home.modslider.next": "เลื่อนไปภาพถัดไป",
 
+  "home.mod.collector.realname": "โฟลเดอร์",
   "home.mod.collector.body": "โฟลเดอร์เปล่า — จัดกลุ่มลูกๆ โดยไม่มีอะไรให้เปิดเอง แค่ขยายและยุบ",
 
+  "home.mod.manager.realname": "โปรเจกต์",
   "home.mod.manager.caption": "Manager — แสดงลูกของโมดูล Major เป็นการ์ด ลิสต์ ตาราง หรือรายการล่าสุด",
   "home.mod.manager.body": "แสดงลูกของโมดูล Major เป็นการ์ด ลิสต์ ตาราง หรือรายการล่าสุด — ฮับเริ่มต้นของโมดูลที่มีลูก",
 
+  "home.mod.inspector.realname": "รายละเอียด",
   "home.mod.inspector.caption": "Inspector — โน้ตยาวหนึ่งชิ้นที่ผูกกับฟิลด์คำอธิบายของโมดูล",
   "home.mod.inspector.body": "โน้ตยาวหนึ่งชิ้น: ตัวแก้ไข markdown ที่ผูกกับฟิลด์คำอธิบายของโมดูลเอง",
 
+  "home.mod.classifier.realname": "หมวดหมู่",
   "home.mod.classifier.caption": "Classifier — ชุดเรคคอร์ดที่มีชนิดกำกับ แสดงเป็นกริดการ์ดในภาพนี้",
   "home.mod.classifier.body": "ชุดเรคคอร์ดที่มีชนิดกำกับ ใช้เทมเพลตแอตทริบิวต์ร่วมกัน — แสดงเป็นตาราง, ลิสต์+รายละเอียด, กราฟความสัมพันธ์ หรือกริดการ์ด",
 
+  "home.mod.locator.realname": "แผนที่",
   "home.mod.locator.caption": "Locator — แคนวาสแผนที่ที่วาดพื้นที่รูปหลายเหลี่ยมและใส่ป้ายกำกับได้",
   "home.mod.locator.body": "แคนวาสแผนที่ที่คุณวาดพื้นที่รูปหลายเหลี่ยม ใส่ป้ายกำกับ และลิงก์ถึงได้",
 
+  "home.mod.chronicler.realname": "ไทม์ไลน์",
   "home.mod.chronicler.caption": "Chronicler — ไทม์ไลน์เหตุการณ์ในโลกเรื่อง",
   "home.mod.chronicler.body": "ไทม์ไลน์เหตุการณ์ในโลกเรื่อง — แบบบรรทัดเดียว, ลิสต์แนวตั้ง หรือเทียบเคียงแบบเคียงข้างกัน",
 
+  "home.mod.wanderer.realname": "ไทม์แมพ",
   "home.mod.wanderer.caption": "Wanderer — ปักหมุดเหตุการณ์จาก Chronicler ลงบนแผนที่ Locator",
   "home.mod.wanderer.body": "ปักหมุดเหตุการณ์จาก Chronicler ลงบนแผนที่ Locator ให้คุณเลื่อนดูช่วงเวลาและเห็นว่าเหตุการณ์เกิดที่ไหน",
 
+  "home.mod.narrator.realname": "เนื้อเรื่อง",
   "home.mod.narrator.caption": "Narrator — กราฟโหนดและเส้นเชื่อมสำหรับบทสนทนาแบบแตกกิ่ง",
   "home.mod.narrator.body": "กราฟโหนดและเส้นเชื่อมสำหรับบทสนทนาแบบแตกกิ่งและผังเส้นทาง",
 
+  "home.mod.author.realname": "หนังสือ",
   "home.mod.author.caption": "Author — สารบัญบทอยู่ด้านซ้าย เนื้อเรื่องเขียนในตัวแก้ไข markdown",
   "home.mod.author.body": "หนังสือหนึ่งเล่ม: สารบัญบทอยู่ด้านซ้าย เนื้อเรื่องเขียนในตัวแก้ไข markdown ด้านขวา",
 
+  "home.mod.scribe.realname": "แชต",
   "home.mod.scribe.caption": "Scribe — โน้ตแชทประทับเวลา ผูกกับโมดูลเดียว",
   "home.mod.scribe.body": "โน้ตแชทประทับเวลา ผูกกับโมดูลเดียว — ไว้จดสั้นๆ ไม่ใช่สมุดโน้ตรวมทั้งแอป",
 
+  "home.mod.drafter.realname": "เอกสาร",
   "home.mod.drafter.caption": "Drafter — หน้ากระดาษ markdown เปล่าสำหรับไอเดียหลวมๆ",
   "home.mod.drafter.body": "หน้ากระดาษ markdown เปล่าสำหรับไอเดียหลวมๆ ที่ไม่ต้องมีแถวฐานข้อมูลของตัวเอง",
 
+  "home.mod.viewer.realname": "วิเคราะห์",
   "home.mod.viewer.caption": "Viewer — มุมมองอ่านอย่างเดียวของฟิลเตอร์ที่บันทึกไว้",
   "home.mod.viewer.body": "มุมมองอ่านอย่างเดียวของฟิลเตอร์ที่บันทึกไว้ — แบบตาราง, การ์ด หรือบอร์ดสไตล์คัมบัง",
 
+  "home.mod.connector.realname": "ความสัมพันธ์",
   "home.mod.connector.caption": "Connector — กราฟความสัมพันธ์ที่สร้างจากฟิลเตอร์ที่บันทึกไว้",
   "home.mod.connector.body": "กราฟความสัมพันธ์ที่สร้างจากฟิลเตอร์ที่บันทึกไว้ — โหนดคือเรคคอร์ด เส้นเชื่อมคือความสัมพันธ์หรือวิกิลิงก์",
 
+  "home.mod.sketcher.realname": "ภาพวาด",
   "home.mod.sketcher.caption": "Sketcher — แคนวาสวาดภาพแบบมืออิสระ",
   "home.mod.sketcher.body": "แคนวาสวาดภาพแบบมืออิสระ — ปากกา ยางลบ หลายหน้า ส่งออกเป็น PNG ได้",
 
+  "home.mod.designer.realname": "กราฟ",
   "home.mod.designer.caption": "Designer — บอร์ดไดอะแกรมแบบอิสระ",
   "home.mod.designer.body": "บอร์ดไดอะแกรมแบบอิสระ — ลากรูปทรง เส้นเชื่อม และป้ายกำกับไปวางตามใจ",
 
