@@ -136,7 +136,7 @@
 
             <article class="card">
               <div class="card__icon" aria-hidden="true">🔗</div>
-              <h3>Obsidian-style wikilinks</h3>
+              <h3>Wikilinks between notes</h3>
               <p class="muted small">
                 Write <code>[[a link]]</code> anywhere in your notes and get
                 backlinks across every piece of content in the project.
@@ -209,25 +209,269 @@
                 >
               </p>
             </div>
-            <div class="card card--pad-lg">
-              <ul class="kinds">
-                <li>collector</li>
-                <li>manager</li>
-                <li>inspector</li>
-                <li>classifier</li>
-                <li>locator</li>
-                <li>chronicler</li>
-                <li>wanderer</li>
-                <li>narrator</li>
-                <li>author</li>
-                <li>scribe</li>
-                <li>drafter</li>
-                <li>viewer</li>
-                <li>connector</li>
-                <li>sketcher</li>
-                <li>designer</li>
-              </ul>
-            </div>
+            <figure class="shot">
+              <img
+                src="assets/screenshots/shell.png"
+                alt="The DraconDex desktop app: a Nexus tree of modules down the left, tabs across the top, and a classifier's object table open as the main view"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <figcaption class="small muted">
+                The app shell — Nexus tree, tabs and search, with a classifier open.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="grid grid--3" style="margin-top: 40px">
+            <article class="card mod-card">
+              <div class="mod-card__placeholder" aria-hidden="true">📁</div>
+              <div class="mod-card__body">
+                <h3>Collector</h3>
+                <p class="muted small">
+                  An empty folder — groups children with nothing to open
+                  itself, just expand and collapse.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/manager.png"
+                alt="Manager module showing a Major module's six children as cards"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Manager</h3>
+                <p class="muted small">
+                  Shows a Major module's children as Cards, List, Table or
+                  Recent — the default hub for any module with kids.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/inspector.png"
+                alt="Inspector module showing a single note with a markdown editor"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Inspector</h3>
+                <p class="muted small">
+                  One long-form note: a markdown editor bound to the module's
+                  own description field.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/classifier.png"
+                alt="Classifier module showing a grid of character cards"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Classifier</h3>
+                <p class="muted small">
+                  A typed set of records sharing one attribute template —
+                  Table, List+Detail, relation graph or card grid.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/locator.png"
+                alt="Locator module showing a map canvas with polygon areas"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Locator</h3>
+                <p class="muted small">
+                  A map canvas with polygon areas you draw, label and link
+                  to.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/chronicler.png"
+                alt="Chronicler module showing an event timeline"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Chronicler</h3>
+                <p class="muted small">
+                  An in-world event timeline — one-line, down-line list, or
+                  side-by-side compare.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/wanderer.png"
+                alt="Wanderer module showing map pins linked to a timeline"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Wanderer</h3>
+                <p class="muted small">
+                  Pins Chronicler's events onto a Locator map so you can
+                  scrub through time and watch where things happened.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/narrator.png"
+                alt="Narrator module showing a node-and-edge dialogue graph"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Narrator</h3>
+                <p class="muted small">
+                  A node-and-edge graph for branching dialogue and route
+                  boards.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/author.png"
+                alt="Author module showing chapters and a prose editor"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Author</h3>
+                <p class="muted small">
+                  A book: chapters down the left, prose in a markdown editor
+                  on the right.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/scribe.png"
+                alt="Scribe module showing timestamped chat-style notes"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Scribe</h3>
+                <p class="muted small">
+                  Timestamped chat notes scoped to one module — quick
+                  asides, not the app-wide notebook.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/drafter.png"
+                alt="Drafter module showing a blank markdown page"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Drafter</h3>
+                <p class="muted small">
+                  A blank markdown page for loose ideas that don't need
+                  their own database row.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/viewer.png"
+                alt="Viewer module showing a read-only table built from a saved filter"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Viewer</h3>
+                <p class="muted small">
+                  A read-only lens over a saved filter — Table, Cards or a
+                  kanban-style Board.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/connector.png"
+                alt="Connector module showing a relationship graph between characters"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Connector</h3>
+                <p class="muted small">
+                  A relationship graph built from a saved filter — nodes are
+                  records, edges are relations or wikilinks.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/sketcher.png"
+                alt="Sketcher module showing a freehand drawing canvas"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Sketcher</h3>
+                <p class="muted small">
+                  A freehand drawing canvas — pen, eraser, multiple pages,
+                  export to PNG.
+                </p>
+              </div>
+            </article>
+
+            <article class="card mod-card">
+              <img
+                src="assets/screenshots/designer.png"
+                alt="Designer module showing a free-form diagram board"
+                width="1440"
+                height="900"
+                loading="lazy"
+              />
+              <div class="mod-card__body">
+                <h3>Designer</h3>
+                <p class="muted small">
+                  A free-form diagram board — shapes, edges and labels you
+                  drag into place.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
