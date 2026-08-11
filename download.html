@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Download DraconDex</title>
+    <title data-i18n="dl.meta.title">Download DraconDex</title>
     <meta
       name="description"
+      data-i18n-attr="content:dl.meta.description"
       content="Download DraconDex for Windows — NSIS installer, single-file portable exe, or a zipped portable folder. Every release, with SHA-256 checksums."
     />
     <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
@@ -13,9 +14,11 @@
     <link rel="stylesheet" href="assets/css/site.css" />
     <script src="assets/js/icons.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/strings.th.js"></script>
+    <script src="assets/js/lang.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
 
     <header class="topbar">
       <div class="wrap">
@@ -24,11 +27,12 @@
           <span>DraconDex</span>
         </a>
         <nav class="nav" aria-label="Main">
-          <a href="./">Home</a>
-          <a href="download.html" aria-current="page">Download</a>
-          <a href="plugins.html">Plugins</a>
-          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme">Docs</a>
+          <a href="./" data-i18n="common.nav.home">Home</a>
+          <a href="download.html" aria-current="page" data-i18n="common.nav.download">Download</a>
+          <a href="plugins.html" data-i18n="common.nav.plugins">Plugins</a>
+          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme" data-i18n="common.nav.docs">Docs</a>
           <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex">GitHub</a>
+          <button class="icon-btn lang-btn" type="button" data-lang-toggle>TH</button>
           <button class="icon-btn" type="button" data-theme-toggle>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </button>
@@ -40,32 +44,29 @@
       <section class="section section--plain" style="padding-top: 48px">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Download</span>
-            <h1 style="font-size: clamp(1.9rem, 5vw, 2.7rem)">
+            <span class="eyebrow" data-i18n="dl.hero.eyebrow">Download</span>
+            <h1 style="font-size: clamp(1.9rem, 5vw, 2.7rem)" data-i18n="dl.hero.title">
               Get DraconDex
             </h1>
-            <p>
+            <p data-i18n="dl.hero.lead">
               Free and offline. Pick the flavour that suits you — all three are
               the same app, they only differ in where they keep your data and
               whether anything is installed.
             </p>
-            <p class="th small">
-              ทั้งสามแบบคือแอปตัวเดียวกัน ต่างกันแค่ว่าเก็บข้อมูลไว้ที่ไหน
-              และต้องติดตั้งหรือไม่
-            </p>
             <p class="small" data-latest-meta hidden>
-              Latest release <strong data-latest-version></strong> ·
-              published <span data-latest-date></span> ·
+              <span data-i18n="dl.hero.meta.latestRelease">Latest release</span> <strong data-latest-version></strong> ·
+              <span data-i18n="dl.hero.meta.published">published</span> <span data-latest-date></span> ·
               <a
                 href="https://github.com/LDKTC/App-DraconDex/releases/latest"
                 data-latest-notes
+                data-i18n="dl.hero.meta.notes"
                 >read the release notes</a
               >
             </p>
           </div>
 
           <div data-latest-assets>
-            <p class="is-loading">Loading the latest release from GitHub…</p>
+            <p class="is-loading" data-i18n="dl.hero.loading">Loading the latest release from GitHub…</p>
             <noscript>
               <p class="muted">
                 This list is built from the GitHub API in your browser. With
@@ -77,7 +78,7 @@
             </noscript>
           </div>
 
-          <p class="small muted" style="margin-top: 16px">
+          <p class="small muted" style="margin-top: 16px" data-i18n="dl.hero.assetsNote">
             Release assets are Windows builds only. On another OS you can still
             run the app from source — see
             <a href="https://github.com/LDKTC/App-DraconDex#getting-started-desktop--dev"
@@ -92,18 +93,18 @@
       <section class="section" id="which">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Which one</span>
-            <h2>Installer, portable exe, or portable folder</h2>
+            <span class="eyebrow" data-i18n="dl.which.eyebrow">Which one</span>
+            <h2 data-i18n="dl.which.title">Installer, portable exe, or portable folder</h2>
           </div>
 
           <div class="table-scroll">
             <table>
               <thead>
                 <tr>
-                  <th scope="col">Build</th>
-                  <th scope="col">Installs?</th>
-                  <th scope="col">Your data lives in</th>
-                  <th scope="col">Best for</th>
+                  <th scope="col" data-i18n="dl.which.th.build">Build</th>
+                  <th scope="col" data-i18n="dl.which.th.installs">Installs?</th>
+                  <th scope="col" data-i18n="dl.which.th.datalives">Your data lives in</th>
+                  <th scope="col" data-i18n="dl.which.th.bestfor">Best for</th>
                 </tr>
               </thead>
               <tbody>
@@ -112,33 +113,33 @@
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg>
                     <code>DraconDex-Setup-&lt;version&gt;.exe</code>
                   </th>
-                  <td>Yes — pick a folder, get shortcuts</td>
-                  <td><code>%APPDATA%/DraconDex/</code>, survives uninstall and updates</td>
-                  <td>Your own PC, the normal choice</td>
+                  <td data-i18n="dl.which.row1.installs">Yes — pick a folder, get shortcuts</td>
+                  <td data-i18n="dl.which.row1.datalives"><code>%APPDATA%/DraconDex/</code>, survives uninstall and updates</td>
+                  <td data-i18n="dl.which.row1.bestfor">Your own PC, the normal choice</td>
                 </tr>
                 <tr>
                   <th scope="row" class="h-icon">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></svg>
                     <code>DraconDex-Portable-&lt;version&gt;.exe</code>
                   </th>
-                  <td>No — one file, just run it</td>
-                  <td><code>novel-manager-data</code> next to the exe</td>
-                  <td>A quick try, or a locked-down machine</td>
+                  <td data-i18n="dl.which.row2.installs">No — one file, just run it</td>
+                  <td data-i18n="dl.which.row2.datalives"><code>novel-manager-data</code> next to the exe</td>
+                  <td data-i18n="dl.which.row2.bestfor">A quick try, or a locked-down machine</td>
                 </tr>
                 <tr>
                   <th scope="row" class="h-icon">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
                     <code>DraconDex-&lt;version&gt;-win-x64.zip</code>
                   </th>
-                  <td>No — unzip and run <code>DraconDex.exe</code></td>
-                  <td><code>novel-manager-data</code> inside the folder</td>
-                  <td>USB sticks; the whole project travels with the folder</td>
+                  <td data-i18n="dl.which.row3.installs">No — unzip and run <code>DraconDex.exe</code></td>
+                  <td data-i18n="dl.which.row3.datalives"><code>novel-manager-data</code> inside the folder</td>
+                  <td data-i18n="dl.which.row3.bestfor">USB sticks; the whole project travels with the folder</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="callout" style="margin-top: 24px">
+          <div class="callout" style="margin-top: 24px" data-i18n="dl.which.callout">
             <strong>The portable builds are around 200–220 MB.</strong> That is
             Electron — the app bundles its own browser engine so it never needs
             a runtime installed, and never needs the network.
@@ -150,9 +151,9 @@
       <section class="section" id="verify">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Verify</span>
-            <h2>Check what you downloaded</h2>
-            <p>
+            <span class="eyebrow" data-i18n="dl.verify.eyebrow">Verify</span>
+            <h2 data-i18n="dl.verify.title">Check what you downloaded</h2>
+            <p data-i18n="dl.verify.lead">
               Every release ships a <code>checksums-sha256.txt</code> covering
               the three Windows builds. Compare before you run anything.
             </p>
@@ -161,7 +162,7 @@
 Get-FileHash .\DraconDex-Setup-&lt;version&gt;.exe -Algorithm SHA256
 
 # then compare against the matching line in checksums-sha256.txt</code></pre>
-          <div class="callout callout--warn">
+          <div class="callout callout--warn" data-i18n="dl.verify.callout">
             <strong>The builds are not code-signed.</strong> Windows SmartScreen
             will warn you the first time you run one. That warning is expected
             for an unsigned open-source build — checking the SHA-256 above is
@@ -175,23 +176,19 @@ Get-FileHash .\DraconDex-Setup-&lt;version&gt;.exe -Algorithm SHA256
         <div class="wrap">
           <div class="section__head">
             <span class="eyebrow">Android</span>
-            <h2>The mobile port</h2>
-            <p>
+            <h2 data-i18n="dl.android.title">The mobile port</h2>
+            <p data-i18n="dl.android.lead">
               A Flutter front-end lives in <code>flutter/</code> in the app
               repository. It shares the desktop app's SQLite schema, so a
               database can move between the two — but it is developed
               independently and is currently behind on features.
             </p>
-            <p class="th small">
-              ฝั่งมือถือยังพัฒนาตามหลังเวอร์ชัน Desktop อยู่ —
-              ฟีเจอร์บางส่วนยังไม่มี
-            </p>
           </div>
 
           <div class="grid grid--2">
             <article class="card card--pad-lg">
-              <h3>From GitHub Actions</h3>
-              <p class="muted small">
+              <h3 data-i18n="dl.android.actions.title">From GitHub Actions</h3>
+              <p class="muted small" data-i18n="dl.android.actions.body">
                 APKs are not attached to releases. Run the
                 <strong>Build Flutter APK</strong> workflow in the app
                 repository and download the <code>release-apks</code> artifact.
@@ -200,13 +197,14 @@ Get-FileHash .\DraconDex-Setup-&lt;version&gt;.exe -Algorithm SHA256
                 <a
                   class="btn btn--sm"
                   href="https://github.com/LDKTC/App-DraconDex/actions/workflows/build-apk.yml"
+                  data-i18n="dl.android.actions.link"
                   >Open the workflow</a
                 >
               </p>
             </article>
             <article class="card card--pad-lg">
-              <h3>Build it yourself</h3>
-              <p class="muted small">
+              <h3 data-i18n="dl.android.build.title">Build it yourself</h3>
+              <p class="muted small" data-i18n="dl.android.build.body">
                 Flutter SDK 3.44.4+ and the Android toolchain:
               </p>
               <pre style="margin-bottom: 0"><code>cd flutter
@@ -215,7 +213,7 @@ flutter build apk --release --split-per-abi</code></pre>
             </article>
           </div>
 
-          <p class="small muted" style="margin-top: 18px">
+          <p class="small muted" style="margin-top: 18px" data-i18n="dl.android.move">
             To move a project across: export <code>novel-manager.db</code> from
             the desktop app's data folder, copy it to the phone, then use
             <strong>Settings → Import Database</strong> in the Android app.
@@ -227,9 +225,9 @@ flutter build apk --release --split-per-abi</code></pre>
       <section class="section" id="npm">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">For developers</span>
-            <h2>The source, as a package</h2>
-            <p>
+            <span class="eyebrow" data-i18n="dl.npm.eyebrow">For developers</span>
+            <h2 data-i18n="dl.npm.title">The source, as a package</h2>
+            <p data-i18n="dl.npm.lead">
               The app is also published as
               <code>@ldktc/dracondex</code> on GitHub Packages. It is the app
               itself, not a library — there is nothing to import. Most people
@@ -240,7 +238,7 @@ flutter build apk --release --split-per-abi</code></pre>
 @ldktc:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN</code></pre>
           <pre><code>npm install @ldktc/dracondex</code></pre>
-          <p class="small muted">
+          <p class="small muted" data-i18n="dl.npm.tokenNote">
             The token only needs the <code>read:packages</code> scope. Electron
             is a dev dependency, so running the app from that install still
             needs <code>npm install</code> in a full checkout.
@@ -252,14 +250,15 @@ flutter build apk --release --split-per-abi</code></pre>
       <section class="section" id="history">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">History</span>
-            <h2>Earlier releases</h2>
+            <span class="eyebrow" data-i18n="dl.history.eyebrow">History</span>
+            <h2 data-i18n="dl.history.title">Earlier releases</h2>
           </div>
           <div data-release-history>
-            <p class="is-loading">Loading…</p>
+            <p class="is-loading" data-i18n="dl.history.loading">Loading…</p>
           </div>
           <p style="margin-top: 20px">
             <a href="https://github.com/LDKTC/App-DraconDex/releases"
+              data-i18n="dl.history.link"
               >Every release on GitHub →</a
             >
           </p>
@@ -271,10 +270,10 @@ flutter build apk --release --split-per-abi</code></pre>
       <div class="wrap">
         <div class="footer__bottom">
           <span>
-            <a href="./">DraconDex</a> · Built by LDKTC · MIT licensed
+            <a href="./">DraconDex</a> · <span data-i18n="common.footer.built">Built by LDKTC · MIT licensed</span>
           </span>
           <span>
-            <a href="https://github.com/LDKTC/App-DraconDex">App repository</a>
+            <a href="https://github.com/LDKTC/App-DraconDex" data-i18n="common.footer.apprepo">App repository</a>
           </span>
         </div>
       </div>

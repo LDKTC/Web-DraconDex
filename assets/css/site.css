@@ -2,7 +2,8 @@
    DraconDex website — styles
    Color roles mirror the app's design tokens (src/design/tokens/tokens.json
    in LDKTC/App-DraconDex): "midnight" is the app's default theme, "daylight"
-   is its light theme. Keep these in sync with the app when tokens change.
+   is its light theme, "moonlight" is a third dark-blue variant. Keep these
+   in sync with the app when tokens change.
    ========================================================================== */
 
 /* --- fonts ------------------------------------------------------------
@@ -168,9 +169,28 @@
   --shadow-pop: 0 6px 20px rgba(23, 32, 51, 0.12);
 }
 
+/* --- tokens: moonlight (dark blue) ---------------------------------------- */
+:root[data-theme="moonlight"] {
+  --bg: #101620;
+  --surface: #182231;
+  --raised: #223044;
+  --hover: #2d3b52;
+  --border: #334258;
+  --t1: #edf4ff;
+  --t2: #a6b3c7;
+  --t3: #66758c;
+  --accent: #7c9cff;
+  --accentH: #9bb5ff;
+  --danger: #f87171;
+  --success: #34d399;
+
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-pop: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Follow the OS when the visitor has not picked a theme explicitly. */
 @media (prefers-color-scheme: light) {
-  :root:not([data-theme="midnight"]) {
+  :root:not([data-theme="midnight"]):not([data-theme="moonlight"]) {
     --bg: #f4f6fb;
     --surface: #ffffff;
     --raised: #eef1f7;
@@ -343,11 +363,6 @@ hr {
   margin-bottom: 8px;
 }
 
-.th {
-  color: var(--t2);
-  font-size: 0.94em;
-}
-
 .muted {
   color: var(--t2);
 }
@@ -439,6 +454,15 @@ hr {
 .icon-btn:hover {
   background: var(--hover);
   color: var(--t1);
+}
+
+.lang-btn {
+  width: auto;
+  padding: 0 10px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 /* --- icons ----------------------------------------------------------------

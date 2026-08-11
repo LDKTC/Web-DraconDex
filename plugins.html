@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DraconDex plugins</title>
+    <title data-i18n="pg.meta.title">DraconDex plugins</title>
     <meta
       name="description"
+      data-i18n-attr="content:pg.meta.description"
       content="Every official DraconDex plugin — Claude Chat, Codex Chat, Ollama Chat and the plugin template — with the permissions each one asks for, how to install them from a link, and how to write your own."
     />
     <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
@@ -13,9 +14,11 @@
     <link rel="stylesheet" href="assets/css/site.css" />
     <script src="assets/js/icons.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/strings.th.js"></script>
+    <script src="assets/js/lang.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
 
     <header class="topbar">
       <div class="wrap">
@@ -24,11 +27,12 @@
           <span>DraconDex</span>
         </a>
         <nav class="nav" aria-label="Main">
-          <a href="./">Home</a>
-          <a href="download.html">Download</a>
-          <a href="plugins.html" aria-current="page">Plugins</a>
-          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme">Docs</a>
+          <a href="./" data-i18n="common.nav.home">Home</a>
+          <a href="download.html" data-i18n="common.nav.download">Download</a>
+          <a href="plugins.html" aria-current="page" data-i18n="common.nav.plugins">Plugins</a>
+          <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme" data-i18n="common.nav.docs">Docs</a>
           <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex">GitHub</a>
+          <button class="icon-btn lang-btn" type="button" data-lang-toggle>TH</button>
           <button class="icon-btn" type="button" data-theme-toggle>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </button>
@@ -40,20 +44,15 @@
       <section class="section section--plain" style="padding-top: 48px">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Plugins</span>
-            <h1 style="font-size: clamp(1.9rem, 5vw, 2.7rem)">
+            <span class="eyebrow" data-i18n="common.nav.plugins">Plugins</span>
+            <h1 style="font-size: clamp(1.9rem, 5vw, 2.7rem)" data-i18n="pg.hero.title">
               Extend DraconDex with a link
             </h1>
-            <p>
+            <p data-i18n="pg.hero.lead">
               A plugin is a git repository with a manifest. Paste its link into
               the app, look at what it says it will do, and confirm. Each
               plugin gets its own database tables and runs in a separate
               sandboxed window — it cannot read your novel data.
-            </p>
-            <p class="th small">
-              ปลั๊กอินคือ git repo ที่มี manifest ของตัวเอง —
-              วางลิงก์ในแอป ดูว่ามันจะทำอะไรบ้าง แล้วกดยืนยัน
-              แต่ละปลั๊กอินมีตารางของตัวเองและรันในหน้าต่างแยกที่ถูกจำกัดสิทธิ์
             </p>
           </div>
         </div>
@@ -63,35 +62,35 @@
       <section class="section" id="install">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Installing</span>
-            <h2>Four steps, one link</h2>
-            <p class="small muted">Requires DraconDex 4.2.0 or newer.</p>
+            <span class="eyebrow" data-i18n="pg.install.eyebrow">Installing</span>
+            <h2 data-i18n="pg.install.title">Four steps, one link</h2>
+            <p class="small muted" data-i18n="pg.install.requires">Requires DraconDex 4.2.0 or newer.</p>
           </div>
 
           <ol class="steps">
-            <li>
+            <li data-i18n="pg.install.step1">
               Open <strong>Settings → Plugins</strong> in DraconDex.
             </li>
-            <li>
+            <li data-i18n="pg.install.step2">
               <strong>Paste the repository link</strong> into the single field.
               A bare <code>owner/repo</code>, an HTTPS URL, an SSH URL or a
               <code>/tree/&lt;branch&gt;</code> link all work. GitHub and
               GitLab are supported; other hosts are rejected.
             </li>
-            <li>
+            <li data-i18n="pg.install.step3">
               <strong>Read the preview.</strong> The app fetches the manifest
               and shows the plugin's name and version, every file it will
               download, every table it will create, and every host it may talk
               to. The preview touches neither disk nor database.
             </li>
-            <li>
+            <li data-i18n="pg.install.step4">
               <strong>Confirm.</strong> The installer resolves and validates
               everything again from scratch — it does not trust the preview —
               then writes the files and creates the tables.
             </li>
           </ol>
 
-          <div class="callout" style="margin-top: 28px">
+          <div class="callout" style="margin-top: 28px" data-i18n="pg.install.callout">
             <strong>Plugins are code from the internet.</strong> The sandbox
             keeps a plugin out of your novel data and off any host it did not
             declare, but it cannot make a badly-written or hostile plugin safe.
@@ -111,12 +110,13 @@
       <section class="section" id="official">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Official</span>
+            <span class="eyebrow" data-i18n="pg.official.eyebrow">Official</span>
             <h2>
-              <span data-plugin-count>4</span> plugins published under
-              github.com/LDKTC
+              <span data-plugin-count>4</span>
+              <span data-i18n="pg.official.title.suffix">plugins published under
+              github.com/LDKTC</span>
             </h2>
-            <p>
+            <p data-i18n="pg.official.lead">
               Versions and permissions below are read from each repository's
               live <code>dracondex-plugin.json</code> when this page loads.
             </p>
@@ -133,7 +133,7 @@
             </p>
           </div>
 
-          <p class="small muted" style="margin-top: 20px">
+          <p class="small muted" style="margin-top: 20px" data-i18n="pg.official.credentials">
             The three chat plugins each need their own credentials — DraconDex
             never supplies or proxies any API key, and there is no DraconDex
             server involved. Ollama is the fully local option: it only talks to
@@ -146,32 +146,32 @@
       <section class="section" id="sandbox">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">The sandbox</span>
-            <h2>What a plugin can and cannot reach</h2>
+            <span class="eyebrow" data-i18n="pg.sandbox.eyebrow">The sandbox</span>
+            <h2 data-i18n="pg.sandbox.title">What a plugin can and cannot reach</h2>
           </div>
 
           <div class="grid grid--2">
             <article class="card card--pad-lg">
               <h3 class="h-icon">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                It can
+                <span data-i18n="pg.sandbox.can.title">It can</span>
               </h3>
               <ul class="ticks">
-                <li>
+                <li data-i18n="pg.sandbox.can.li1">
                   Read and write <em>its own</em> tables through
                   <code>window.pluginApi.table.*</code>
                 </li>
-                <li>
+                <li data-i18n="pg.sandbox.can.li2">
                   Call hosts it declared in <code>permissions.net</code> —
                   HTTPS only, with <code>Cookie</code>, <code>Host</code>,
                   <code>Origin</code> and <code>Referer</code> stripped and no
                   cookie jar
                 </li>
-                <li>
+                <li data-i18n="pg.sandbox.can.li3">
                   Stream responses, and run an OAuth 2.0 + PKCE flow that opens
                   the system browser
                 </li>
-                <li>
+                <li data-i18n="pg.sandbox.can.li4">
                   Render as a panel docked in the main window, and ask for the
                   open module's <code>id</code>, <code>name</code> and
                   <code>kind</code> if it declared
@@ -183,23 +183,23 @@
             <article class="card card--pad-lg">
               <h3 class="h-icon">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
-                It cannot
+                <span data-i18n="pg.sandbox.cannot.title">It cannot</span>
               </h3>
               <ul class="ticks">
-                <li>
+                <li data-i18n="pg.sandbox.cannot.li1">
                   Touch <code>window.api</code> — the main app's IPC surface is
                   simply not present in a plugin window
                 </li>
-                <li>
+                <li data-i18n="pg.sandbox.cannot.li2">
                   Read your characters, notes, timelines, or any other app
                   table
                 </li>
-                <li>
+                <li data-i18n="pg.sandbox.cannot.li3">
                   Reach a host it did not declare, downgrade to plain
                   <code>http://</code> (except a loopback address with an
                   explicit port), or follow a redirect off its allowlist
                 </li>
-                <li>
+                <li data-i18n="pg.sandbox.cannot.li4">
                   Widen what it asked for after install — the installer
                   re-validates the manifest itself and ignores the preview
                 </li>
@@ -207,7 +207,7 @@
             </article>
           </div>
 
-          <p class="small muted" style="margin-top: 18px">
+          <p class="small muted" style="margin-top: 18px" data-i18n="pg.sandbox.note">
             Plugin windows run with <code>contextIsolation: true</code>,
             <code>nodeIntegration: false</code> and <code>sandbox: true</code>.
             Table and column names from a manifest are checked against strict
@@ -221,9 +221,9 @@
       <section class="section" id="build">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Build your own</span>
-            <h2>A plugin is one JSON file and some HTML</h2>
-            <p>
+            <span class="eyebrow" data-i18n="pg.build.eyebrow">Build your own</span>
+            <h2 data-i18n="pg.build.title">A plugin is one JSON file and some HTML</h2>
+            <p data-i18n="pg.build.lead">
               Put <code>dracondex-plugin.json</code> at the root of a public
               repository. Fork
               <a href="https://github.com/LDKTC/DraconDex-Plugin-Template"
@@ -254,39 +254,39 @@
   ]
 }</code></pre>
 
-          <h3 style="margin-top: 32px">The limits</h3>
+          <h3 style="margin-top: 32px" data-i18n="pg.build.limits.title">The limits</h3>
           <div class="table-scroll">
             <table>
               <thead>
                 <tr>
-                  <th scope="col">Field</th>
-                  <th scope="col">Rule</th>
+                  <th scope="col" data-i18n="pg.build.limits.th.field">Field</th>
+                  <th scope="col" data-i18n="pg.build.limits.th.rule">Rule</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row"><code>id</code></th>
-                  <td>Lowercase <code>a–z</code>, <code>0–9</code> and <code>_</code>; 20 characters max</td>
+                  <td data-i18n="pg.build.limits.id">Lowercase <code>a–z</code>, <code>0–9</code> and <code>_</code>; 20 characters max</td>
                 </tr>
                 <tr>
                   <th scope="row"><code>entry</code></th>
-                  <td>An HTML file, and it must also appear in <code>files</code></td>
+                  <td data-i18n="pg.build.limits.entry">An HTML file, and it must also appear in <code>files</code></td>
                 </tr>
                 <tr>
                   <th scope="row"><code>files</code></th>
-                  <td>Up to 30 files, 2 MB each. The app fetches exactly these — it never walks the repository</td>
+                  <td data-i18n="pg.build.limits.files">Up to 30 files, 2 MB each. The app fetches exactly these — it never walks the repository</td>
                 </tr>
                 <tr>
                   <th scope="row"><code>tables</code></th>
-                  <td>Up to 10 tables, 25 columns each. Column types are <code>TEXT</code>, <code>INTEGER</code> or <code>REAL</code> only — no defaults, checks or foreign keys</td>
+                  <td data-i18n="pg.build.limits.tables">Up to 10 tables, 25 columns each. Column types are <code>TEXT</code>, <code>INTEGER</code> or <code>REAL</code> only — no defaults, checks or foreign keys</td>
                 </tr>
                 <tr>
                   <th scope="row"><code>panels</code></th>
-                  <td>Up to 5. Each needs a unique id, a title of 40 characters or fewer, and an <code>entry</code> listed in <code>files</code></td>
+                  <td data-i18n="pg.build.limits.panels">Up to 5. Each needs a unique id, a title of 40 characters or fewer, and an <code>entry</code> listed in <code>files</code></td>
                 </tr>
                 <tr>
                   <th scope="row"><code>permissions.net</code></th>
-                  <td>
+                  <td data-i18n="pg.build.limits.net">
                     Up to 10 bare <code>https://</code> origins — no path,
                     query or credentials. The one exception is a loopback
                     address with an explicit port, e.g.
@@ -295,13 +295,13 @@
                 </tr>
                 <tr>
                   <th scope="row"><code>permissions.context</code></th>
-                  <td>Only <code>"module"</code> today — the open module's identity, never its content</td>
+                  <td data-i18n="pg.build.limits.context">Only <code>"module"</code> today — the open module's identity, never its content</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="callout" style="margin-top: 26px">
+          <div class="callout" style="margin-top: 26px" data-i18n="pg.build.callout">
             <strong>Panels get reloaded.</strong> A docked panel is re-rendered
             whenever the main window re-renders, so keep state in your own
             tables and restore it on load — never in a plain variable.
@@ -311,12 +311,14 @@
             <a
               class="btn btn--primary"
               href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md"
+              data-i18n="pg.build.linkdocs"
               >Read the full plugin documentation</a
             >
             <a
               class="btn"
               href="https://github.com/LDKTC/DraconDex-Plugin-Template"
               style="margin-left: 8px"
+              data-i18n="pg.build.linktemplate"
               >Start from the template</a
             >
           </p>
@@ -328,10 +330,10 @@
       <div class="wrap">
         <div class="footer__bottom">
           <span>
-            <a href="./">DraconDex</a> · Built by LDKTC · MIT licensed
+            <a href="./">DraconDex</a> · <span data-i18n="common.footer.built">Built by LDKTC · MIT licensed</span>
           </span>
           <span>
-            <a href="https://github.com/LDKTC/App-DraconDex">App repository</a>
+            <a href="https://github.com/LDKTC/App-DraconDex" data-i18n="common.footer.apprepo">App repository</a>
           </span>
         </div>
       </div>
