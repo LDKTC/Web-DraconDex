@@ -11,7 +11,7 @@
   var PLUGINS = [
     {
       repo: "DraconDex-Plugin-Claude",
-      emoji: "💬",
+      icon: "message-circle",
       tagline:
         "Chat with Anthropic's Claude models inside DraconDex — as a full window or as a panel docked next to the module you are writing.",
       taglineTh:
@@ -30,7 +30,7 @@
     },
     {
       repo: "DraconDex-Plugin-Codex",
-      emoji: "🤖",
+      icon: "terminal",
       tagline:
         "The same chat surface wired to OpenAI — Codex/GPT models, with the OAuth sign-in flow the app's plugin runtime provides.",
       taglineTh:
@@ -56,7 +56,7 @@
     },
     {
       repo: "DraconDex-Plugin-Ollama",
-      emoji: "🦙",
+      icon: "server",
       tagline:
         "Talk to models running on your own machine through Ollama. Nothing leaves the computer — the only network permission it asks for is localhost:11434.",
       taglineTh:
@@ -78,7 +78,7 @@
     },
     {
       repo: "DraconDex-Plugin-Template",
-      emoji: "🧩",
+      icon: "puzzle",
       tagline:
         "A minimal, working plugin to copy when you want to build your own — one HTML entry point, one table, no permissions requested.",
       taglineTh:
@@ -140,8 +140,8 @@
     box.dataset.plugin = p.repo;
 
     var head = el("div", "plugin__head");
-    var emoji = el("div", "plugin__emoji", p.emoji);
-    emoji.setAttribute("aria-hidden", "true");
+    var emoji = el("div", "plugin__emoji");
+    emoji.innerHTML = window.DDIcon ? window.DDIcon(p.icon) : "";
     head.appendChild(emoji);
 
     var titles = el("div");
