@@ -18,7 +18,7 @@
      DraconDex-<v>-win-x64.zip, checksums-sha256.txt */
   var KINDS = {
     installer: {
-      icon: "🪄",
+      icon: "wand-sparkles",
       label: "Windows installer",
       note: "Normal install/uninstall, shortcuts, data in %APPDATA%/DraconDex",
       test: function (n) {
@@ -26,7 +26,7 @@
       }
     },
     portable: {
-      icon: "🥾",
+      icon: "footprints",
       label: "Portable .exe",
       note: "Single file, nothing installed — data sits next to the exe",
       test: function (n) {
@@ -34,7 +34,7 @@
       }
     },
     zip: {
-      icon: "🗂",
+      icon: "archive",
       label: "Portable folder (zip)",
       note: "Unzip and run DraconDex.exe — the whole folder travels on a USB stick",
       test: function (n) {
@@ -42,14 +42,14 @@
       }
     },
     checksums: {
-      icon: "🔐",
+      icon: "lock",
       label: "SHA-256 checksums",
       note: "Verify a download before running it",
       test: function (n) {
         return /^checksums/i.test(n);
       }
     },
-    other: { icon: "📦", label: "Asset", note: "", test: function () {
+    other: { icon: "package", label: "Asset", note: "", test: function () {
       return true;
     } }
   };
@@ -191,8 +191,7 @@
 
     var icon = document.createElement("div");
     icon.className = "asset__icon";
-    icon.setAttribute("aria-hidden", "true");
-    icon.textContent = meta.icon;
+    icon.innerHTML = window.DDIcon ? window.DDIcon(meta.icon) : "";
 
     var body = document.createElement("div");
     body.className = "asset__body";

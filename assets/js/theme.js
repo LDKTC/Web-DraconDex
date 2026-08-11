@@ -35,7 +35,7 @@
 
   function sync(btn) {
     var dark = current() === "midnight";
-    btn.textContent = dark ? "☀" : "☾";
+    btn.innerHTML = window.DDIcon ? window.DDIcon(dark ? "sun" : "moon") : "";
     btn.setAttribute(
       "aria-label",
       dark ? "Switch to light theme" : "Switch to dark theme"

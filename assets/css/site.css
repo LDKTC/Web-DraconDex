@@ -5,6 +5,120 @@
    is its light theme. Keep these in sync with the app when tokens change.
    ========================================================================== */
 
+/* --- fonts ------------------------------------------------------------
+   Self-hosted, Latin + Thai subsets only (no CDN calls, no build step).
+   "Kanit Display" (OFL) drives headings and the wordmark; "Plex Sans
+   Thai" (OFL) is IBM Plex Sans Thai and carries body copy in both
+   scripts. Source: Google Fonts — see assets/fonts/README.md. */
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-400-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-500-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-500-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-600-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Plex Sans Thai";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/plex-sans-thai-700-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+@font-face {
+  font-family: "Kanit Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/kanit-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Kanit Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/kanit-600-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+@font-face {
+  font-family: "Kanit Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/kanit-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Kanit Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/kanit-700-thai.woff2") format("woff2");
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
 /* --- tokens: midnight (default / dark) ----------------------------------- */
 :root {
   --bg: #0f0f13;
@@ -29,8 +143,9 @@
   --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.3);
   --shadow-pop: 0 6px 20px rgba(0, 0, 0, 0.3);
   --maxw: 1120px;
-  --font-sans: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", system-ui,
-    -apple-system, "Noto Sans Thai", sans-serif;
+  --font-sans: "Plex Sans Thai", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Segoe UI", system-ui, -apple-system, "Noto Sans Thai", sans-serif;
+  --font-display: "Kanit Display", var(--font-sans);
   --font-mono: ui-monospace, SFMono-Regular, "Courier New", monospace;
 }
 
@@ -100,9 +215,10 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: var(--font-display);
   line-height: 1.25;
   margin: 0 0 0.5em;
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
@@ -218,8 +334,9 @@ hr {
 
 .eyebrow {
   display: inline-block;
+  font-family: var(--font-display);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--accent);
@@ -262,6 +379,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: var(--font-display);
   font-weight: 700;
   color: var(--t1);
   letter-spacing: -0.01em;
@@ -321,6 +439,36 @@ hr {
 .icon-btn:hover {
   background: var(--hover);
   color: var(--t1);
+}
+
+/* --- icons ----------------------------------------------------------------
+   Inline SVGs (vendored from Lucide, see assets/js/icons.js) replace emoji
+   everywhere on the site so glyphs render the same on every platform. */
+.icon {
+  width: 1em;
+  height: 1em;
+  flex: none;
+  vertical-align: -0.15em;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.h-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+th.h-icon {
+  display: table-cell;
+}
+
+th.h-icon .icon {
+  vertical-align: -0.2em;
+  margin-right: 8px;
 }
 
 @media (max-width: 720px) {
@@ -588,8 +736,13 @@ hr {
   border-radius: var(--r);
   background: var(--raised);
   border: 1px solid var(--border);
-  font-size: 1.05rem;
+  color: var(--accent);
   margin-bottom: 14px;
+}
+
+.card__icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .card--link {
@@ -689,7 +842,11 @@ hr {
   background: var(--raised);
   border-bottom: 1px solid var(--border);
   color: var(--t3);
-  font-size: 2rem;
+}
+
+.mod-card__placeholder svg {
+  width: 32px;
+  height: 32px;
 }
 
 .mod-card__body {
@@ -761,7 +918,12 @@ tbody tr:last-child td {
   border-radius: var(--r);
   background: var(--raised);
   border: 1px solid var(--border);
-  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+.asset__icon svg {
+  width: 21px;
+  height: 21px;
 }
 
 .asset__body {
@@ -842,7 +1004,12 @@ tbody tr:last-child td {
   border-radius: var(--r);
   background: var(--raised);
   border: 1px solid var(--border);
-  font-size: 1.35rem;
+  color: var(--accent);
+}
+
+.plugin__emoji svg {
+  width: 23px;
+  height: 23px;
 }
 
 .plugin__title {

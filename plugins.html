@@ -11,6 +11,7 @@
     <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
     <link rel="canonical" href="https://ldktc.github.io/Web-DraconDex/plugins.html" />
     <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/icons.js"></script>
     <script src="assets/js/theme.js"></script>
   </head>
   <body>
@@ -28,7 +29,9 @@
           <a href="plugins.html" aria-current="page">Plugins</a>
           <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme">Docs</a>
           <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex">GitHub</a>
-          <button class="icon-btn" type="button" data-theme-toggle>☀</button>
+          <button class="icon-btn" type="button" data-theme-toggle>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -149,7 +152,10 @@
 
           <div class="grid grid--2">
             <article class="card card--pad-lg">
-              <h3>✅ It can</h3>
+              <h3 class="h-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                It can
+              </h3>
               <ul class="ticks">
                 <li>
                   Read and write <em>its own</em> tables through
@@ -175,7 +181,10 @@
             </article>
 
             <article class="card card--pad-lg">
-              <h3>🚫 It cannot</h3>
+              <h3 class="h-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                It cannot
+              </h3>
               <ul class="ticks">
                 <li>
                   Touch <code>window.api</code> — the main app's IPC surface is

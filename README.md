@@ -28,11 +28,14 @@ Three static pages, no build step, no dependencies:
 Supporting files:
 
 ```
-assets/css/site.css     one stylesheet; colors mirror the app's design tokens
+assets/css/site.css     one stylesheet; colors and fonts mirror the app's design tokens
+assets/js/icons.js      shared inline-SVG icon set (Lucide paths), used in place of emoji
 assets/js/theme.js      midnight/daylight theme switch, persisted to localStorage
 assets/js/releases.js   reads the GitHub Releases API for the download pages
 assets/js/plugins.js    the plugin catalogue, refreshed from live manifests
 assets/brand/           logo and icon, downscaled from the app repository
+assets/fonts/           self-hosted Kanit + IBM Plex Sans Thai, Latin+Thai subsets only
+assets/screenshots/     app screenshots for the module-tree section on index.html
 .nojekyll               serve the files as-is, no Jekyll processing
 ```
 

@@ -11,6 +11,7 @@
     <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
     <link rel="canonical" href="https://ldktc.github.io/Web-DraconDex/download.html" />
     <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/icons.js"></script>
     <script src="assets/js/theme.js"></script>
   </head>
   <body>
@@ -28,7 +29,9 @@
           <a href="plugins.html">Plugins</a>
           <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex#readme">Docs</a>
           <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex">GitHub</a>
-          <button class="icon-btn" type="button" data-theme-toggle>☀</button>
+          <button class="icon-btn" type="button" data-theme-toggle>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -105,19 +108,28 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">🪄 <code>DraconDex-Setup-&lt;version&gt;.exe</code></th>
+                  <th scope="row" class="h-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg>
+                    <code>DraconDex-Setup-&lt;version&gt;.exe</code>
+                  </th>
                   <td>Yes — pick a folder, get shortcuts</td>
                   <td><code>%APPDATA%/DraconDex/</code>, survives uninstall and updates</td>
                   <td>Your own PC, the normal choice</td>
                 </tr>
                 <tr>
-                  <th scope="row">🥾 <code>DraconDex-Portable-&lt;version&gt;.exe</code></th>
+                  <th scope="row" class="h-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></svg>
+                    <code>DraconDex-Portable-&lt;version&gt;.exe</code>
+                  </th>
                   <td>No — one file, just run it</td>
                   <td><code>novel-manager-data</code> next to the exe</td>
                   <td>A quick try, or a locked-down machine</td>
                 </tr>
                 <tr>
-                  <th scope="row">🗂 <code>DraconDex-&lt;version&gt;-win-x64.zip</code></th>
+                  <th scope="row" class="h-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
+                    <code>DraconDex-&lt;version&gt;-win-x64.zip</code>
+                  </th>
                   <td>No — unzip and run <code>DraconDex.exe</code></td>
                   <td><code>novel-manager-data</code> inside the folder</td>
                   <td>USB sticks; the whole project travels with the folder</td>
