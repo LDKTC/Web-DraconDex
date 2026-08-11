@@ -805,7 +805,8 @@ th.h-icon .icon {
    App screenshots are 1440x900 PNGs exported from LDKTC/App-DraconDex's
    docs/mockups/ design references — see assets/screenshots/README.md. */
 .shot {
-  margin: 0;
+  margin: 0 0 0 auto;
+  max-width: 480px;
   border-radius: var(--rl);
   border: 1px solid var(--border);
   background: var(--surface);
