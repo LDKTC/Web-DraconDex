@@ -27,3 +27,21 @@ and `docs/Architec.md` in that repo).
 
 There is no `collector.png` — that module kind has no dedicated screen by
 design (it's an empty folder that only groups children).
+
+## Theme mockups
+
+The `theme-*.png` files are the same source mockup (the Classifier screen)
+re-skinned with each palette from `docs/mockups/build.js`'s `THEME_VARS`, used
+for the "Theme mockups" carousel on `index.html`. `midnight` is the app's
+default theme and is already shown throughout the module-tree screenshots
+above, so there is no `theme-midnight.png`.
+
+| file | theme |
+|---|---|
+| theme-daylight.png | daylight (one of the app's three built-in themes) |
+| theme-moonlight.png | moonlight (one of the app's three built-in themes) |
+| theme-redEclipse.png | redEclipse (bundled preset) |
+| theme-clearSky.png | clearSky (bundled preset) |
+| theme-atDusk.png | atDusk (bundled preset) |
+| theme-clearAurora.png | clearAurora (bundled preset) |
+| theme-rainbow.png | rainbow (bundled preset) |

@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DraconDex — offline world-building for novelists</title>
+    <title data-i18n="home.meta.title">DraconDex — offline world-building for novelists</title>
     <meta
       name="description"
+      data-i18n-attr="content:home.meta.description"
       content="DraconDex is a free, offline desktop app for organizing novel world-building data — characters, places, timelines, relationships and wikilinked notes — in a local SQLite database. Windows downloads and official plugins."
     />
     <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
@@ -25,9 +26,11 @@
     <link rel="stylesheet" href="assets/css/site.css" />
     <script src="assets/js/icons.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/strings.th.js"></script>
+    <script src="assets/js/lang.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
 
     <header class="topbar">
       <div class="wrap">
@@ -36,17 +39,19 @@
           <span>DraconDex</span>
         </a>
         <nav class="nav" aria-label="Main">
-          <a href="./" aria-current="page">Home</a>
-          <a href="download.html">Download</a>
-          <a href="plugins.html">Plugins</a>
+          <a href="./" aria-current="page" data-i18n="common.nav.home">Home</a>
+          <a href="download.html" data-i18n="common.nav.download">Download</a>
+          <a href="plugins.html" data-i18n="common.nav.plugins">Plugins</a>
           <a
             class="nav--wide"
             href="https://github.com/LDKTC/App-DraconDex#readme"
+            data-i18n="common.nav.docs"
             >Docs</a
           >
           <a class="nav--wide" href="https://github.com/LDKTC/App-DraconDex"
             >GitHub</a
           >
+          <button class="icon-btn lang-btn" type="button" data-lang-toggle>TH</button>
           <button class="icon-btn" type="button" data-theme-toggle>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
           </button>
@@ -62,19 +67,14 @@
             <div>
               <span class="pill pill--accent">
                 <span class="dot"></span>
-                Free · open source · works offline
+                <span data-i18n="home.hero.pill">Free · open source · works offline</span>
               </span>
-              <h1>Your whole world, kept on your own disk.</h1>
-              <p class="hero__lead">
+              <h1 data-i18n="home.hero.title">Your whole world, kept on your own disk.</h1>
+              <p class="hero__lead" data-i18n="home.hero.lead">
                 DraconDex is a desktop app for organizing the data behind a
                 story — characters, places, timelines, relationships, and
                 free-form notes — for novelists, story-game designers, and
                 D&amp;D DMs.
-              </p>
-              <p class="th">
-                แอปจัดการข้อมูลโลกในนิยาย — ตัวละคร, สถานที่, ไทม์ไลน์,
-                ความสัมพันธ์ และโน้ตอิสระ สำหรับนักเขียน นักออกแบบเกม
-                และ Dungeon Master (ภาษาไทยเป็นภาษาหลักของแอป)
               </p>
 
               <div class="btn-row" style="margin-top: 26px">
@@ -87,17 +87,17 @@
                   <span class="small" style="opacity: 0.75" data-download-sub
                   ></span>
                 </a>
-                <a class="btn btn--lg" href="plugins.html">Browse plugins</a>
+                <a class="btn btn--lg" href="plugins.html" data-i18n="home.hero.cta.plugins">Browse plugins</a>
               </div>
 
               <div class="hero__meta">
                 <span data-latest-meta hidden>
-                  Latest <strong data-latest-version></strong> ·
+                  <span data-i18n="home.hero.meta.latestPrefix">Latest</span> <strong data-latest-version></strong> ·
                   <span data-latest-date></span> ·
-                  <a href="https://github.com/LDKTC/App-DraconDex/releases/latest" data-latest-notes>release notes</a>
+                  <a href="https://github.com/LDKTC/App-DraconDex/releases/latest" data-latest-notes data-i18n="home.hero.meta.notes">release notes</a>
                 </span>
-                <span>Windows · portable or installer</span>
-                <span>No account, no cloud, no internet required</span>
+                <span data-i18n="home.hero.meta.windows">Windows · portable or installer</span>
+                <span data-i18n="home.hero.meta.privacy">No account, no cloud, no internet required</span>
               </div>
             </div>
 
@@ -105,6 +105,7 @@
               <img
                 src="assets/brand/DraconDex_Color-512.png"
                 alt="The DraconDex mark: a twelve-pointed compass rose"
+                data-i18n-attr="alt:home.hero.art.alt"
                 width="700"
                 height="700"
               />
@@ -117,9 +118,9 @@
       <section class="section" id="features">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">What it does</span>
-            <h2>Built for the messy middle of world-building</h2>
-            <p>
+            <span class="eyebrow" data-i18n="home.features.eyebrow">What it does</span>
+            <h2 data-i18n="home.features.title">Built for the messy middle of world-building</h2>
+            <p data-i18n="home.features.lead">
               Everything lives in one local SQLite database. Nothing is
               uploaded, nothing phones home, and the whole project folder can
               travel on a flash drive.
@@ -131,8 +132,8 @@
               <div class="card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg>
               </div>
-              <h3>Two module systems, side by side</h3>
-              <p class="muted small">
+              <h3 data-i18n="home.features.f1.title">Two module systems, side by side</h3>
+              <p class="muted small" data-i18n="home.features.f1.body">
                 Seven fixed legacy modules — Director, Navigator, Hero, Writer,
                 Scribe, Sage, Artisan — alongside the v3 "Nexus nest": an
                 unlimited tree of modules you build yourself.
@@ -143,8 +144,8 @@
               <div class="card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
               </div>
-              <h3>Wikilinks between notes</h3>
-              <p class="muted small">
+              <h3 data-i18n="home.features.f2.title">Wikilinks between notes</h3>
+              <p class="muted small" data-i18n="home.features.f2.body">
                 Write <code>[[a link]]</code> anywhere in your notes and get
                 backlinks across every piece of content in the project.
               </p>
@@ -154,8 +155,8 @@
               <div class="card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg>
               </div>
-              <h3>Maps, timelines, canvases</h3>
-              <p class="muted small">
+              <h3 data-i18n="home.features.f3.title">Maps, timelines, canvases</h3>
+              <p class="muted small" data-i18n="home.features.f3.body">
                 Dialogue graphs, sketching and diagramming surfaces built on
                 vendored D3 and Konva — bundled with the app, so they work with
                 the network off.
@@ -166,8 +167,8 @@
               <div class="card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
               </div>
-              <h3>18 languages, 3 themes</h3>
-              <p class="muted small">
+              <h3 data-i18n="home.features.f4.title">18 languages, 3 themes</h3>
+              <p class="muted small" data-i18n="home.features.f4.body">
                 Thai by default, with English, Japanese, Korean, Chinese,
                 Vietnamese, Indonesian and eleven more — plus midnight,
                 daylight and moonlight themes.
@@ -178,8 +179,8 @@
               <div class="card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></svg>
               </div>
-              <h3>Portable by design</h3>
-              <p class="muted small">
+              <h3 data-i18n="home.features.f5.title">Portable by design</h3>
+              <p class="muted small" data-i18n="home.features.f5.body">
                 The portable build keeps your data next to the executable. Copy
                 the folder to a USB stick and your project comes with it.
               </p>
@@ -189,8 +190,8 @@
               <div class="card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg>
               </div>
-              <h3>Backups you own</h3>
-              <p class="muted small">
+              <h3 data-i18n="home.features.f6.title">Backups you own</h3>
+              <p class="muted small" data-i18n="home.features.f6.body">
                 Export the whole database, a single Nexus, or one module
                 subtree to a file. Optional Google Drive backup uses the
                 <code>drive.appdata</code> scope and your own OAuth client — no
@@ -206,20 +207,17 @@
         <div class="wrap">
           <div class="grid grid--2" style="align-items: start; gap: 40px">
             <div>
-              <span class="eyebrow">The v3 module tree</span>
-              <h2>Fifteen kinds, nested however you want</h2>
-              <p class="muted">
+              <span class="eyebrow" data-i18n="home.modules.eyebrow">The v3 module tree</span>
+              <h2 data-i18n="home.modules.title">Fifteen kinds, nested however you want</h2>
+              <p class="muted" data-i18n="home.modules.lead">
                 Instead of a fixed set of screens, DraconDex v3 lets you grow a
                 tree of modules. Each node picks one of fifteen kinds, and the
                 kind decides what the module can do — collect records, draw a
                 map, track a timeline, sketch, or write prose.
               </p>
-              <p class="th small">
-                สร้างโมดูลซ้อนกันได้ไม่จำกัด แต่ละโหนดเลือก "ชนิด" ได้ 1 จาก 15
-                ชนิด — ชนิดเป็นตัวกำหนดว่าโมดูลนั้นทำอะไรได้บ้าง
-              </p>
               <p>
                 <a href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/Architec.md"
+                  data-i18n="home.modules.link"
                   >Read the architecture notes →</a
                 >
               </p>
@@ -231,6 +229,7 @@
                 data-lightbox-trigger
                 data-full="assets/screenshots/shell.png"
                 data-caption="The app shell — Nexus tree, tabs and search, with a classifier open."
+                data-i18n-attr="data-caption:home.modules.shot.caption"
               >
                 <img
                   src="assets/screenshots/shell.png"
@@ -241,7 +240,7 @@
                   draggable="false"
                 />
               </button>
-              <figcaption class="small muted">
+              <figcaption class="small muted" data-i18n="home.modules.shot.figcaption">
                 The app shell — Nexus tree, tabs and search, with a classifier open. Click to zoom.
               </figcaption>
             </figure>
@@ -254,6 +253,7 @@
                 data-mod-track
                 tabindex="0"
                 aria-label="Module screenshots — drag, use the arrow buttons, or press the arrow keys to browse; click the front screenshot to zoom"
+                data-i18n-attr="aria-label:home.modtrack.aria"
               >
               <figure class="mod-slide" data-mod-item>
                 <div class="mod-slide__placeholder" aria-hidden="true">
@@ -261,7 +261,7 @@
                 </div>
                 <figcaption>
                   <h3>Collector</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.collector.body">
                     An empty folder — groups children with nothing to open
                     itself, just expand and collapse.
                   </p>
@@ -269,12 +269,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/manager.png" data-caption="Manager — shows a Major module's children as Cards, List, Table or Recent.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/manager.png" data-caption="Manager — shows a Major module's children as Cards, List, Table or Recent." data-i18n-attr="data-caption:home.mod.manager.caption">
                   <img src="assets/screenshots/manager.png" alt="Manager module showing a Major module's six children as cards" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Manager</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.manager.body">
                     Shows a Major module's children as Cards, List, Table or
                     Recent — the default hub for any module with kids.
                   </p>
@@ -282,12 +282,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/inspector.png" data-caption="Inspector — one long-form note bound to the module's description field.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/inspector.png" data-caption="Inspector — one long-form note bound to the module's description field." data-i18n-attr="data-caption:home.mod.inspector.caption">
                   <img src="assets/screenshots/inspector.png" alt="Inspector module showing a single note with a markdown editor" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Inspector</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.inspector.body">
                     One long-form note: a markdown editor bound to the
                     module's own description field.
                   </p>
@@ -295,12 +295,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/classifier.png" data-caption="Classifier — a typed set of records, shown here as a card grid.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/classifier.png" data-caption="Classifier — a typed set of records, shown here as a card grid." data-i18n-attr="data-caption:home.mod.classifier.caption">
                   <img src="assets/screenshots/classifier.png" alt="Classifier module showing a grid of character cards" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Classifier</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.classifier.body">
                     A typed set of records sharing one attribute template —
                     Table, List+Detail, relation graph or card grid.
                   </p>
@@ -308,12 +308,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/locator.png" data-caption="Locator — a map canvas with polygon areas you draw and label.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/locator.png" data-caption="Locator — a map canvas with polygon areas you draw and label." data-i18n-attr="data-caption:home.mod.locator.caption">
                   <img src="assets/screenshots/locator.png" alt="Locator module showing a map canvas with polygon areas" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Locator</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.locator.body">
                     A map canvas with polygon areas you draw, label and link
                     to.
                   </p>
@@ -321,12 +321,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/chronicler.png" data-caption="Chronicler — an in-world event timeline.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/chronicler.png" data-caption="Chronicler — an in-world event timeline." data-i18n-attr="data-caption:home.mod.chronicler.caption">
                   <img src="assets/screenshots/chronicler.png" alt="Chronicler module showing an event timeline" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Chronicler</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.chronicler.body">
                     An in-world event timeline — one-line, down-line list, or
                     side-by-side compare.
                   </p>
@@ -334,12 +334,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/wanderer.png" data-caption="Wanderer — Chronicler's events pinned onto a Locator map.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/wanderer.png" data-caption="Wanderer — Chronicler's events pinned onto a Locator map." data-i18n-attr="data-caption:home.mod.wanderer.caption">
                   <img src="assets/screenshots/wanderer.png" alt="Wanderer module showing map pins linked to a timeline" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Wanderer</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.wanderer.body">
                     Pins Chronicler's events onto a Locator map so you can
                     scrub through time and watch where things happened.
                   </p>
@@ -347,12 +347,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/narrator.png" data-caption="Narrator — a node-and-edge graph for branching dialogue.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/narrator.png" data-caption="Narrator — a node-and-edge graph for branching dialogue." data-i18n-attr="data-caption:home.mod.narrator.caption">
                   <img src="assets/screenshots/narrator.png" alt="Narrator module showing a node-and-edge dialogue graph" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Narrator</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.narrator.body">
                     A node-and-edge graph for branching dialogue and route
                     boards.
                   </p>
@@ -360,12 +360,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/author.png" data-caption="Author — chapters down the left, prose in a markdown editor.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/author.png" data-caption="Author — chapters down the left, prose in a markdown editor." data-i18n-attr="data-caption:home.mod.author.caption">
                   <img src="assets/screenshots/author.png" alt="Author module showing chapters and a prose editor" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Author</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.author.body">
                     A book: chapters down the left, prose in a markdown
                     editor on the right.
                   </p>
@@ -373,12 +373,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/scribe.png" data-caption="Scribe — timestamped chat notes scoped to one module.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/scribe.png" data-caption="Scribe — timestamped chat notes scoped to one module." data-i18n-attr="data-caption:home.mod.scribe.caption">
                   <img src="assets/screenshots/scribe.png" alt="Scribe module showing timestamped chat-style notes" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Scribe</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.scribe.body">
                     Timestamped chat notes scoped to one module — quick
                     asides, not the app-wide notebook.
                   </p>
@@ -386,12 +386,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/drafter.png" data-caption="Drafter — a blank markdown page for loose ideas.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/drafter.png" data-caption="Drafter — a blank markdown page for loose ideas." data-i18n-attr="data-caption:home.mod.drafter.caption">
                   <img src="assets/screenshots/drafter.png" alt="Drafter module showing a blank markdown page" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Drafter</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.drafter.body">
                     A blank markdown page for loose ideas that don't need
                     their own database row.
                   </p>
@@ -399,12 +399,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/viewer.png" data-caption="Viewer — a read-only lens over a saved filter.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/viewer.png" data-caption="Viewer — a read-only lens over a saved filter." data-i18n-attr="data-caption:home.mod.viewer.caption">
                   <img src="assets/screenshots/viewer.png" alt="Viewer module showing a read-only table built from a saved filter" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Viewer</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.viewer.body">
                     A read-only lens over a saved filter — Table, Cards or a
                     kanban-style Board.
                   </p>
@@ -412,12 +412,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/connector.png" data-caption="Connector — a relationship graph built from a saved filter.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/connector.png" data-caption="Connector — a relationship graph built from a saved filter." data-i18n-attr="data-caption:home.mod.connector.caption">
                   <img src="assets/screenshots/connector.png" alt="Connector module showing a relationship graph between characters" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Connector</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.connector.body">
                     A relationship graph built from a saved filter — nodes
                     are records, edges are relations or wikilinks.
                   </p>
@@ -425,12 +425,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/sketcher.png" data-caption="Sketcher — a freehand drawing canvas.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/sketcher.png" data-caption="Sketcher — a freehand drawing canvas." data-i18n-attr="data-caption:home.mod.sketcher.caption">
                   <img src="assets/screenshots/sketcher.png" alt="Sketcher module showing a freehand drawing canvas" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Sketcher</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.sketcher.body">
                     A freehand drawing canvas — pen, eraser, multiple pages,
                     export to PNG.
                   </p>
@@ -438,12 +438,12 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/designer.png" data-caption="Designer — a free-form diagram board.">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/designer.png" data-caption="Designer — a free-form diagram board." data-i18n-attr="data-caption:home.mod.designer.caption">
                   <img src="assets/screenshots/designer.png" alt="Designer module showing a free-form diagram board" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Designer</h3>
-                  <p class="muted small">
+                  <p class="muted small" data-i18n="home.mod.designer.body">
                     A free-form diagram board — shapes, edges and labels you
                     drag into place.
                   </p>
@@ -453,10 +453,139 @@
             </div>
 
             <div class="mod-slider__controls">
-              <button type="button" class="mod-slider__arrow" data-mod-prev aria-label="Scroll to previous screenshots">
+              <button type="button" class="mod-slider__arrow" data-mod-prev aria-label="Scroll to previous screenshots" data-i18n-attr="aria-label:home.modslider.prev">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
               </button>
-              <button type="button" class="mod-slider__arrow" data-mod-next aria-label="Scroll to next screenshots">
+              <button type="button" class="mod-slider__arrow" data-mod-next aria-label="Scroll to next screenshots" data-i18n-attr="aria-label:home.modslider.next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ theme mockups -->
+      <section class="section" id="themes">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="home.themes.eyebrow">Themes</span>
+            <h2 data-i18n="home.themes.title">Three built-in themes, plus presets to build your own from</h2>
+            <p data-i18n="home.themes.lead">
+              The module screenshots above are in midnight, the app's default.
+              Below are its other two built-in themes — daylight and moonlight
+              — alongside a few of the example palettes from the in-app Custom
+              Theme editor, each a starting point you can copy, tweak and save
+              as your own.
+            </p>
+          </div>
+
+          <div class="mod-slider" data-mod-slider>
+            <div class="mod-slider__stage" data-mod-stage>
+              <div
+                class="mod-slider__track"
+                data-mod-track
+                tabindex="0"
+                aria-label="Theme mockups — drag, use the arrow buttons, or press the arrow keys to browse; click the front screenshot to zoom"
+                data-i18n-attr="aria-label:home.themetrack.aria"
+              >
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/theme-daylight.png" data-caption="Daylight — the app's light theme, one of the three built-in options." data-i18n-attr="data-caption:home.theme.daylight.caption">
+                  <img src="assets/screenshots/theme-daylight.png" alt="DraconDex UI shown in the daylight theme" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Daylight</h3>
+                  <p class="muted small" data-i18n="home.theme.daylight.body">
+                    Clean and light — one of DraconDex's three built-in
+                    themes, alongside midnight and moonlight.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/theme-moonlight.png" data-caption="Moonlight — a dark blue variant, the newest of the three built-in themes." data-i18n-attr="data-caption:home.theme.moonlight.caption">
+                  <img src="assets/screenshots/theme-moonlight.png" alt="DraconDex UI shown in the moonlight theme" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Moonlight</h3>
+                  <p class="muted small" data-i18n="home.theme.moonlight.body">
+                    A cooler, blue-tinted alternative to midnight — the newest
+                    of the three built-in themes.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/theme-redEclipse.png" data-caption="Red Eclipse — an example palette from the Custom Theme editor, warm reds on near-black." data-i18n-attr="data-caption:home.theme.redeclipse.caption">
+                  <img src="assets/screenshots/theme-redEclipse.png" alt="DraconDex UI shown in the Red Eclipse example theme palette" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Red Eclipse</h3>
+                  <p class="muted small" data-i18n="home.theme.redeclipse.body">
+                    An example palette from the Custom Theme editor — warm
+                    reds on a near-black background.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/theme-clearSky.png" data-caption="Clear Sky — an example palette from the Custom Theme editor, cool blues on white." data-i18n-attr="data-caption:home.theme.clearsky.caption">
+                  <img src="assets/screenshots/theme-clearSky.png" alt="DraconDex UI shown in the Clear Sky example theme palette" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Clear Sky</h3>
+                  <p class="muted small" data-i18n="home.theme.clearsky.body">
+                    An example palette from the Custom Theme editor — cool sky
+                    blues on a bright white background.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/theme-atDusk.png" data-caption="At Dusk — an example palette from the Custom Theme editor, purples and violet." data-i18n-attr="data-caption:home.theme.atdusk.caption">
+                  <img src="assets/screenshots/theme-atDusk.png" alt="DraconDex UI shown in the At Dusk example theme palette" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>At Dusk</h3>
+                  <p class="muted small" data-i18n="home.theme.atdusk.body">
+                    An example palette from the Custom Theme editor — deep
+                    purples with a violet accent.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/theme-clearAurora.png" data-caption="Clear Aurora — an example palette from the Custom Theme editor, teal and magenta." data-i18n-attr="data-caption:home.theme.clearaurora.caption">
+                  <img src="assets/screenshots/theme-clearAurora.png" alt="DraconDex UI shown in the Clear Aurora example theme palette" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Clear Aurora</h3>
+                  <p class="muted small" data-i18n="home.theme.clearaurora.body">
+                    An example palette from the Custom Theme editor — teal
+                    surfaces with a magenta accent.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/theme-rainbow.png" data-caption="Rainbow — an example palette from the Custom Theme editor, a gradient frame with multicolor controls." data-i18n-attr="data-caption:home.theme.rainbow.caption">
+                  <img src="assets/screenshots/theme-rainbow.png" alt="DraconDex UI shown in the Rainbow example theme palette" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Rainbow</h3>
+                  <p class="muted small" data-i18n="home.theme.rainbow.body">
+                    An example palette from the Custom Theme editor — a
+                    gradient app frame with multicolor buttons and badges.
+                  </p>
+                </figcaption>
+              </figure>
+              </div>
+            </div>
+
+            <div class="mod-slider__controls">
+              <button type="button" class="mod-slider__arrow" data-mod-prev aria-label="Scroll to previous screenshots" data-i18n-attr="aria-label:home.modslider.prev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="mod-slider__arrow" data-mod-next aria-label="Scroll to next screenshots" data-i18n-attr="aria-label:home.modslider.next">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
               </button>
             </div>
@@ -468,12 +597,13 @@
       <section class="section" id="plugins">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Plugins</span>
+            <span class="eyebrow" data-i18n="home.plugins.eyebrow">Plugins</span>
             <h2>
-              <span data-plugin-count>4</span> official plugins, installed from
-              a link
+              <span data-plugin-count>4</span>
+              <span data-i18n="home.plugins.title.suffix">official plugins, installed from
+              a link</span>
             </h2>
-            <p>
+            <p data-i18n="home.plugins.lead">
               Paste a repository link into Settings → Plugins. DraconDex shows
               you exactly which files it will fetch, which tables it will
               create and which hosts it may talk to — then runs the plugin in a
@@ -488,7 +618,7 @@
           </div>
 
           <p style="margin-top: 24px">
-            <a class="btn" href="plugins.html">All plugins and how to build one</a>
+            <a class="btn" href="plugins.html" data-i18n="home.plugins.cta">All plugins and how to build one</a>
           </p>
         </div>
       </section>
@@ -497,33 +627,33 @@
       <section class="section" id="platforms">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Platforms</span>
-            <h2>Where it runs</h2>
+            <span class="eyebrow" data-i18n="home.platforms.eyebrow">Platforms</span>
+            <h2 data-i18n="home.platforms.title">Where it runs</h2>
           </div>
           <div class="grid grid--2">
             <article class="card card--pad-lg">
               <h3 class="h-icon">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
-                Windows desktop
+                <span data-i18n="home.platforms.win.title">Windows desktop</span>
               </h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.platforms.win.body">
                 The main app, built on Electron. Ships three ways every
                 release: an NSIS installer, a single-file portable
                 <code>.exe</code>, and a zipped portable folder.
               </p>
-              <p><a href="download.html">Downloads →</a></p>
+              <p><a href="download.html" data-i18n="home.platforms.win.link">Downloads →</a></p>
             </article>
             <article class="card card--pad-lg">
               <h3 class="h-icon">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-                Android <span class="pill">in progress</span>
+                Android <span class="pill" data-i18n="home.platforms.android.pill">in progress</span>
               </h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.platforms.android.body">
                 A Flutter port shares the same SQLite schema, so databases move
                 between desktop and phone. It is developed independently and is
                 currently behind the desktop app in features.
               </p>
-              <p><a href="download.html#android">How to get an APK →</a></p>
+              <p><a href="download.html#android" data-i18n="home.platforms.android.link">How to get an APK →</a></p>
             </article>
           </div>
         </div>
@@ -533,9 +663,9 @@
       <section class="section" id="docs">
         <div class="wrap">
           <div class="section__head">
-            <span class="eyebrow">Documentation</span>
-            <h2>Docs live in the app repository</h2>
-            <p>
+            <span class="eyebrow" data-i18n="home.docs.eyebrow">Documentation</span>
+            <h2 data-i18n="home.docs.title">Docs live in the app repository</h2>
+            <p data-i18n="home.docs.lead">
               The project keeps detailed, actively-maintained docs — written in
               Thai, the project's primary language.
             </p>
@@ -546,7 +676,7 @@
               href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/Architec.md"
             >
               <h3>Architec.md</h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.docs.architec">
                 The v3 module-tree architecture, and how each kind maps to
                 files and IPC channels.
               </p>
@@ -556,7 +686,7 @@
               href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/SYSTEMS.md"
             >
               <h3>SYSTEMS.md</h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.docs.systems">
                 How each system behaves — Director, Navigator, Hero, Writer,
                 Scribe, Sage, Artisan, wikilinks, the IDE shell.
               </p>
@@ -566,7 +696,7 @@
               href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md"
             >
               <h3>PLUGINS.md</h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.docs.plugins">
                 The plugin runtime: manifest format, the sandbox, and an honest
                 account of what it does and does not protect against.
               </p>
@@ -576,7 +706,7 @@
               href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/DRIVE.md"
             >
               <h3>DRIVE.md</h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.docs.drive">
                 Setting up optional Google Drive backup with your own OAuth
                 client.
               </p>
@@ -586,7 +716,7 @@
               href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/FILES.md"
             >
               <h3>FILES.md</h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.docs.files">
                 A per-file reference of what lives where in the codebase.
               </p>
             </a>
@@ -595,7 +725,7 @@
               href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/CHANGELOG.md"
             >
               <h3>CHANGELOG.md</h3>
-              <p class="muted small">
+              <p class="muted small" data-i18n="home.docs.changelog">
                 What changed and why, session to session.
               </p>
             </a>
@@ -607,18 +737,19 @@
       <section class="section" id="get">
         <div class="wrap">
           <div class="card card--pad-lg" style="text-align: center">
-            <h2>Start writing your world</h2>
-            <p class="muted">
+            <h2 data-i18n="home.cta.title">Start writing your world</h2>
+            <p class="muted" data-i18n="home.cta.body">
               No account. No subscription. Download it, run it, and your data
               stays where you put it.
             </p>
             <div class="btn-row" style="justify-content: center">
-              <a class="btn btn--primary btn--lg" href="download.html"
+              <a class="btn btn--primary btn--lg" href="download.html" data-i18n="home.cta.download"
                 >Download DraconDex</a
               >
               <a
                 class="btn btn--lg"
                 href="https://github.com/LDKTC/App-DraconDex"
+                data-i18n="home.cta.source"
                 >View the source</a
               >
             </div>
@@ -635,56 +766,62 @@
               <img src="assets/brand/DraconDex_Color-64.png" alt="" />
               <span>DraconDex</span>
             </a>
-            <p class="small">
+            <p class="small" data-i18n="common.footer.tagline">
               Offline world-building for novelists, game designers and DMs.
             </p>
           </div>
           <div>
-            <h4>Get it</h4>
+            <h4 data-i18n="common.footer.getit">Get it</h4>
             <ul>
-              <li><a href="download.html">Downloads</a></li>
+              <li><a href="download.html" data-i18n="common.nav.download">Downloads</a></li>
               <li>
                 <a href="https://github.com/LDKTC/App-DraconDex/releases"
+                  data-i18n="common.footer.allreleases"
                   >All releases</a
                 >
               </li>
               <li>
                 <a href="https://github.com/LDKTC/App-DraconDex/packages"
+                  data-i18n="common.footer.npm"
                   >npm package</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Plugins</h4>
+            <h4 data-i18n="common.nav.plugins">Plugins</h4>
             <ul>
-              <li><a href="plugins.html">Official plugins</a></li>
+              <li><a href="plugins.html" data-i18n="common.footer.officialplugins">Official plugins</a></li>
               <li>
                 <a href="https://github.com/LDKTC/DraconDex-Plugin-Template"
+                  data-i18n="common.footer.plugintemplate"
                   >Plugin template</a
                 >
               </li>
               <li>
                 <a
                   href="https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md"
+                  data-i18n="common.footer.plugindocs"
                   >Plugin docs</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h4>Project</h4>
+            <h4 data-i18n="common.footer.project">Project</h4>
             <ul>
               <li>
-                <a href="https://github.com/LDKTC/App-DraconDex">App repository</a>
+                <a href="https://github.com/LDKTC/App-DraconDex" data-i18n="common.footer.apprepo">App repository</a>
               </li>
               <li>
                 <a href="https://github.com/LDKTC/App-DraconDex/issues"
+                  data-i18n="common.footer.issues"
                   >Issues</a
                 >
               </li>
               <li>
                 <a href="https://github.com/LDKTC/Web-DraconDex"
+                  data-i18n="common.footer.websitesource"
                   >This website's source</a
                 >
               </li>
@@ -692,29 +829,29 @@
           </div>
         </div>
         <div class="footer__bottom">
-          <span>Built by LDKTC · MIT licensed</span>
-          <span>Not affiliated with any of the AI providers its plugins connect to.</span>
+          <span data-i18n="common.footer.built">Built by LDKTC · MIT licensed</span>
+          <span data-i18n="common.footer.disclaimer">Not affiliated with any of the AI providers its plugins connect to.</span>
         </div>
       </div>
     </footer>
 
-    <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+    <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Screenshot viewer" data-i18n-attr="aria-label:common.lightbox.aria" hidden>
       <div class="lightbox__toolbar">
-        <button type="button" class="lightbox__btn" data-lightbox-zoom-out aria-label="Zoom out">
+        <button type="button" class="lightbox__btn" data-lightbox-zoom-out aria-label="Zoom out" data-i18n-attr="aria-label:common.lightbox.zoomout">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
         </button>
         <span class="lightbox__zoom-level" data-lightbox-zoom-level>100%</span>
-        <button type="button" class="lightbox__btn" data-lightbox-zoom-in aria-label="Zoom in">
+        <button type="button" class="lightbox__btn" data-lightbox-zoom-in aria-label="Zoom in" data-i18n-attr="aria-label:common.lightbox.zoomin">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
         </button>
-        <button type="button" class="lightbox__btn" data-lightbox-close aria-label="Close">
+        <button type="button" class="lightbox__btn" data-lightbox-close aria-label="Close" data-i18n-attr="aria-label:common.lightbox.close">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
-      <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Previous screenshot">
+      <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Previous screenshot" data-i18n-attr="aria-label:common.lightbox.prev">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
       </button>
-      <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next screenshot">
+      <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next screenshot" data-i18n-attr="aria-label:common.lightbox.next">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
       </button>
       <div class="lightbox__stage" data-lightbox-stage>
