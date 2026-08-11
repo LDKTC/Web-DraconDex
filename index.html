@@ -225,270 +225,241 @@
               </p>
             </div>
             <figure class="shot">
-              <img
-                src="assets/screenshots/shell.png"
-                alt="The DraconDex desktop app: a Nexus tree of modules down the left, tabs across the top, and a classifier's object table open as the main view"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
+              <button
+                type="button"
+                class="shot__trigger"
+                data-lightbox-trigger
+                data-full="assets/screenshots/shell.png"
+                data-caption="The app shell — Nexus tree, tabs and search, with a classifier open."
+              >
+                <img
+                  src="assets/screenshots/shell.png"
+                  alt="The DraconDex desktop app: a Nexus tree of modules down the left, tabs across the top, and a classifier's object table open as the main view"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </button>
               <figcaption class="small muted">
-                The app shell — Nexus tree, tabs and search, with a classifier open.
+                The app shell — Nexus tree, tabs and search, with a classifier open. Click to zoom.
               </figcaption>
             </figure>
           </div>
 
-          <div class="grid grid--3" style="margin-top: 40px">
-            <article class="card mod-card">
-              <div class="mod-card__placeholder" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>
-              </div>
-              <div class="mod-card__body">
-                <h3>Collector</h3>
-                <p class="muted small">
-                  An empty folder — groups children with nothing to open
-                  itself, just expand and collapse.
-                </p>
-              </div>
-            </article>
+          <div class="mod-slider" data-mod-slider>
+            <div class="mod-slider__stage" data-mod-stage>
+              <div
+                class="mod-slider__track"
+                data-mod-track
+                tabindex="0"
+                aria-label="Module screenshots — drag, use the arrow buttons, or press the arrow keys to browse; click the front screenshot to zoom"
+              >
+              <figure class="mod-slide" data-mod-item>
+                <div class="mod-slide__placeholder" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg>
+                </div>
+                <figcaption>
+                  <h3>Collector</h3>
+                  <p class="muted small">
+                    An empty folder — groups children with nothing to open
+                    itself, just expand and collapse.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/manager.png"
-                alt="Manager module showing a Major module's six children as cards"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Manager</h3>
-                <p class="muted small">
-                  Shows a Major module's children as Cards, List, Table or
-                  Recent — the default hub for any module with kids.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/manager.png" data-caption="Manager — shows a Major module's children as Cards, List, Table or Recent.">
+                  <img src="assets/screenshots/manager.png" alt="Manager module showing a Major module's six children as cards" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Manager</h3>
+                  <p class="muted small">
+                    Shows a Major module's children as Cards, List, Table or
+                    Recent — the default hub for any module with kids.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/inspector.png"
-                alt="Inspector module showing a single note with a markdown editor"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Inspector</h3>
-                <p class="muted small">
-                  One long-form note: a markdown editor bound to the module's
-                  own description field.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/inspector.png" data-caption="Inspector — one long-form note bound to the module's description field.">
+                  <img src="assets/screenshots/inspector.png" alt="Inspector module showing a single note with a markdown editor" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Inspector</h3>
+                  <p class="muted small">
+                    One long-form note: a markdown editor bound to the
+                    module's own description field.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/classifier.png"
-                alt="Classifier module showing a grid of character cards"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Classifier</h3>
-                <p class="muted small">
-                  A typed set of records sharing one attribute template —
-                  Table, List+Detail, relation graph or card grid.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/classifier.png" data-caption="Classifier — a typed set of records, shown here as a card grid.">
+                  <img src="assets/screenshots/classifier.png" alt="Classifier module showing a grid of character cards" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Classifier</h3>
+                  <p class="muted small">
+                    A typed set of records sharing one attribute template —
+                    Table, List+Detail, relation graph or card grid.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/locator.png"
-                alt="Locator module showing a map canvas with polygon areas"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Locator</h3>
-                <p class="muted small">
-                  A map canvas with polygon areas you draw, label and link
-                  to.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/locator.png" data-caption="Locator — a map canvas with polygon areas you draw and label.">
+                  <img src="assets/screenshots/locator.png" alt="Locator module showing a map canvas with polygon areas" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Locator</h3>
+                  <p class="muted small">
+                    A map canvas with polygon areas you draw, label and link
+                    to.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/chronicler.png"
-                alt="Chronicler module showing an event timeline"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Chronicler</h3>
-                <p class="muted small">
-                  An in-world event timeline — one-line, down-line list, or
-                  side-by-side compare.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/chronicler.png" data-caption="Chronicler — an in-world event timeline.">
+                  <img src="assets/screenshots/chronicler.png" alt="Chronicler module showing an event timeline" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Chronicler</h3>
+                  <p class="muted small">
+                    An in-world event timeline — one-line, down-line list, or
+                    side-by-side compare.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/wanderer.png"
-                alt="Wanderer module showing map pins linked to a timeline"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Wanderer</h3>
-                <p class="muted small">
-                  Pins Chronicler's events onto a Locator map so you can
-                  scrub through time and watch where things happened.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/wanderer.png" data-caption="Wanderer — Chronicler's events pinned onto a Locator map.">
+                  <img src="assets/screenshots/wanderer.png" alt="Wanderer module showing map pins linked to a timeline" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Wanderer</h3>
+                  <p class="muted small">
+                    Pins Chronicler's events onto a Locator map so you can
+                    scrub through time and watch where things happened.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/narrator.png"
-                alt="Narrator module showing a node-and-edge dialogue graph"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Narrator</h3>
-                <p class="muted small">
-                  A node-and-edge graph for branching dialogue and route
-                  boards.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/narrator.png" data-caption="Narrator — a node-and-edge graph for branching dialogue.">
+                  <img src="assets/screenshots/narrator.png" alt="Narrator module showing a node-and-edge dialogue graph" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Narrator</h3>
+                  <p class="muted small">
+                    A node-and-edge graph for branching dialogue and route
+                    boards.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/author.png"
-                alt="Author module showing chapters and a prose editor"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Author</h3>
-                <p class="muted small">
-                  A book: chapters down the left, prose in a markdown editor
-                  on the right.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/author.png" data-caption="Author — chapters down the left, prose in a markdown editor.">
+                  <img src="assets/screenshots/author.png" alt="Author module showing chapters and a prose editor" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Author</h3>
+                  <p class="muted small">
+                    A book: chapters down the left, prose in a markdown
+                    editor on the right.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/scribe.png"
-                alt="Scribe module showing timestamped chat-style notes"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Scribe</h3>
-                <p class="muted small">
-                  Timestamped chat notes scoped to one module — quick
-                  asides, not the app-wide notebook.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/scribe.png" data-caption="Scribe — timestamped chat notes scoped to one module.">
+                  <img src="assets/screenshots/scribe.png" alt="Scribe module showing timestamped chat-style notes" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Scribe</h3>
+                  <p class="muted small">
+                    Timestamped chat notes scoped to one module — quick
+                    asides, not the app-wide notebook.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/drafter.png"
-                alt="Drafter module showing a blank markdown page"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Drafter</h3>
-                <p class="muted small">
-                  A blank markdown page for loose ideas that don't need
-                  their own database row.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/drafter.png" data-caption="Drafter — a blank markdown page for loose ideas.">
+                  <img src="assets/screenshots/drafter.png" alt="Drafter module showing a blank markdown page" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Drafter</h3>
+                  <p class="muted small">
+                    A blank markdown page for loose ideas that don't need
+                    their own database row.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/viewer.png"
-                alt="Viewer module showing a read-only table built from a saved filter"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Viewer</h3>
-                <p class="muted small">
-                  A read-only lens over a saved filter — Table, Cards or a
-                  kanban-style Board.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/viewer.png" data-caption="Viewer — a read-only lens over a saved filter.">
+                  <img src="assets/screenshots/viewer.png" alt="Viewer module showing a read-only table built from a saved filter" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Viewer</h3>
+                  <p class="muted small">
+                    A read-only lens over a saved filter — Table, Cards or a
+                    kanban-style Board.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/connector.png"
-                alt="Connector module showing a relationship graph between characters"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Connector</h3>
-                <p class="muted small">
-                  A relationship graph built from a saved filter — nodes are
-                  records, edges are relations or wikilinks.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/connector.png" data-caption="Connector — a relationship graph built from a saved filter.">
+                  <img src="assets/screenshots/connector.png" alt="Connector module showing a relationship graph between characters" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Connector</h3>
+                  <p class="muted small">
+                    A relationship graph built from a saved filter — nodes
+                    are records, edges are relations or wikilinks.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/sketcher.png"
-                alt="Sketcher module showing a freehand drawing canvas"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Sketcher</h3>
-                <p class="muted small">
-                  A freehand drawing canvas — pen, eraser, multiple pages,
-                  export to PNG.
-                </p>
-              </div>
-            </article>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/sketcher.png" data-caption="Sketcher — a freehand drawing canvas.">
+                  <img src="assets/screenshots/sketcher.png" alt="Sketcher module showing a freehand drawing canvas" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Sketcher</h3>
+                  <p class="muted small">
+                    A freehand drawing canvas — pen, eraser, multiple pages,
+                    export to PNG.
+                  </p>
+                </figcaption>
+              </figure>
 
-            <article class="card mod-card">
-              <img
-                src="assets/screenshots/designer.png"
-                alt="Designer module showing a free-form diagram board"
-                width="1440"
-                height="900"
-                loading="lazy"
-              />
-              <div class="mod-card__body">
-                <h3>Designer</h3>
-                <p class="muted small">
-                  A free-form diagram board — shapes, edges and labels you
-                  drag into place.
-                </p>
+              <figure class="mod-slide" data-mod-item>
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/designer.png" data-caption="Designer — a free-form diagram board.">
+                  <img src="assets/screenshots/designer.png" alt="Designer module showing a free-form diagram board" width="1440" height="900" loading="lazy" draggable="false" />
+                </button>
+                <figcaption>
+                  <h3>Designer</h3>
+                  <p class="muted small">
+                    A free-form diagram board — shapes, edges and labels you
+                    drag into place.
+                  </p>
+                </figcaption>
+              </figure>
               </div>
-            </article>
+            </div>
+
+            <div class="mod-slider__controls">
+              <button type="button" class="mod-slider__arrow" data-mod-prev aria-label="Scroll to previous screenshots">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="mod-slider__arrow" data-mod-next aria-label="Scroll to next screenshots">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -727,7 +698,33 @@
       </div>
     </footer>
 
+    <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+      <div class="lightbox__toolbar">
+        <button type="button" class="lightbox__btn" data-lightbox-zoom-out aria-label="Zoom out">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+        </button>
+        <span class="lightbox__zoom-level" data-lightbox-zoom-level>100%</span>
+        <button type="button" class="lightbox__btn" data-lightbox-zoom-in aria-label="Zoom in">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+        </button>
+        <button type="button" class="lightbox__btn" data-lightbox-close aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Previous screenshot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Next screenshot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+      <div class="lightbox__stage" data-lightbox-stage>
+        <img data-lightbox-img alt="" draggable="false" />
+      </div>
+      <p class="lightbox__caption" data-lightbox-caption></p>
+    </div>
+
     <script src="assets/js/releases.js"></script>
     <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/mod-slider.js"></script>
   </body>
 </html>

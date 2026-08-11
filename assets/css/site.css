@@ -813,29 +813,117 @@ th.h-icon .icon {
   overflow: hidden;
 }
 
+.shot__trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: zoom-in;
+}
+
 .shot img {
   display: block;
   width: 100%;
   height: auto;
+  pointer-events: none;
 }
 
 .shot figcaption {
   padding: 12px 18px 16px;
 }
 
-.mod-card {
-  padding: 0;
+/* --- module screenshot carousel ---------------------------------------
+   A "coverflow" style, endlessly-looping carousel: the front slide sits at
+   full size, the rest recede in scale/opacity to either side. Every slide
+   stays mounted and absolutely positioned — assets/js/mod-slider.js drives
+   position purely through math (a cyclic distance from the current index),
+   so there's no start/end to hit and nothing to clone for the loop. A mouse
+   drag also tilts each visible slide individually towards the drag
+   direction (not one shared skewed pane), easing back to level on release;
+   touch/pen drag the carousel without the tilt. */
+.mod-slider {
+  position: relative;
+  margin-top: 40px;
+}
+
+.mod-slider__stage {
+  position: relative;
+  height: 480px;
   overflow: hidden;
 }
 
-.mod-card img {
+.mod-slider__track {
+  position: absolute;
+  inset: 0;
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.mod-slider__track:focus-visible {
+  outline: none;
+}
+
+.mod-slider__track.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.mod-slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  will-change: transform, opacity;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.5s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.mod-slider__track.is-dragging .mod-slide {
+  transition: none;
+}
+
+.mod-slide.is-current {
+  box-shadow: var(--shadow-pop);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+}
+
+.mod-slide__img {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: zoom-in;
+}
+
+.mod-slide.is-current .mod-slide__img {
+  cursor: zoom-in;
+}
+
+.mod-slide:not(.is-current) .mod-slide__img {
+  cursor: pointer;
+}
+
+.mod-slide__img img {
   display: block;
   width: 100%;
   height: auto;
   border-bottom: 1px solid var(--border);
+  pointer-events: none;
 }
 
-.mod-card__placeholder {
+.mod-slide__placeholder {
   aspect-ratio: 16 / 10;
   display: grid;
   place-items: center;
@@ -844,17 +932,206 @@ th.h-icon .icon {
   color: var(--t3);
 }
 
-.mod-card__placeholder svg {
+.mod-slide__placeholder svg {
   width: 32px;
   height: 32px;
 }
 
-.mod-card__body {
+.mod-slide figcaption {
   padding: 16px 18px;
 }
 
-.mod-card__body h3 {
+.mod-slide figcaption h3 {
   margin-bottom: 6px;
+}
+
+.mod-slider__controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.mod-slider__arrow {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--t2);
+  cursor: pointer;
+  transition: background var(--ease), color var(--ease);
+}
+
+.mod-slider__arrow:hover {
+  background: var(--hover);
+  color: var(--t1);
+}
+
+.mod-slider__arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 640px) {
+  .mod-slider__stage {
+    height: 400px;
+  }
+  .mod-slide {
+    width: 300px;
+  }
+}
+
+/* --- lightbox ---------------------------------------------------------
+   Fullscreen viewer for any [data-lightbox-trigger]. Wheel/buttons/pinch
+   zoom; drag to pan once zoomed in. See assets/js/mod-slider.js. */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--bg) 85%, black 15%);
+  backdrop-filter: blur(6px);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox__stage {
+  position: relative;
+  width: min(92vw, 1400px);
+  height: min(86vh, 900px);
+  overflow: hidden;
+  touch-action: none;
+}
+
+.lightbox__stage.is-zoomed {
+  cursor: grab;
+}
+
+.lightbox__stage.is-panning {
+  cursor: grabbing;
+}
+
+.lightbox__stage img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%) scale(1);
+  user-select: none;
+  box-shadow: var(--shadow-pop);
+  border-radius: var(--r);
+  transition: transform 0.15s ease-out;
+}
+
+.lightbox__stage.is-panning img {
+  transition: none;
+}
+
+.lightbox__toolbar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 6px;
+  box-shadow: var(--shadow-card);
+}
+
+.lightbox__btn {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--rs);
+  border: 0;
+  background: transparent;
+  color: var(--t2);
+  cursor: pointer;
+  transition: background var(--ease), color var(--ease);
+}
+
+.lightbox__btn:hover {
+  background: var(--hover);
+  color: var(--t1);
+}
+
+.lightbox__btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.lightbox__btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.lightbox__zoom-level {
+  min-width: 3.4em;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--t3);
+  font-variant-numeric: tabular-nums;
+}
+
+.lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+}
+
+.lightbox__nav--prev {
+  left: 16px;
+}
+
+.lightbox__nav--next {
+  right: 16px;
+}
+
+.lightbox__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  margin: 0;
+  text-align: center;
+  color: var(--t2);
+  font-size: 0.875rem;
+  padding: 0 64px;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .lightbox__nav {
+    width: 36px;
+    height: 36px;
+  }
+  .lightbox__nav--prev {
+    left: 8px;
+  }
+  .lightbox__nav--next {
+    right: 8px;
+  }
 }
 
 /* --- tables -------------------------------------------------------------- */
