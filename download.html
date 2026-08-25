@@ -7,7 +7,7 @@
     <meta
       name="description"
       data-i18n-attr="content:dl.meta.description"
-      content="Download DraconDex for Windows — NSIS installer, single-file portable exe, or a zipped portable folder. Every release, with SHA-256 checksums."
+      content="Download DraconDex — Windows installer or portable build, the signed Android APK, or run it straight in the browser. Every release, with SHA-256 checksums."
     />
     <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
     <link rel="canonical" href="https://ldktc.github.io/Web-DraconDex/download.html" />
@@ -49,9 +49,9 @@
               Get DraconDex
             </h1>
             <p data-i18n="dl.hero.lead">
-              Free and offline. Pick the flavour that suits you — all three are
-              the same app, they only differ in where they keep your data and
-              whether anything is installed.
+              Free and offline, on Windows, Android, or straight in a browser.
+              The Windows builds below are all the same app — they only differ
+              in where they keep your data and whether anything is installed.
             </p>
             <p class="small" data-latest-meta hidden>
               <span data-i18n="dl.hero.meta.latestRelease">Latest release</span> <strong data-latest-version></strong> ·
@@ -79,8 +79,9 @@
           </div>
 
           <p class="small muted" style="margin-top: 16px" data-i18n="dl.hero.assetsNote">
-            Release assets are Windows builds only. On another OS you can still
-            run the app from source — see
+            These are the Windows builds. Android has its
+            <a href="#android">own releases below</a>, and any other OS can run
+            <a href="#web">the browser build</a> or the app from source — see
             <a href="https://github.com/LDKTC/App-DraconDex#getting-started-desktop--dev"
               >Getting started</a
             >
@@ -155,7 +156,8 @@
             <h2 data-i18n="dl.verify.title">Check what you downloaded</h2>
             <p data-i18n="dl.verify.lead">
               Every release ships a <code>checksums-sha256.txt</code> covering
-              the three Windows builds. Compare before you run anything.
+              everything attached to it — the three Windows builds, or the four
+              APKs. Compare before you run anything.
             </p>
           </div>
           <pre><code># PowerShell
@@ -176,30 +178,56 @@ Get-FileHash .\DraconDex-Setup-&lt;version&gt;.exe -Algorithm SHA256
         <div class="wrap">
           <div class="section__head">
             <span class="eyebrow">Android</span>
-            <h2 data-i18n="dl.android.title">The mobile port</h2>
+            <h2 data-i18n="dl.android.title">The Android app</h2>
             <p data-i18n="dl.android.lead">
-              A Flutter front-end lives in <code>flutter/</code> in the app
-              repository. It shares the desktop app's SQLite schema, so a
-              database can move between the two — but it is developed
-              independently and is currently behind on features.
+              A Flutter build with its own release line — <code>flutter-v*</code>
+              tags, versioned independently of the desktop app. It shares the
+              desktop app's SQLite schema, so a world can move between the two,
+              but it is developed separately and is still behind on features.
+            </p>
+            <p class="small" data-apk-meta hidden>
+              <span data-i18n="dl.android.meta.latest">Latest APK release</span>
+              <strong data-apk-version></strong> ·
+              <span data-i18n="dl.android.meta.published">published</span>
+              <span data-apk-date></span> ·
+              <a
+                href="https://github.com/LDKTC/App-DraconDex/releases"
+                data-apk-notes
+                data-i18n="dl.android.meta.notes"
+                >read the release notes</a
+              >
             </p>
           </div>
 
-          <div class="grid grid--2">
-            <article class="card card--pad-lg">
-              <h3 data-i18n="dl.android.actions.title">From GitHub Actions</h3>
-              <p class="muted small" data-i18n="dl.android.actions.body">
-                APKs are not attached to releases. Run the
-                <strong>Build Flutter APK</strong> workflow in the app
-                repository and download the <code>release-apks</code> artifact.
+          <div data-apk-assets>
+            <p class="is-loading" data-i18n="dl.android.loading">Loading the latest APK release from GitHub…</p>
+            <noscript>
+              <p class="muted">
+                This list is built from the GitHub API in your browser. With
+                JavaScript off, the APKs are attached to every
+                <a href="https://github.com/LDKTC/App-DraconDex/releases"
+                  ><code>flutter-v*</code> release</a
+                >.
               </p>
-              <p>
-                <a
-                  class="btn btn--sm"
-                  href="https://github.com/LDKTC/App-DraconDex/actions/workflows/build-apk.yml"
-                  data-i18n="dl.android.actions.link"
-                  >Open the workflow</a
-                >
+            </noscript>
+          </div>
+
+          <p class="small muted" style="margin-top: 16px" data-i18n="dl.android.which">
+            Not sure which one? Take <code>arm64-v8a</code> — it fits every
+            phone and tablet shipped in the last several years. The universal
+            APK carries all three architectures at roughly twice the size, and
+            is the safe answer if the ABI split ever installs the wrong one.
+          </p>
+
+          <div class="grid grid--2" style="margin-top: 26px">
+            <article class="card card--pad-lg">
+              <h3 data-i18n="dl.android.install.title">Installing it</h3>
+              <p class="muted small" data-i18n="dl.android.install.body">
+                Open the downloaded <code>.apk</code> and allow installs from
+                whichever app you downloaded it with — Android asks once, per
+                source. DraconDex is not on Google Play, so this is a sideload.
+                Once it is installed, the app's own update check can install
+                later releases over the top.
               </p>
             </article>
             <article class="card card--pad-lg">
@@ -213,11 +241,82 @@ flutter build apk --release --split-per-abi</code></pre>
             </article>
           </div>
 
+          <div class="callout callout--warn" style="margin-top: 24px" data-i18n="dl.android.signing">
+            <strong>Coming from 2.3.0–2.8.0? Uninstall first.</strong> Those
+            builds were each signed with a throwaway key, so Android refuses to
+            update over them. Export your data, uninstall, then install
+            <strong>2.8.1 or newer</strong> — every release from 2.8.1 on is
+            signed with the same permanent certificate
+            (<code>CN=DraconDex, O=LDKTC, C=TH</code>, SHA-256
+            <code>6b1b62e9…c2dc97e8</code>) and updates in place from there on.
+          </div>
+
           <p class="small muted" style="margin-top: 18px" data-i18n="dl.android.move">
-            To move a project across: export <code>novel-manager.db</code> from
-            the desktop app's data folder, copy it to the phone, then use
-            <strong>Settings → Import Database</strong> in the Android app.
+            To move a world across: <strong>Export</strong> it from the desktop
+            app, copy the <code>.ddx</code> file to the phone and rename it to
+            <code>.db</code> (the Android file picker filters on that
+            extension), then use <strong>Settings → Import Database</strong>.
+            Both sides use the same schema, and importing merges rather than
+            replaces.
           </p>
+
+          <p style="margin-top: 20px">
+            <a href="https://github.com/LDKTC/App-DraconDex/releases?q=flutter-v&amp;expanded=true"
+              data-i18n="dl.android.allreleases"
+              >Every APK release on GitHub →</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ web -->
+      <section class="section" id="web">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="dl.web.eyebrow">In the browser</span>
+            <h2 data-i18n="dl.web.title">Nothing to install at all</h2>
+            <p data-i18n="dl.web.lead">
+              DraconDex also runs as a web app, and installs from the browser
+              like any other PWA. It is the real app, not a demo: the desktop
+              lane runs the Electron front-end's own renderer and data layer in
+              the page, and the mobile lane is the same Flutter build that
+              ships as the APK. A router picks the lane that fits your device.
+            </p>
+          </div>
+
+          <div class="btn-row">
+            <a class="btn btn--primary btn--lg" href="https://ldktc.github.io/PWA-DraconDex/"
+              data-i18n="dl.web.cta"
+              >Open the web app</a
+            >
+            <a class="btn btn--lg" href="https://github.com/LDKTC/PWA-DraconDex"
+              data-i18n="dl.web.source"
+              >How it is built</a
+            >
+          </div>
+
+          <div class="grid grid--2" style="margin-top: 26px">
+            <article class="card card--pad-lg">
+              <h3 data-i18n="dl.web.data.title">Where the data goes</h3>
+              <p class="muted small" data-i18n="dl.web.data.body">
+                Into the browser's own storage on that device — there is no
+                account and no server. Which also means it belongs to that
+                browser: clearing site data or opening a private window starts
+                you from empty. Export a <code>.ddx</code> file for anything you
+                want to keep; the desktop app opens it directly.
+              </p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="dl.web.limits.title">What a page cannot do</h3>
+              <p class="muted small" data-i18n="dl.web.limits.body">
+                Plugins (separate windows with filesystem access), reveal-in-folder
+                and other OS handoffs, keeping an imported file linked to its
+                path on disk, and the installer-based update notice. Each says so
+                rather than failing quietly. Everything else is the whole app,
+                offline after the first load.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
