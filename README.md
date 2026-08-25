@@ -22,7 +22,7 @@ Three static pages, no build step, no dependencies:
 | Page | Covers |
 |---|---|
 | `index.html` | What DraconDex is, its features, the v3 module tree, a plugin teaser, and links to the docs |
-| `download.html` | The latest release's assets, which build to pick, checksum verification, the Android APK route, and the npm package |
+| `download.html` | The latest release's assets, which build to pick, checksum verification, the signed Android APKs, the browser build, and the npm package |
 | `plugins.html` | Every official plugin, how installing from a link works, what the sandbox does and doesn't allow, and how to write your own |
 
 Supporting files:
@@ -33,7 +33,9 @@ assets/js/icons.js      shared inline-SVG icon set (Lucide paths), used in place
 assets/js/theme.js      midnight/daylight/moonlight theme switch, persisted to localStorage
 assets/js/lang.js       English/Thai language switch, persisted to localStorage
 assets/js/strings.th.js the Thai dictionary that assets/js/lang.js swaps in
-assets/js/releases.js   reads the GitHub Releases API for the download pages
+assets/js/releases.js   reads the GitHub Releases API for the download pages,
+                        splitting it into the desktop (`v*`) and Android
+                        (`flutter-v*`) release streams
 assets/js/plugins.js    the plugin catalogue, refreshed from live manifests
 assets/brand/           logo and icon, downscaled from the app repository
 assets/fonts/           self-hosted Kanit + IBM Plex Sans Thai, Latin+Thai subsets only
@@ -65,6 +67,23 @@ carousel as the module-tree screenshots (`assets/js/mod-slider.js` already
 initializes every `[data-mod-slider]` element on the page, so a second
 carousel instance needs no extra JS) to show off daylight, moonlight and a
 few of the example palettes from the app's in-app Custom Theme editor.
+
+## Two release streams, one tag list
+
+The app repository publishes two independent release lines from the same
+`releases` endpoint:
+
+| Tags | Built by | Assets |
+|---|---|---|
+| `v<x.y.z>` | `build-electron.yml` | the three Windows builds + `checksums-sha256.txt` |
+| `flutter-v<x.y.z>` | `build-apk.yml` | four APKs (three ABIs + universal) + `checksums-sha256.txt` |
+
+Their version numbers are unrelated, and the newest release *overall* is
+routinely the Android one, so `assets/js/releases.js` filters by stream before
+anything else — the Windows download button, the latest-assets list and the
+release history all read the desktop stream, and the APK section on
+`download.html` reads the Android one. Dropping that filter puts `.apk` files
+under the Windows download button the next time an APK ships last.
 
 ## Why the data is fetched in the browser
 
@@ -107,7 +126,18 @@ updating when that repository changes:
 - The `theme-*.png` files in `assets/screenshots/` (see the README there) are
   exported from the same `docs/mockups/` as the module-tree screenshots.
 - The release asset names matched in `assets/js/releases.js` come from
-  `.github/workflows/build-electron.yml`.
+  `.github/workflows/build-electron.yml` (desktop) and
+  `.github/workflows/build-apk.yml` (Android).
+- The Android signing certificate quoted in `download.html`'s `#android`
+  callout — subject `CN=DraconDex, O=LDKTC, C=TH`, SHA-256 `6b1b62e9…c2dc97e8`,
+  and the "2.3.0–2.8.0 must uninstall first" caveat — comes from
+  `docs/UPDATE.md` §2.16.
+- The browser build that `#web` links to is a third repository,
+  [`LDKTC/PWA-DraconDex`](https://github.com/LDKTC/PWA-DraconDex), which builds
+  both front-ends for the web and deploys them to
+  [ldktc.github.io/PWA-DraconDex](https://ldktc.github.io/PWA-DraconDex/). What
+  that page says a browser cannot do comes from its README and
+  `docs/BROWSER-BUILD.md`.
 - The manifest limits listed on `plugins.html` come from `docs/PLUGINS.md`.
 - The logo files in `assets/brand/` come from `src/assets/brand/`. The master
   `DraconDex_Color.png` is 1839px and ~550 KB, so the site ships 512px and

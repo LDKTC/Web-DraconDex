@@ -7,7 +7,7 @@
     <meta
       name="description"
       data-i18n-attr="content:home.meta.description"
-      content="DraconDex is a free, offline desktop app for organizing novel world-building data — characters, places, timelines, relationships and wikilinked notes — in a local SQLite database. Windows downloads and official plugins."
+      content="DraconDex is a free, offline app for organizing novel world-building data — characters, places, timelines, relationships and wikilinked notes — in a local SQLite database. Windows, Android and browser builds, plus official plugins."
     />
     <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
     <link rel="apple-touch-icon" href="assets/brand/DraconDex_Color-512.png" />
@@ -96,7 +96,7 @@
                   <span data-latest-date></span> ·
                   <a href="https://github.com/LDKTC/App-DraconDex/releases/latest" data-latest-notes data-i18n="home.hero.meta.notes">release notes</a>
                 </span>
-                <span data-i18n="home.hero.meta.windows">Windows · portable or installer</span>
+                <span data-i18n="home.hero.meta.windows">Windows · Android · or straight in the browser</span>
                 <span data-i18n="home.hero.meta.privacy">No account, no cloud, no internet required</span>
               </div>
             </div>
@@ -121,9 +121,10 @@
             <span class="eyebrow" data-i18n="home.features.eyebrow">What it does</span>
             <h2 data-i18n="home.features.title">Built for the messy middle of world-building</h2>
             <p data-i18n="home.features.lead">
-              Everything lives in one local SQLite database. Nothing is
-              uploaded, nothing phones home, and the whole project folder can
-              travel on a flash drive.
+              Everything lives in local SQLite files. Nothing leaves your
+              machine unless you set up a backup or a sync yourself — with your
+              own credentials — and the whole project folder can travel on a
+              flash drive.
             </p>
           </div>
 
@@ -630,7 +631,7 @@
             <span class="eyebrow" data-i18n="home.platforms.eyebrow">Platforms</span>
             <h2 data-i18n="home.platforms.title">Where it runs</h2>
           </div>
-          <div class="grid grid--2">
+          <div class="grid grid--3">
             <article class="card card--pad-lg">
               <h3 class="h-icon">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
@@ -646,14 +647,31 @@
             <article class="card card--pad-lg">
               <h3 class="h-icon">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-                Android <span class="pill" data-i18n="home.platforms.android.pill">in progress</span>
+                Android <span class="pill" data-i18n="home.platforms.android.pill">signed APKs</span>
               </h3>
               <p class="muted small" data-i18n="home.platforms.android.body">
-                A Flutter port shares the same SQLite schema, so databases move
-                between desktop and phone. It is developed independently and is
-                currently behind the desktop app in features.
+                A Flutter build, released on its own tags: four signed APKs —
+                one per architecture plus a universal one — attached to every
+                release. Same SQLite schema as the desktop app, developed
+                independently, still behind it on features.
               </p>
-              <p><a href="download.html#android" data-i18n="home.platforms.android.link">How to get an APK →</a></p>
+              <p><a href="download.html#android" data-i18n="home.platforms.android.link">Get the APK →</a></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 class="h-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                <span data-i18n="home.platforms.web.title">In the browser</span>
+              </h3>
+              <p class="muted small" data-i18n="home.platforms.web.body">
+                Both front-ends built for the web and installable as a PWA — the
+                desktop one for big screens, the Flutter one for touch. Your
+                data stays in the browser's own storage; no account, no server.
+              </p>
+              <p>
+                <a href="https://ldktc.github.io/PWA-DraconDex/" data-i18n="home.platforms.web.link"
+                  >Open the web app →</a
+                >
+              </p>
             </article>
           </div>
         </div>
@@ -774,6 +792,12 @@
             <h4 data-i18n="common.footer.getit">Get it</h4>
             <ul>
               <li><a href="download.html" data-i18n="common.nav.download">Downloads</a></li>
+              <li>
+                <a href="https://ldktc.github.io/PWA-DraconDex/"
+                  data-i18n="common.footer.webapp"
+                  >Web app</a
+                >
+              </li>
               <li>
                 <a href="https://github.com/LDKTC/App-DraconDex/releases"
                   data-i18n="common.footer.allreleases"

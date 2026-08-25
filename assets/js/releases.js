@@ -12,10 +12,40 @@
   var CACHE_KEY = "dracondex-releases";
   var CACHE_MS = 10 * 60 * 1000;
 
+  /* --- release streams ---------------------------------------------------
+     The app repository publishes two independent release lines from the same
+     tag list: the Electron desktop app on `v<x.y.z>` tags (build-electron.yml)
+     and the Flutter Android app on `flutter-v<x.y.z>` tags (build-apk.yml).
+     Their version numbers are unrelated and the newest release overall may be
+     either one, so every consumer here filters by stream first — otherwise an
+     APK release shipping an hour after a desktop one turns the Windows
+     download button into a list of .apk files. */
+  function streamOf(release) {
+    return /^flutter-v/i.test(release.tag_name || "") ? "android" : "desktop";
+  }
+
+  function inStream(releases, stream) {
+    return releases.filter(function (r) {
+      return streamOf(r) === stream;
+    });
+  }
+
+  function newestStable(releases) {
+    return (
+      releases.filter(function (r) {
+        return !r.prerelease;
+      })[0] || releases[0] || null
+    );
+  }
+
   /* --- asset classification ---------------------------------------------
-     Asset names come from .github/workflows/build-electron.yml in the app
-     repo: DraconDex-Setup-<v>.exe, DraconDex-Portable-<v>.exe,
-     DraconDex-<v>-win-x64.zip, checksums-sha256.txt */
+     Desktop asset names come from .github/workflows/build-electron.yml in the
+     app repo: DraconDex-Setup-<v>.exe, DraconDex-Portable-<v>.exe,
+     DraconDex-<v>-win-x64.zip, checksums-sha256.txt. Android names come from
+     build-apk.yml: DraconDex-<v>-<abi>-release.apk for each split ABI, plus an
+     unqualified DraconDex-<v>-release.apk carrying all three. Order matters —
+     kindOf() returns the first match, so the ABI tests have to run before the
+     catch-all .apk one. */
   var KINDS = {
     installer: {
       icon: "wand-sparkles",
@@ -41,6 +71,38 @@
         return /win-x64\.zip$/i.test(n);
       }
     },
+    apkArm64: {
+      icon: "smartphone",
+      label: "Android APK · arm64-v8a",
+      note: "Nearly every phone and tablet made since 2017 — start here",
+      test: function (n) {
+        return /-arm64-v8a-release\.apk$/i.test(n);
+      }
+    },
+    apkArm32: {
+      icon: "smartphone",
+      label: "Android APK · armeabi-v7a",
+      note: "Older 32-bit ARM devices",
+      test: function (n) {
+        return /-armeabi-v7a-release\.apk$/i.test(n);
+      }
+    },
+    apkX64: {
+      icon: "smartphone",
+      label: "Android APK · x86_64",
+      note: "Emulators and the handful of Intel/AMD Android devices",
+      test: function (n) {
+        return /-x86_64-release\.apk$/i.test(n);
+      }
+    },
+    apkUniversal: {
+      icon: "package",
+      label: "Android APK · universal",
+      note: "All three ABIs in one file — larger, but always the right one",
+      test: function (n) {
+        return /\.apk$/i.test(n);
+      }
+    },
     checksums: {
       icon: "lock",
       label: "SHA-256 checksums",
@@ -54,7 +116,17 @@
     } }
   };
 
-  var KIND_ORDER = ["installer", "portable", "zip", "checksums", "other"];
+  var KIND_ORDER = [
+    "installer",
+    "portable",
+    "zip",
+    "apkArm64",
+    "apkArm32",
+    "apkX64",
+    "apkUniversal",
+    "checksums",
+    "other"
+  ];
 
   function kindOf(name) {
     for (var i = 0; i < KIND_ORDER.length; i++) {
@@ -85,6 +157,11 @@
   function isWindows() {
     var p = (navigator.userAgentData && navigator.userAgentData.platform) || "";
     return /win/i.test(p || navigator.platform || navigator.userAgent);
+  }
+
+  function isAndroid() {
+    var p = (navigator.userAgentData && navigator.userAgentData.platform) || "";
+    return /android/i.test(p || navigator.userAgent);
   }
 
   /* --- fetching ---------------------------------------------------------- */
@@ -138,11 +215,9 @@
     return pending;
   }
 
-  /* --- hero / nav download button ---------------------------------------- */
-  function fillPrimaryButtons(releases) {
-    var latest = releases.filter(function (r) {
-      return !r.prerelease;
-    })[0] || releases[0];
+  /* --- hero / nav download button ----------------------------------------
+     Always the desktop stream: these buttons offer a Windows build. */
+  function fillPrimaryButtons(latest) {
     if (!latest) return;
 
     var assets = latest.assets || [];
@@ -152,15 +227,22 @@
     }
 
     document.querySelectorAll("[data-latest-download]").forEach(function (el) {
-      // Non-Windows visitors keep the Releases page link — the only builds
-      // published as release assets are Windows ones.
+      // Windows visitors get the installer itself. Android visitors are sent
+      // to the APK section rather than a Windows .exe. Everyone else keeps the
+      // Releases page link the markup ships with.
       if (preferred && isWindows()) {
         el.href = preferred.browser_download_url;
         var label = el.querySelector("[data-download-label]");
         if (label) label.textContent = "Download for Windows";
+      } else if (isAndroid()) {
+        el.href = "download.html#android";
+        var androidLabel = el.querySelector("[data-download-label]");
+        if (androidLabel) androidLabel.textContent = "Get the Android APK";
       }
       var sub = el.querySelector("[data-download-sub]");
-      if (sub) {
+      // The desktop version and size say nothing about the APK, so the
+      // Android button carries no sub-label.
+      if (sub && !isAndroid()) {
         sub.textContent =
           latest.tag_name +
           (preferred ? " · " + formatSize(preferred.size) : "");
@@ -230,7 +312,7 @@
     });
   }
 
-  function renderLatest(host, release) {
+  function renderLatest(host, release, featuredKind) {
     host.textContent = "";
     if (!release.assets || !release.assets.length) {
       var empty = document.createElement("p");
@@ -241,7 +323,7 @@
       return;
     }
     sortAssets(release.assets).forEach(function (asset) {
-      host.appendChild(assetRow(asset, kindOf(asset.name) === "installer"));
+      host.appendChild(assetRow(asset, kindOf(asset.name) === featuredKind));
     });
   }
 
@@ -310,19 +392,55 @@
     host.appendChild(a);
   }
 
+  /* --- android downloads --------------------------------------------------
+     The APK section on download.html, fed from the flutter-v* stream. Its
+     version number is independent of the desktop app's, so it carries its own
+     meta line rather than reusing [data-latest-*]. */
+  function fillAndroidMeta(release) {
+    document.querySelectorAll("[data-apk-version]").forEach(function (el) {
+      el.textContent = release.tag_name.replace(/^flutter-/i, "");
+    });
+    document.querySelectorAll("[data-apk-date]").forEach(function (el) {
+      el.textContent = formatDate(release.published_at);
+    });
+    document.querySelectorAll("[data-apk-notes]").forEach(function (el) {
+      el.href = release.html_url;
+    });
+    document.querySelectorAll("[data-apk-meta]").forEach(function (el) {
+      el.hidden = false;
+    });
+  }
+
+  function renderAndroid(host, releases) {
+    var latest = newestStable(releases);
+    if (!latest) {
+      host.innerHTML =
+        '<p class="muted">No APK release has been published yet. The section below builds one from source.</p>';
+      return;
+    }
+    fillAndroidMeta(latest);
+    renderLatest(host, latest, "apkArm64");
+  }
+
   /* --- boot -------------------------------------------------------------- */
   document.addEventListener("DOMContentLoaded", function () {
     var latestHost = document.querySelector("[data-latest-assets]");
     var historyHost = document.querySelector("[data-release-history]");
+    var androidHost = document.querySelector("[data-apk-assets]");
     var needsButtons = document.querySelector("[data-latest-download]");
 
-    if (!latestHost && !historyHost && !needsButtons) return;
+    if (!latestHost && !historyHost && !androidHost && !needsButtons) return;
 
     load()
       .then(function (releases) {
-        fillPrimaryButtons(releases);
+        var desktop = inStream(releases, "desktop");
+        var android = inStream(releases, "android");
 
-        if (!releases.length) {
+        fillPrimaryButtons(newestStable(desktop));
+
+        if (androidHost) renderAndroid(androidHost, android);
+
+        if (!desktop.length) {
           if (latestHost) {
             latestHost.innerHTML =
               '<p class="muted">No releases have been published yet. Builds can be produced from source — see the app repository.</p>';
@@ -331,16 +449,13 @@
           return;
         }
 
-        var stable = releases.filter(function (r) {
-          return !r.prerelease;
-        });
-        var latest = stable[0] || releases[0];
+        var latest = newestStable(desktop);
 
-        if (latestHost) renderLatest(latestHost, latest);
+        if (latestHost) renderLatest(latestHost, latest, "installer");
         if (historyHost) {
           renderHistory(
             historyHost,
-            releases.filter(function (r) {
+            desktop.filter(function (r) {
               return r.id !== latest.id;
             })
           );
@@ -348,6 +463,7 @@
       })
       .catch(function (err) {
         failure(latestHost, err);
+        failure(androidHost, err);
         if (historyHost) {
           historyHost.innerHTML =
             '<p class="muted">Earlier releases are listed on <a href="' +
