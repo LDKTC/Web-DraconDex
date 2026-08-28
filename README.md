@@ -91,10 +91,19 @@ Release versions, asset sizes and plugin manifests all change in *other*
 repositories. Rather than rebuilding this site whenever one of them does, each
 page reads them at load time:
 
-- **Releases** come from `api.github.com/repos/LDKTC/App-DraconDex/releases`.
+- **Releases** come from `api.github.com/repos/LDKTC/Release-DraconDex/releases`
+  — a public, releases-only mirror. The app's source repository
+  (`LDKTC/App-DraconDex`) is private, so the API answers 404 there to every
+  visitor of this site; its build workflows mirror each release, notes and
+  assets alike, into the public repo instead, and the in-app update check on
+  both the desktop and Android builds reads the same mirror.
   Anonymous API requests are capped at 60/hour per IP, so every entry point
   falls back to a plain link to the Releases page when that runs out, and
   responses are cached in `sessionStorage` for ten minutes.
+  The list is sorted by version number rather than taken in the order GitHub
+  returns it: that order follows each release's `created_at`, which is the
+  date of the *commit* its tag points at, so a tag cut on an older commit
+  sorts below releases published days earlier.
 - **Plugin manifests** come from `raw.githubusercontent.com`, which is
   CORS-open and outside the API rate limit. Each card ships with the manifest
   values baked in, so a failed fetch is a no-op rather than an empty page.
