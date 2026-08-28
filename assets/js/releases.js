@@ -2,13 +2,21 @@
    Reads the public GitHub API from the visitor's browser — no build step and
    no token, so the page never goes stale when a new version ships. The API
    allows 60 unauthenticated requests per hour per IP; every entry point
-   degrades to a plain link to the Releases page when that runs out. */
+   degrades to a plain link to the Releases page when that runs out.
+
+   The repo below is NOT the app's source repository (LDKTC/App-DraconDex):
+   that one is private, so this request answered 404 for every visitor and the
+   whole download page fell through to its error state. The app repo's build
+   workflows mirror every release — notes and assets alike — into the public
+   LDKTC/Release-DraconDex repo, which holds nothing else, and that is what
+   this reads. The in-app update check on both the desktop and the Android
+   build reads the same mirror. */
 (function () {
   "use strict";
 
-  var APP_REPO = "LDKTC/App-DraconDex";
-  var API = "https://api.github.com/repos/" + APP_REPO + "/releases";
-  var RELEASES_URL = "https://github.com/" + APP_REPO + "/releases";
+  var RELEASE_REPO = "LDKTC/Release-DraconDex";
+  var API = "https://api.github.com/repos/" + RELEASE_REPO + "/releases";
+  var RELEASES_URL = "https://github.com/" + RELEASE_REPO + "/releases";
   var CACHE_KEY = "dracondex-releases";
   var CACHE_MS = 10 * 60 * 1000;
 
@@ -30,11 +38,44 @@
     });
   }
 
+  /* --- ordering ----------------------------------------------------------
+     GET /releases is ordered by each release's created_at, and created_at is
+     the date of the COMMIT the tag points at — not the date the release was
+     published. Tag a fix that sits on an older commit and its release sorts
+     BELOW releases published days earlier: flutter-v2.10.0 and flutter-v2.10.1
+     both landed underneath flutter-v2.9.0 in the real feed. Taking releases[0]
+     therefore offered 2.9.0 as the newest Android build while 2.10.1 was out,
+     and the same trap is one badly-timed tag away on the desktop stream.
+     Compare version numbers instead, which has no such failure mode. */
+  function versionOf(release) {
+    return String(release.tag_name || "").replace(/^flutter-/i, "").replace(/^v/i, "");
+  }
+
+  function compareVersions(a, b) {
+    var pa = a.split(".");
+    var pb = b.split(".");
+    var len = Math.max(pa.length, pb.length);
+    for (var i = 0; i < len; i++) {
+      var d = (parseInt(pa[i], 10) || 0) - (parseInt(pb[i], 10) || 0);
+      if (d) return d;
+    }
+    return 0;
+  }
+
+  /* Newest version first. Sorting a copy keeps the cached array — which is
+     shared by the desktop and Android passes — in the order GitHub sent it. */
+  function byVersionDesc(releases) {
+    return releases.slice().sort(function (a, b) {
+      return compareVersions(versionOf(b), versionOf(a));
+    });
+  }
+
   function newestStable(releases) {
+    var ranked = byVersionDesc(releases);
     return (
-      releases.filter(function (r) {
+      ranked.filter(function (r) {
         return !r.prerelease;
-      })[0] || releases[0] || null
+      })[0] || ranked[0] || null
     );
   }
 
@@ -455,7 +496,7 @@
         if (historyHost) {
           renderHistory(
             historyHost,
-            desktop.filter(function (r) {
+            byVersionDesc(desktop).filter(function (r) {
               return r.id !== latest.id;
             })
           );
