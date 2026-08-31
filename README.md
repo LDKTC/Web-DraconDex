@@ -33,9 +33,12 @@ assets/js/icons.js      shared inline-SVG icon set (Lucide paths), used in place
 assets/js/theme.js      midnight/daylight/moonlight theme switch, persisted to localStorage
 assets/js/lang.js       English/Thai language switch, persisted to localStorage
 assets/js/strings.th.js the Thai dictionary that assets/js/lang.js swaps in
-assets/js/releases.js   reads the GitHub Releases API for the download pages,
+assets/js/releases.js   reads assets/data/releases.json for the download pages,
                         splitting it into the desktop (`v*`) and Android
                         (`flutter-v*`) release streams
+assets/data/releases.json  the release list itself — a static snapshot of this
+                        repo's own GitHub Releases, refreshed by the app repo's
+                        CI after every publish (see below), not hand-edited
 assets/js/plugins.js    the plugin catalogue, refreshed from live manifests
 assets/brand/           logo and icon, downscaled from the app repository
 assets/fonts/           self-hosted Kanit + IBM Plex Sans Thai, Latin+Thai subsets only
@@ -70,8 +73,8 @@ few of the example palettes from the app's in-app Custom Theme editor.
 
 ## Two release streams, one tag list
 
-The app repository publishes two independent release lines from the same
-`releases` endpoint:
+The app repository publishes two independent release lines that both land in
+this repo's own release list:
 
 | Tags | Built by | Assets |
 |---|---|---|
@@ -85,28 +88,41 @@ release history all read the desktop stream, and the APK section on
 `download.html` reads the Android one. Dropping that filter puts `.apk` files
 under the Windows download button the next time an APK ships last.
 
-## Why the data is fetched in the browser
+## Why the release data is a committed file, not a live API call
 
-Release versions, asset sizes and plugin manifests all change in *other*
-repositories. Rather than rebuilding this site whenever one of them does, each
-page reads them at load time:
+Release versions and asset sizes change in *another* repository
+(`LDKTC/App-DraconDex`, which is private). Rather than calling that other
+repo's API from every visitor's browser, `assets/js/releases.js` reads a file
+committed straight into **this** repo:
 
-- **Releases** come from `api.github.com/repos/LDKTC/Release-DraconDex/releases`
-  — a public, releases-only mirror. The app's source repository
-  (`LDKTC/App-DraconDex`) is private, so the API answers 404 there to every
-  visitor of this site; its build workflows mirror each release, notes and
-  assets alike, into the public repo instead, and the in-app update check on
-  both the desktop and Android builds reads the same mirror.
-  Anonymous API requests are capped at 60/hour per IP, so every entry point
-  falls back to a plain link to the Releases page when that runs out, and
-  responses are cached in `sessionStorage` for ten minutes.
-  The list is sorted by version number rather than taken in the order GitHub
-  returns it: that order follows each release's `created_at`, which is the
-  date of the *commit* its tag points at, so a tag cut on an older commit
+- **`assets/data/releases.json`** is a snapshot of this repo's own GitHub
+  Releases — the app repo's build workflows publish each release, notes and
+  assets alike, directly onto `LDKTC/Web-DraconDex` (this repo) as a normal
+  GitHub Release, then `.github/scripts/update-web-releases-json.sh` (in the
+  app repo) re-reads that list via the Contents API and commits it here as
+  this file. Its shape is the raw `GET /repos/.../releases` response,
+  unmodified, so `releases.js`'s parsing needed no changes when the source
+  moved from a live fetch to a static one — only the fetch target did.
+  Reading a same-origin static file this way means no token, no CORS
+  question, and no rate limit: the old approach called
+  `api.github.com/repos/LDKTC/Release-DraconDex/releases` from the browser,
+  which is capped at 60 anonymous requests/hour **per IP** — fine for one
+  visitor, but a shared office/campus NAT or a traffic spike could exhaust it
+  for everyone behind that IP at once. `LDKTC/Release-DraconDex` still exists
+  as a separate public mirror; only the in-app update check
+  (`electron/src/db/update.js`, `flutter/lib/data/services/update_service.dart`
+  in the app repo) reads it now.
+  Responses are still cached in `sessionStorage` for ten minutes — cheap
+  insurance against re-fetching the same static file on every page within a
+  session.
+  The list is sorted by version number rather than taken in the order the
+  file lists them: that order follows each release's `created_at`, which is
+  the date of the *commit* its tag points at, so a tag cut on an older commit
   sorts below releases published days earlier.
-- **Plugin manifests** come from `raw.githubusercontent.com`, which is
-  CORS-open and outside the API rate limit. Each card ships with the manifest
-  values baked in, so a failed fetch is a no-op rather than an empty page.
+- **Plugin manifests** still come from `raw.githubusercontent.com`, which is
+  CORS-open and outside any GitHub API rate limit. Each card ships with the
+  manifest values baked in, so a failed fetch is a no-op rather than an empty
+  page.
 
 ## Local preview
 
