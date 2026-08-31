@@ -1,21 +1,27 @@
-/* Live release data for the download buttons and the download page.
-   Reads the public GitHub API from the visitor's browser — no build step and
-   no token, so the page never goes stale when a new version ships. The API
-   allows 60 unauthenticated requests per hour per IP; every entry point
-   degrades to a plain link to the Releases page when that runs out.
+/* Release data for the download buttons and the download page.
+   Reads a static JSON file committed straight into THIS repo — no live call
+   to api.github.com from the visitor's browser, and so no rate limit either.
+   The anonymous GitHub API is capped at 60 requests/hour PER IP; fine for one
+   visitor, but a shared office/campus NAT or a traffic spike can exhaust it
+   for everyone behind that IP at once, and every entry point below would
+   fall back to a plain link to the Releases page.
 
-   The repo below is NOT the app's source repository (LDKTC/App-DraconDex):
-   that one is private, so this request answered 404 for every visitor and the
-   whole download page fell through to its error state. The app repo's build
-   workflows mirror every release — notes and assets alike — into the public
-   LDKTC/Release-DraconDex repo, which holds nothing else, and that is what
-   this reads. The in-app update check on both the desktop and the Android
-   build reads the same mirror. */
+   The app's source repository (LDKTC/App-DraconDex) is private, so it has
+   nothing this site could read directly anyway. Its build workflows mirror
+   every release — notes and assets alike — onto THIS repo
+   (LDKTC/Web-DraconDex) as a normal GitHub Release, then snapshot that
+   release list into assets/data/releases.json via the Contents API (see
+   .github/scripts/update-web-releases-json.sh in the app repo). The file's
+   shape is the raw GitHub API response, unmodified, so nothing below that
+   parses it needed to change when the source moved from a live fetch to a
+   static one. A separate public mirror, LDKTC/Release-DraconDex, still
+   exists — the in-app update check on both the desktop and the Android
+   build reads that one, unrelated to this page. */
 (function () {
   "use strict";
 
-  var RELEASE_REPO = "LDKTC/Release-DraconDex";
-  var API = "https://api.github.com/repos/" + RELEASE_REPO + "/releases";
+  var RELEASE_REPO = "LDKTC/Web-DraconDex";
+  var STATIC_DATA_URL = "assets/data/releases.json";
   var RELEASES_URL = "https://github.com/" + RELEASE_REPO + "/releases";
   var CACHE_KEY = "dracondex-releases";
   var CACHE_MS = 10 * 60 * 1000;
@@ -238,11 +244,9 @@
       pending = Promise.resolve(cached);
       return pending;
     }
-    pending = fetch(API + "?per_page=20", {
-      headers: { Accept: "application/vnd.github+json" }
-    })
+    pending = fetch(STATIC_DATA_URL)
       .then(function (res) {
-        if (!res.ok) throw new Error("GitHub API responded " + res.status);
+        if (!res.ok) throw new Error("Release data responded " + res.status);
         return res.json();
       })
       .then(function (list) {
@@ -424,7 +428,7 @@
     p.textContent =
       "Could not load the release list (" +
       err.message +
-      "). GitHub limits anonymous API requests — the downloads are always available directly:";
+      "). The downloads are always available directly:";
     var a = document.createElement("a");
     a.className = "btn btn--primary";
     a.href = RELEASES_URL;
