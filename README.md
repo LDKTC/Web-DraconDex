@@ -22,7 +22,7 @@ Three static pages, no build step, no dependencies:
 | Page | Covers |
 |---|---|
 | `index.html` | What DraconDex is, its features, the v3 module tree, a plugin teaser, and links to the docs |
-| `download.html` | The latest release's assets, which build to pick, checksum verification, the signed Android APKs, the browser build, and the npm package |
+| `download.html` | Every way to get the app in one place — the latest release's Windows assets and the browser/PWA build side by side, which build to pick, checksum verification, and the signed Android APKs |
 | `plugins.html` | Every official plugin, how installing from a link works, what the sandbox does and doesn't allow, and how to write your own |
 
 Supporting files:
@@ -112,6 +112,12 @@ committed straight into **this** repo:
   as a separate public mirror; only the in-app update check
   (`electron/src/db/update.js`, `flutter/lib/data/services/update_service.dart`
   in the app repo) reads it now.
+  Nothing fills this file from here: it is written by the app repo's
+  "Mirror releases" workflow, which needs a `WEB_REPO_TOKEN` secret there
+  holding a token with `contents: write` on this repo. Until that secret
+  exists and the workflow has run once with `tag: all` (its backfill lever),
+  this repo has no Releases, the file stays `[]`, and every download entry
+  point falls back to its "no releases published yet" state.
   Responses are still cached in `sessionStorage` for ten minutes — cheap
   insurance against re-fetching the same static file on every page within a
   session.
@@ -157,7 +163,8 @@ updating when that repository changes:
   callout — subject `CN=DraconDex, O=LDKTC, C=TH`, SHA-256 `6b1b62e9…c2dc97e8`,
   and the "2.3.0–2.8.0 must uninstall first" caveat — comes from
   `docs/UPDATE.md` §2.16.
-- The browser build that `#web` links to is a third repository,
+- The browser build behind `#web` — a block inside `download.html`'s Download
+  section rather than a section of its own — is a third repository,
   [`LDKTC/PWA-DraconDex`](https://github.com/LDKTC/PWA-DraconDex), which builds
   both front-ends for the web and deploys them to
   [ldktc.github.io/PWA-DraconDex](https://ldktc.github.io/PWA-DraconDex/). What

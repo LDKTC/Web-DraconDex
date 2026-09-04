@@ -49,9 +49,12 @@
               Get DraconDex
             </h1>
             <p data-i18n="dl.hero.lead">
-              Free and offline, on Windows, Android, or straight in a browser.
-              The Windows builds below are all the same app — they only differ
-              in where they keep your data and whether anything is installed.
+              One app, three ways to run it — install it on Windows, sideload
+              the Android APK, or open it in a browser and keep it there as a
+              PWA. Each one is free, works offline, and keeps your worlds on
+              your own device; there is no account anywhere. The Windows builds
+              are first, the browser build closes this section, and Android has
+              a section of its own further down.
             </p>
             <p class="small" data-latest-meta hidden>
               <span data-i18n="dl.hero.meta.latestRelease">Latest release</span> <strong data-latest-version></strong> ·
@@ -79,14 +82,71 @@
           </div>
 
           <p class="small muted" style="margin-top: 16px" data-i18n="dl.hero.assetsNote">
-            These are the Windows builds. Android has its
-            <a href="#android">own releases below</a>, and any other OS can run
-            <a href="#web">the browser build</a> or the app from source — see
+            Those are the Windows builds — the same app three ways over;
+            <a href="#which">the table further down</a> says which to take.
+            Android has its
+            <a href="#android">own releases further down</a>; on macOS, Linux,
+            or anything else, take <a href="#web">the browser build</a> just
+            below or run it from source — see
             <a href="https://github.com/LDKTC/App-DraconDex#getting-started-desktop--dev"
               >Getting started</a
             >
             in the repository.
           </p>
+
+          <!-- The browser build lives in this same Download block rather than
+               in a section of its own: it is a third way to get the app, not a
+               separate topic, and on a phone or a Mac it is the answer the
+               Windows list above cannot give. -->
+          <div class="subsection" id="web">
+            <div class="section__head">
+              <span class="eyebrow" data-i18n="dl.web.eyebrow">In the browser</span>
+              <h2 data-i18n="dl.web.title">Or take it with nothing installed</h2>
+              <p data-i18n="dl.web.lead">
+                DraconDex also runs as a web app, and installs from the browser
+                like any other PWA — which is how you get it on macOS, Linux, a
+                Chromebook, or an iPhone. It is the real app, not a demo: the
+                desktop lane runs the Electron front-end's own renderer and data
+                layer in the page, and the mobile lane is the same Flutter build
+                that ships as the APK. A router picks the lane that fits your
+                device.
+              </p>
+            </div>
+
+            <div class="btn-row">
+              <a class="btn btn--primary btn--lg" href="https://ldktc.github.io/PWA-DraconDex/"
+                data-i18n="dl.web.cta"
+                >Open the web app</a
+              >
+              <a class="btn btn--lg" href="https://github.com/LDKTC/PWA-DraconDex"
+                data-i18n="dl.web.source"
+                >How it is built</a
+              >
+            </div>
+
+            <div class="grid grid--2" style="margin-top: 26px">
+              <article class="card card--pad-lg">
+                <h3 data-i18n="dl.web.data.title">Where the data goes</h3>
+                <p class="muted small" data-i18n="dl.web.data.body">
+                  Into the browser's own storage on that device — there is no
+                  account and no server. Which also means it belongs to that
+                  browser: clearing site data or opening a private window starts
+                  you from empty. Export a <code>.ddx</code> file for anything you
+                  want to keep; the desktop app opens it directly.
+                </p>
+              </article>
+              <article class="card card--pad-lg">
+                <h3 data-i18n="dl.web.limits.title">What a page cannot do</h3>
+                <p class="muted small" data-i18n="dl.web.limits.body">
+                  Plugins (separate windows with filesystem access), reveal-in-folder
+                  and other OS handoffs, keeping an imported file linked to its
+                  path on disk, and the installer-based update notice. Each says so
+                  rather than failing quietly. Everything else is the whole app,
+                  offline after the first load.
+                </p>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -265,82 +325,6 @@ flutter build apk --release --split-per-abi</code></pre>
               data-i18n="dl.android.allreleases"
               >Every APK release on GitHub →</a
             >
-          </p>
-        </div>
-      </section>
-
-      <!-- ================================================ web -->
-      <section class="section" id="web">
-        <div class="wrap">
-          <div class="section__head">
-            <span class="eyebrow" data-i18n="dl.web.eyebrow">In the browser</span>
-            <h2 data-i18n="dl.web.title">Nothing to install at all</h2>
-            <p data-i18n="dl.web.lead">
-              DraconDex also runs as a web app, and installs from the browser
-              like any other PWA. It is the real app, not a demo: the desktop
-              lane runs the Electron front-end's own renderer and data layer in
-              the page, and the mobile lane is the same Flutter build that
-              ships as the APK. A router picks the lane that fits your device.
-            </p>
-          </div>
-
-          <div class="btn-row">
-            <a class="btn btn--primary btn--lg" href="https://ldktc.github.io/PWA-DraconDex/"
-              data-i18n="dl.web.cta"
-              >Open the web app</a
-            >
-            <a class="btn btn--lg" href="https://github.com/LDKTC/PWA-DraconDex"
-              data-i18n="dl.web.source"
-              >How it is built</a
-            >
-          </div>
-
-          <div class="grid grid--2" style="margin-top: 26px">
-            <article class="card card--pad-lg">
-              <h3 data-i18n="dl.web.data.title">Where the data goes</h3>
-              <p class="muted small" data-i18n="dl.web.data.body">
-                Into the browser's own storage on that device — there is no
-                account and no server. Which also means it belongs to that
-                browser: clearing site data or opening a private window starts
-                you from empty. Export a <code>.ddx</code> file for anything you
-                want to keep; the desktop app opens it directly.
-              </p>
-            </article>
-            <article class="card card--pad-lg">
-              <h3 data-i18n="dl.web.limits.title">What a page cannot do</h3>
-              <p class="muted small" data-i18n="dl.web.limits.body">
-                Plugins (separate windows with filesystem access), reveal-in-folder
-                and other OS handoffs, keeping an imported file linked to its
-                path on disk, and the installer-based update notice. Each says so
-                rather than failing quietly. Everything else is the whole app,
-                offline after the first load.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================================================ npm -->
-      <section class="section" id="npm">
-        <div class="wrap">
-          <div class="section__head">
-            <span class="eyebrow" data-i18n="dl.npm.eyebrow">For developers</span>
-            <h2 data-i18n="dl.npm.title">The source, as a package</h2>
-            <p data-i18n="dl.npm.lead">
-              The app is also published as
-              <code>@ldktc/dracondex</code> on GitHub Packages. It is the app
-              itself, not a library — there is nothing to import. Most people
-              want the installer above.
-            </p>
-          </div>
-          <pre><code># ~/.npmrc — GitHub Packages needs a token even for public packages
-@ldktc:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN</code></pre>
-          <pre><code>npm install @ldktc/dracondex</code></pre>
-          <p class="small muted" data-i18n="dl.npm.tokenNote">
-            The token only needs the <code>read:packages</code> scope. Electron
-            is a dev dependency, so running the app from that install still
-            needs <code>npm install</code> in a full checkout.
           </p>
         </div>
       </section>
