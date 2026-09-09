@@ -23,7 +23,7 @@ window.DDStrings = {
   "common.footer.apprepo": "Repository ของแอป",
   "common.footer.issues": "แจ้งปัญหา",
   "common.footer.websitesource": "ซอร์สโค้ดเว็บไซต์นี้",
-  "common.footer.built": "สร้างโดย LDKTC · สัญญาอนุญาต MIT",
+  "common.footer.built": "สร้างโดย ZYDRAXYL · สัญญาอนุญาต MIT",
   "common.footer.disclaimer": "ไม่มีส่วนเกี่ยวข้องกับผู้ให้บริการ AI ที่ปลั๊กอินเชื่อมต่อด้วย",
 
   "common.lightbox.aria": "ตัวแสดงภาพหน้าจอ",
@@ -208,7 +208,7 @@ window.DDStrings = {
   "dl.hero.meta.published": "เผยแพร่เมื่อ",
   "dl.hero.meta.notes": "อ่านบันทึกการอัปเดต",
   "dl.hero.loading": "กำลังโหลดรีลีสล่าสุดจาก GitHub…",
-  "dl.hero.assetsNote": "ด้านบนคือบิลด์ Windows — แอปตัวเดียวกันในสามรูปแบบ <a href=\"#which\">ตารางที่อยู่ถัดลงไป</a>บอกว่าควรเลือกอันไหน ส่วน Android มี<a href=\"#android\">รีลีสของตัวเองอยู่ถัดลงไป</a> ถ้าใช้ macOS, Linux หรืออย่างอื่น ให้ใช้<a href=\"#web\">เวอร์ชันเบราว์เซอร์</a>ที่อยู่ถัดจากนี้ หรือรันจากซอร์สโค้ดก็ได้ — ดู <a href=\"https://github.com/LDKTC/App-DraconDex#getting-started-desktop--dev\">Getting started</a> ใน repository",
+  "dl.hero.assetsNote": "ด้านบนคือบิลด์ Windows — แอปตัวเดียวกันในสามรูปแบบ <a href=\"#which\">ตารางที่อยู่ถัดลงไป</a>บอกว่าควรเลือกอันไหน ส่วน Android มี<a href=\"#android\">รีลีสของตัวเองอยู่ถัดลงไป</a> ถ้าใช้ macOS, Linux หรืออย่างอื่น ให้ใช้<a href=\"#web\">เวอร์ชันเบราว์เซอร์</a>ที่อยู่ถัดจากนี้ หรือรันจากซอร์สโค้ดก็ได้ — ดู <a href=\"https://github.com/ZYDRAXYL/DraconDex-APP#getting-started-desktop--dev\">Getting started</a> ใน repository",
 
   "dl.web.eyebrow": "ในเบราว์เซอร์",
   "dl.web.title": "หรือเอาไปใช้แบบไม่ต้องติดตั้งอะไรเลย",
@@ -253,7 +253,7 @@ window.DDStrings = {
   "dl.android.install.body": "เปิดไฟล์ <code>.apk</code> ที่ดาวน์โหลดมา แล้วอนุญาตให้แอปที่คุณใช้ดาวน์โหลดติดตั้งแอปได้ — Android จะถามครั้งเดียวต่อหนึ่งแหล่ง DraconDex ไม่ได้อยู่บน Google Play ตรงนี้จึงเป็นการ sideload พอติดตั้งแล้ว ระบบตรวจอัปเดตในแอปจะติดตั้งรีลีสถัดไปทับให้ได้เลย",
   "dl.android.build.title": "สร้างเองด้วยตัวเอง",
   "dl.android.build.body": "ต้องมี Flutter SDK 3.44.4 ขึ้นไป และ Android toolchain:",
-  "dl.android.signing": "<strong>ถ้าเคยลง 2.3.0–2.8.0 ต้องถอนออกก่อน</strong> รีลีสรุ่นนั้นถูกเซ็นด้วยคีย์ที่สุ่มใหม่ทุกครั้ง Android จึงอัปเดตทับไม่ได้ ให้ส่งออกข้อมูลไว้ก่อน ถอนแอป แล้วค่อยติดตั้ง <strong>2.8.1 หรือใหม่กว่า</strong> — ตั้งแต่ 2.8.1 เป็นต้นไปทุกรีลีสเซ็นด้วย certificate ถาวรใบเดียวกัน (<code>CN=DraconDex, O=LDKTC, C=TH</code>, SHA-256 <code>6b1b62e9…c2dc97e8</code>) และอัปเดตทับได้ตลอดจากนี้",
+  "dl.android.signing": "<strong>ถ้าเคยลง 2.3.0–2.8.0 ต้องถอนออกก่อน</strong> รีลีสรุ่นนั้นถูกเซ็นด้วยคีย์ที่สุ่มใหม่ทุกครั้ง Android จึงอัปเดตทับไม่ได้ ให้ส่งออกข้อมูลไว้ก่อน ถอนแอป แล้วค่อยติดตั้ง <strong>2.8.1 หรือใหม่กว่า</strong> — ตั้งแต่ 2.8.1 เป็นต้นไปทุกรีลีสเซ็นด้วย certificate ถาวรใบเดียวกัน (<code>CN=DraconDex, O=ZYDRAXYL, C=TH</code>, SHA-256 <code>6b1b62e9…c2dc97e8</code>) และอัปเดตทับได้ตลอดจากนี้",
   "dl.android.move": "ย้ายโลกข้ามเครื่อง: <strong>ส่งออก</strong> จากแอปเดสก์ท็อป คัดลอกไฟล์ <code>.ddx</code> ไปที่มือถือแล้วเปลี่ยนนามสกุลเป็น <code>.db</code> (ตัวเลือกไฟล์บน Android กรองด้วยนามสกุลนี้) จากนั้นใช้ <strong>Settings → Import Database</strong> ทั้งสองฝั่งใช้สคีมาเดียวกัน และการนำเข้าเป็นการรวมข้อมูล ไม่ใช่เขียนทับ",
   "dl.android.allreleases": "รีลีส APK ทั้งหมดบน GitHub →",
 
@@ -276,10 +276,10 @@ window.DDStrings = {
   "pg.install.step2": "<strong>วางลิงก์ repository</strong> ลงในช่องเดียว รองรับทั้งแบบ <code>owner/repo</code> เปล่าๆ, URL แบบ HTTPS, URL แบบ SSH หรือลิงก์ <code>/tree/&lt;branch&gt;</code> รองรับ GitHub และ GitLab เท่านั้น โฮสต์อื่นจะถูกปฏิเสธ",
   "pg.install.step3": "<strong>อ่านตัวอย่างก่อนติดตั้ง</strong> แอปจะดึง manifest มาแสดงชื่อและเวอร์ชันของปลั๊กอิน ไฟล์ทุกไฟล์ที่จะดาวน์โหลด ตารางทุกตารางที่จะสร้าง และโฮสต์ทุกแห่งที่อาจติดต่อ ขั้นตอนนี้ไม่แตะทั้งดิสก์และฐานข้อมูล",
   "pg.install.step4": "<strong>ยืนยัน</strong> ตัวติดตั้งจะตรวจสอบทุกอย่างใหม่ทั้งหมดตั้งแต่ต้น — ไม่เชื่อผลจากตัวอย่างก่อนหน้า — แล้วจึงเขียนไฟล์และสร้างตาราง",
-  "pg.install.callout": "<strong>ปลั๊กอินคือโค้ดจากอินเทอร์เน็ต</strong> แซนด์บ็อกซ์กันไม่ให้ปลั๊กอินแตะข้อมูลนิยายของคุณหรือติดต่อโฮสต์ที่ไม่ได้ประกาศไว้ แต่มันทำให้ปลั๊กอินที่เขียนแย่หรือมุ่งร้ายปลอดภัยไม่ได้ แอปมี <a href=\"https://github.com/LDKTC/App-DraconDex/blob/main/docs/PLUGINS.md\">PLUGINS.md</a> ที่อธิบายตรงไปตรงมาว่าแซนด์บ็อกซ์ป้องกันอะไรได้และไม่ได้ — ควรอ่านก่อนติดตั้งอะไรก็ตามที่คุณไม่ได้เขียนเอง",
+  "pg.install.callout": "<strong>ปลั๊กอินคือโค้ดจากอินเทอร์เน็ต</strong> แซนด์บ็อกซ์กันไม่ให้ปลั๊กอินแตะข้อมูลนิยายของคุณหรือติดต่อโฮสต์ที่ไม่ได้ประกาศไว้ แต่มันทำให้ปลั๊กอินที่เขียนแย่หรือมุ่งร้ายปลอดภัยไม่ได้ แอปมี <a href=\"https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/PLUGINS.md\">PLUGINS.md</a> ที่อธิบายตรงไปตรงมาว่าแซนด์บ็อกซ์ป้องกันอะไรได้และไม่ได้ — ควรอ่านก่อนติดตั้งอะไรก็ตามที่คุณไม่ได้เขียนเอง",
 
   "pg.official.eyebrow": "ปลั๊กอินทางการ",
-  "pg.official.title.suffix": "ปลั๊กอิน เผยแพร่ภายใต้ github.com/LDKTC",
+  "pg.official.title.suffix": "ปลั๊กอิน เผยแพร่ภายใต้ github.com/ZYDRAXYL",
   "pg.official.lead": "เวอร์ชันและสิทธิ์ด้านล่างอ่านมาจาก <code>dracondex-plugin.json</code> สดของแต่ละ repository ตอนโหลดหน้านี้",
   "pg.official.credentials": "ปลั๊กอินแชททั้งสามตัวต้องใช้ credential ของตัวเอง — DraconDex ไม่แจก API key หรือพร็อกซีให้ และไม่มีเซิร์ฟเวอร์ของ DraconDex เข้ามาเกี่ยวข้อง Ollama เป็นตัวเลือกที่รันในเครื่องล้วนๆ — คุยกับโมเดลที่รันอยู่บนเครื่องของคุณเองเท่านั้น",
 
@@ -299,7 +299,7 @@ window.DDStrings = {
 
   "pg.build.eyebrow": "สร้างปลั๊กอินของคุณเอง",
   "pg.build.title": "ปลั๊กอินคือไฟล์ JSON หนึ่งไฟล์กับ HTML อีกนิดหน่อย",
-  "pg.build.lead": "วาง <code>dracondex-plugin.json</code> ไว้ที่รากของ public repository แล้ว fork <a href=\"https://github.com/LDKTC/DraconDex-Plugin-Template\">DraconDex-Plugin-Template</a> เพื่อข้ามงานเซ็ตอัพซ้ำๆ",
+  "pg.build.lead": "วาง <code>dracondex-plugin.json</code> ไว้ที่รากของ public repository แล้ว fork <a href=\"https://github.com/ZYDRAXYL/DraconDex-PGI-Template\">DraconDex-PGI-Template</a> เพื่อข้ามงานเซ็ตอัพซ้ำๆ",
   "pg.build.limits.title": "ขีดจำกัด",
   "pg.build.limits.th.field": "ฟิลด์",
   "pg.build.limits.th.rule": "กติกา",

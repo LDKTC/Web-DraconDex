@@ -1,5 +1,5 @@
 /* Theme switch — mirrors the app's three themes (src/design/tokens/tokens.json
-   in LDKTC/App-DraconDex): "midnight" (default dark), "daylight" (light) and
+   in ZYDRAXYL/DraconDex-APP): "midnight" (default dark), "daylight" (light) and
    "moonlight" (dark blue). Loaded synchronously in <head> so the stored
    choice is applied before first paint. With nothing stored we leave
    data-theme unset and let the prefers-color-scheme block in site.css

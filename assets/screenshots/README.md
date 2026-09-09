@@ -1,7 +1,7 @@
 # Screenshots
 
 These images are exported from `docs/mockups/` in
-[LDKTC/App-DraconDex](https://github.com/LDKTC/App-DraconDex) — static
+[ZYDRAXYL/DraconDex-APP](https://github.com/ZYDRAXYL/DraconDex-APP) — static
 design references for the v3 module-tree UI, rendered as 1440x900 PNGs.
 They are not live captures of a running build, but they reflect the same
 UI strings and layout as the shipped app (see `electron/src/renderer/i18n.js`

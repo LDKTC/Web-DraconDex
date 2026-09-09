@@ -1,9 +1,9 @@
 [
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382883082",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382883082/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382883082/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.10.2",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382883082",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382883082/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382883082/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.10.2",
     "id": 382883082,
     "author": {
       "login": "LDKTC",
@@ -38,7 +38,7 @@
     "published_at": "2026-09-04T16:48:30Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544623874",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544623874",
         "id": 544623874,
         "node_id": "RA_kwDOT0DQEM4gdk0C",
         "name": "checksums-sha256.txt",
@@ -71,10 +71,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:48:27Z",
         "updated_at": "2026-09-04T16:48:27Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.2/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.2/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544623873",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544623873",
         "id": 544623873,
         "node_id": "RA_kwDOT0DQEM4gdk0B",
         "name": "DraconDex-2.10.2-arm64-v8a-release.apk",
@@ -107,10 +107,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:48:27Z",
         "updated_at": "2026-09-04T16:48:28Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.2/DraconDex-2.10.2-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.2/DraconDex-2.10.2-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544623875",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544623875",
         "id": 544623875,
         "node_id": "RA_kwDOT0DQEM4gdk0D",
         "name": "DraconDex-2.10.2-armeabi-v7a-release.apk",
@@ -143,10 +143,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:48:27Z",
         "updated_at": "2026-09-04T16:48:28Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.2/DraconDex-2.10.2-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.2/DraconDex-2.10.2-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544623871",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544623871",
         "id": 544623871,
         "node_id": "RA_kwDOT0DQEM4gdkz_",
         "name": "DraconDex-2.10.2-release.apk",
@@ -179,10 +179,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:48:27Z",
         "updated_at": "2026-09-04T16:48:29Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.2/DraconDex-2.10.2-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.2/DraconDex-2.10.2-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544623870",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544623870",
         "id": 544623870,
         "node_id": "RA_kwDOT0DQEM4gdkz-",
         "name": "DraconDex-2.10.2-x86_64-release.apk",
@@ -215,19 +215,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:48:27Z",
         "updated_at": "2026-09-04T16:48:28Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.2/DraconDex-2.10.2-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.2/DraconDex-2.10.2-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.10.2",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.10.2",
-    "body": "## What's Changed\n* v.4.13.2 — Dragon workspace: ERP console instead of the drag-to-arrange board by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/81\n* Stop deploying the PWA from this repo by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/82\n* v.4.13.3 — mirror releases to a public repo, and stop trusting GitHub's release order by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/83\n* Rewrite the README against the app as it stands by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/84\n* Process 7 part 2: app-wide undo/redo (Ctrl+Z) + Setting window fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/85\n* Mirror releases directly into Web-DraconDex, drop the runtime GitHub API call by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/86\n* v.4.15.0 — Process 8 part 1 complete: module handle, Classifier rework, Chronicler graphs, Custom-calendar by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/87\n* Consolidate release mirroring on Web-DraconDex, and fix the three bugs that hid behind each other by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/88\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.10.1...flutter-v2.10.2\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.10.2",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.10.2",
+    "body": "## What's Changed\n* v.4.13.2 — Dragon workspace: ERP console instead of the drag-to-arrange board by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/81\n* Stop deploying the PWA from this repo by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/82\n* v.4.13.3 — mirror releases to a public repo, and stop trusting GitHub's release order by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/83\n* Rewrite the README against the app as it stands by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/84\n* Process 7 part 2: app-wide undo/redo (Ctrl+Z) + Setting window fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/85\n* Mirror releases directly into Web-DraconDex, drop the runtime GitHub API call by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/86\n* v.4.15.0 — Process 8 part 1 complete: module handle, Classifier rework, Chronicler graphs, Custom-calendar by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/87\n* Consolidate release mirroring on Web-DraconDex, and fix the three bugs that hid behind each other by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/88\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.10.1...flutter-v2.10.2\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858987",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858987/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382858987/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/v4.12.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858987",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858987/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858987/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/v4.12.0",
     "id": 382858987,
     "author": {
       "login": "LDKTC",
@@ -262,7 +262,7 @@
     "published_at": "2026-09-04T16:04:55Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579463",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579463",
         "id": 544579463,
         "node_id": "RA_kwDOT0DQEM4gdZ-H",
         "name": "checksums-sha256.txt",
@@ -295,10 +295,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:52Z",
         "updated_at": "2026-09-04T16:12:52Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.12.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.12.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579462",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579462",
         "id": 544579462,
         "node_id": "RA_kwDOT0DQEM4gdZ-G",
         "name": "DraconDex-4.12.0-win-x64.zip",
@@ -331,10 +331,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:52Z",
         "updated_at": "2026-09-04T16:12:54Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.12.0/DraconDex-4.12.0-win-x64.zip"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.12.0/DraconDex-4.12.0-win-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579464",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579464",
         "id": 544579464,
         "node_id": "RA_kwDOT0DQEM4gdZ-I",
         "name": "DraconDex-Portable-4.12.0.exe",
@@ -367,10 +367,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:52Z",
         "updated_at": "2026-09-04T16:12:54Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.12.0/DraconDex-Portable-4.12.0.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.12.0/DraconDex-Portable-4.12.0.exe"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579465",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579465",
         "id": 544579465,
         "node_id": "RA_kwDOT0DQEM4gdZ-J",
         "name": "DraconDex-Setup-4.12.0.exe",
@@ -403,19 +403,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:52Z",
         "updated_at": "2026-09-04T16:12:54Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.12.0/DraconDex-Setup-4.12.0.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.12.0/DraconDex-Setup-4.12.0.exe"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/v4.12.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/v4.12.0",
-    "body": "## What's Changed\n* Flutter APK: make it impossible to publish a debug-signed release by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/74\n* Fix the signing-certificate gate, which was passing every APK by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/75\n* Record the flutter-v2.8.1 release, and correct §2.15's root cause by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/77\n* v.4.12.0 — Google OAuth login redone across Electron, Flutter and PWA by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/76\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/v4.11.0...v4.12.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/v4.12.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/v4.12.0",
+    "body": "## What's Changed\n* Flutter APK: make it impossible to publish a debug-signed release by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/74\n* Fix the signing-certificate gate, which was passing every APK by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/75\n* Record the flutter-v2.8.1 release, and correct §2.15's root cause by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/77\n* v.4.12.0 — Google OAuth login redone across Electron, Flutter and PWA by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/76\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/v4.11.0...v4.12.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858432",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858432/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382858432/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/v4.11.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858432",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858432/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858432/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/v4.11.0",
     "id": 382858432,
     "author": {
       "login": "LDKTC",
@@ -450,7 +450,7 @@
     "published_at": "2026-09-04T16:04:17Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579131",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579131",
         "id": 544579131,
         "node_id": "RA_kwDOT0DQEM4gdZ47",
         "name": "checksums-sha256.txt",
@@ -483,10 +483,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:36Z",
         "updated_at": "2026-09-04T16:12:36Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.11.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.11.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579128",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579128",
         "id": 544579128,
         "node_id": "RA_kwDOT0DQEM4gdZ44",
         "name": "DraconDex-4.11.0-win-x64.zip",
@@ -519,10 +519,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:36Z",
         "updated_at": "2026-09-04T16:12:39Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.11.0/DraconDex-4.11.0-win-x64.zip"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.11.0/DraconDex-4.11.0-win-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579129",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579129",
         "id": 544579129,
         "node_id": "RA_kwDOT0DQEM4gdZ45",
         "name": "DraconDex-Portable-4.11.0.exe",
@@ -555,10 +555,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:36Z",
         "updated_at": "2026-09-04T16:12:39Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.11.0/DraconDex-Portable-4.11.0.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.11.0/DraconDex-Portable-4.11.0.exe"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579127",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579127",
         "id": 544579127,
         "node_id": "RA_kwDOT0DQEM4gdZ43",
         "name": "DraconDex-Setup-4.11.0.exe",
@@ -591,19 +591,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:36Z",
         "updated_at": "2026-09-04T16:12:39Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.11.0/DraconDex-Setup-4.11.0.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.11.0/DraconDex-Setup-4.11.0.exe"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/v4.11.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/v4.11.0",
-    "body": "## What's Changed\n* Deploy the Flutter-web PWA to GitHub Pages by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/67\n* version-update: commit+push on standalone local runs; Flutter 2.6.0 fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/68\n* Flutter: add the Builder shell — Navibar with view + folder-views buttons by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/69\n* Sign release APKs with a persistent keystore for update continuity by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/70\n* Bump Flutter app version to 2.7.0+7 and cut APK release by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/71\n* Hide Flutter Google Drive backup UI until OAuth client is set up by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/72\n* v.4.11.0 — BYOS: set up your own Supabase project from inside the app by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/73\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/v4.10.6...v4.11.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/v4.11.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/v4.11.0",
+    "body": "## What's Changed\n* Deploy the Flutter-web PWA to GitHub Pages by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/67\n* version-update: commit+push on standalone local runs; Flutter 2.6.0 fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/68\n* Flutter: add the Builder shell — Navibar with view + folder-views buttons by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/69\n* Sign release APKs with a persistent keystore for update continuity by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/70\n* Bump Flutter app version to 2.7.0+7 and cut APK release by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/71\n* Hide Flutter Google Drive backup UI until OAuth client is set up by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/72\n* v.4.11.0 — BYOS: set up your own Supabase project from inside the app by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/73\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/v4.10.6...v4.11.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857660",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857660/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382857660/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/v4.10.6",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857660",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857660/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857660/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/v4.10.6",
     "id": 382857660,
     "author": {
       "login": "LDKTC",
@@ -638,7 +638,7 @@
     "published_at": "2026-09-04T16:03:31Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578830",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578830",
         "id": 544578830,
         "node_id": "RA_kwDOT0DQEM4gdZ0O",
         "name": "checksums-sha256.txt",
@@ -671,10 +671,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:16Z",
         "updated_at": "2026-09-04T16:12:17Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.6/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.6/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578820",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578820",
         "id": 544578820,
         "node_id": "RA_kwDOT0DQEM4gdZ0E",
         "name": "DraconDex-4.10.6-win-x64.zip",
@@ -707,10 +707,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:16Z",
         "updated_at": "2026-09-04T16:12:20Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.6/DraconDex-4.10.6-win-x64.zip"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.6/DraconDex-4.10.6-win-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578831",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578831",
         "id": 544578831,
         "node_id": "RA_kwDOT0DQEM4gdZ0P",
         "name": "DraconDex-Portable-4.10.6.exe",
@@ -743,10 +743,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:16Z",
         "updated_at": "2026-09-04T16:12:19Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.6/DraconDex-Portable-4.10.6.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.6/DraconDex-Portable-4.10.6.exe"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578828",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578828",
         "id": 544578828,
         "node_id": "RA_kwDOT0DQEM4gdZ0M",
         "name": "DraconDex-Setup-4.10.6.exe",
@@ -779,19 +779,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:16Z",
         "updated_at": "2026-09-04T16:12:20Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.6/DraconDex-Setup-4.10.6.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.6/DraconDex-Setup-4.10.6.exe"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/v4.10.6",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/v4.10.6",
-    "body": "## What's Changed\n* v.4.10.2 — Process 4 Part 1: restore .icon base rule + search-bar CSS by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/59\n* v.4.10.3 — Process 4 Part 2: nav rail quick-menu toggle + navbar/left-panel resize fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/60\n* v.4.10.3 — Process 5: workspace nav orientation + module export/import target choice by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/61\n* v.4.10.6 — Process 6 (navbar + Tags + tab-move) + Process 7 Part 1 (toggle animations) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/62\n* Flutter: v3 module tree (Nexus/Hub) drill-down explorer + APK version bump by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/63\n* Flutter: Nexus-nest-only navigation, fixed language switching, Electron brand icon by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/64\n* Update-check fixes, in-app APK install, Nexus/status-bar fixes, unified DB schema, Flutter-web PWA by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/65\n* Bump Flutter app version to 2.5.0+5 by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/66\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/v4.10.1...v4.10.6\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/v4.10.6",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/v4.10.6",
+    "body": "## What's Changed\n* v.4.10.2 — Process 4 Part 1: restore .icon base rule + search-bar CSS by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/59\n* v.4.10.3 — Process 4 Part 2: nav rail quick-menu toggle + navbar/left-panel resize fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/60\n* v.4.10.3 — Process 5: workspace nav orientation + module export/import target choice by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/61\n* v.4.10.6 — Process 6 (navbar + Tags + tab-move) + Process 7 Part 1 (toggle animations) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/62\n* Flutter: v3 module tree (Nexus/Hub) drill-down explorer + APK version bump by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/63\n* Flutter: Nexus-nest-only navigation, fixed language switching, Electron brand icon by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/64\n* Update-check fixes, in-app APK install, Nexus/status-bar fixes, unified DB schema, Flutter-web PWA by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/65\n* Bump Flutter app version to 2.5.0+5 by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/66\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/v4.10.1...v4.10.6\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857326",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857326/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382857326/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/v4.10.1",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857326",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857326/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857326/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/v4.10.1",
     "id": 382857326,
     "author": {
       "login": "LDKTC",
@@ -826,7 +826,7 @@
     "published_at": "2026-09-04T16:02:58Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578491",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578491",
         "id": 544578491,
         "node_id": "RA_kwDOT0DQEM4gdZu7",
         "name": "checksums-sha256.txt",
@@ -859,10 +859,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:58Z",
         "updated_at": "2026-09-04T16:11:59Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.1/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.1/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578484",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578484",
         "id": 544578484,
         "node_id": "RA_kwDOT0DQEM4gdZu0",
         "name": "DraconDex-4.10.1-win-x64.zip",
@@ -895,10 +895,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:58Z",
         "updated_at": "2026-09-04T16:12:02Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.1/DraconDex-4.10.1-win-x64.zip"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.1/DraconDex-4.10.1-win-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578487",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578487",
         "id": 544578487,
         "node_id": "RA_kwDOT0DQEM4gdZu3",
         "name": "DraconDex-Portable-4.10.1.exe",
@@ -931,10 +931,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:58Z",
         "updated_at": "2026-09-04T16:12:01Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.1/DraconDex-Portable-4.10.1.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.1/DraconDex-Portable-4.10.1.exe"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578483",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578483",
         "id": 544578483,
         "node_id": "RA_kwDOT0DQEM4gdZuz",
         "name": "DraconDex-Setup-4.10.1.exe",
@@ -967,19 +967,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:58Z",
         "updated_at": "2026-09-04T16:12:01Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.10.1/DraconDex-Setup-4.10.1.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.10.1/DraconDex-Setup-4.10.1.exe"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/v4.10.1",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/v4.10.1",
-    "body": "## What's Changed\n* Add build-release-git skill for GitHub release cadence by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/47\n* Reorganize repo into electron/ · flutter/ · src/ (shared) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/48\n* Manual test run check & plan writing 10/8/26 by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/49\n* Sync CLAUDE.md with current repo state by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/50\n* Add plugin manifest `dependencies` — auto-install a plugin's declared companions by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/51\n* Test&plan  11/08/26 update by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/52\n* v.4.7.6 — Security hardening: close the RCE→credential-theft chain, add containment by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/53\n* Plugin dependency gating, per-Nexus .ddx files, Nexus options menu, cloud-storage seam by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/54\n* v.4.9.1 — Part 1: Nav bar — active side bar, resize-to-labels, hub-toggle relocation by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/55\n* Plugin recommend list: require .dracondex marker, exclude template by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/56\n* Process 1 + Process 2 (complete) + Process 3 Part 1: nexus, hub, navbar, legacy conversion + deletion, terminology rename by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/57\n* Process 3: Major/Minor terminology fix + Hub context-menu overhaul by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/58\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/v4.7.1...v4.10.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/v4.10.1",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/v4.10.1",
+    "body": "## What's Changed\n* Add build-release-git skill for GitHub release cadence by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/47\n* Reorganize repo into electron/ · flutter/ · src/ (shared) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/48\n* Manual test run check & plan writing 10/8/26 by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/49\n* Sync CLAUDE.md with current repo state by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/50\n* Add plugin manifest `dependencies` — auto-install a plugin's declared companions by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/51\n* Test&plan  11/08/26 update by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/52\n* v.4.7.6 — Security hardening: close the RCE→credential-theft chain, add containment by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/53\n* Plugin dependency gating, per-Nexus .ddx files, Nexus options menu, cloud-storage seam by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/54\n* v.4.9.1 — Part 1: Nav bar — active side bar, resize-to-labels, hub-toggle relocation by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/55\n* Plugin recommend list: require .dracondex marker, exclude template by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/56\n* Process 1 + Process 2 (complete) + Process 3 Part 1: nexus, hub, navbar, legacy conversion + deletion, terminology rename by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/57\n* Process 3: Major/Minor terminology fix + Hub context-menu overhaul by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/58\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/v4.7.1...v4.10.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382856845",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382856845/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382856845/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/v4.7.1",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382856845",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382856845/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382856845/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/v4.7.1",
     "id": 382856845,
     "author": {
       "login": "LDKTC",
@@ -1014,7 +1014,7 @@
     "published_at": "2026-09-04T16:02:40Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578367",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578367",
         "id": 544578367,
         "node_id": "RA_kwDOT0DQEM4gdZs_",
         "name": "checksums-sha256.txt",
@@ -1047,10 +1047,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:50Z",
         "updated_at": "2026-09-04T16:11:50Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.7.1/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.7.1/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578375",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578375",
         "id": 544578375,
         "node_id": "RA_kwDOT0DQEM4gdZtH",
         "name": "DraconDex-4.7.1-win-x64.zip",
@@ -1083,10 +1083,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:50Z",
         "updated_at": "2026-09-04T16:11:55Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.7.1/DraconDex-4.7.1-win-x64.zip"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.7.1/DraconDex-4.7.1-win-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578374",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578374",
         "id": 544578374,
         "node_id": "RA_kwDOT0DQEM4gdZtG",
         "name": "DraconDex-Portable-4.7.1.exe",
@@ -1119,10 +1119,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:50Z",
         "updated_at": "2026-09-04T16:11:54Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.7.1/DraconDex-Portable-4.7.1.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.7.1/DraconDex-Portable-4.7.1.exe"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578369",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578369",
         "id": 544578369,
         "node_id": "RA_kwDOT0DQEM4gdZtB",
         "name": "DraconDex-Setup-4.7.1.exe",
@@ -1155,19 +1155,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:50Z",
         "updated_at": "2026-09-04T16:11:53Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.7.1/DraconDex-Setup-4.7.1.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.7.1/DraconDex-Setup-4.7.1.exe"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/v4.7.1",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/v4.7.1",
-    "body": "## What's Changed\n* CI: publish @ldktc/dracondex to GitHub Packages by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/43\n* v.4.5.0 — ปิด Cloud Sync (Supabase) เหลือสำรองข้อมูลผ่าน Google Drive OAuth อย่างเดียว by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/44\n* v.4.7.0 — Welcome เป็นหน้าต่างของตัวเอง + setup wizard ครั้งแรก by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/45\n* docs(version-update): add module-or-fix rule for the minor/patch call by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/46\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/v4.4.2...v4.7.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/v4.7.1",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/v4.7.1",
+    "body": "## What's Changed\n* CI: publish @ldktc/dracondex to GitHub Packages by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/43\n* v.4.5.0 — ปิด Cloud Sync (Supabase) เหลือสำรองข้อมูลผ่าน Google Drive OAuth อย่างเดียว by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/44\n* v.4.7.0 — Welcome เป็นหน้าต่างของตัวเอง + setup wizard ครั้งแรก by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/45\n* docs(version-update): add module-or-fix rule for the minor/patch call by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/46\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/v4.4.2...v4.7.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382856695",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382856695/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382856695/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/v4.4.2",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382856695",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382856695/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382856695/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/v4.4.2",
     "id": 382856695,
     "author": {
       "login": "LDKTC",
@@ -1202,7 +1202,7 @@
     "published_at": "2026-09-04T16:02:22Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578212",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578212",
         "id": 544578212,
         "node_id": "RA_kwDOT0DQEM4gdZqk",
         "name": "checksums-sha256.txt",
@@ -1235,10 +1235,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:43Z",
         "updated_at": "2026-09-04T16:11:43Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.4.2/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.4.2/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578213",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578213",
         "id": 544578213,
         "node_id": "RA_kwDOT0DQEM4gdZql",
         "name": "DraconDex-4.4.2-win-x64.zip",
@@ -1271,10 +1271,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:43Z",
         "updated_at": "2026-09-04T16:11:47Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.4.2/DraconDex-4.4.2-win-x64.zip"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.4.2/DraconDex-4.4.2-win-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578211",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578211",
         "id": 544578211,
         "node_id": "RA_kwDOT0DQEM4gdZqj",
         "name": "DraconDex-Portable-4.4.2.exe",
@@ -1307,10 +1307,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:43Z",
         "updated_at": "2026-09-04T16:11:45Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.4.2/DraconDex-Portable-4.4.2.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.4.2/DraconDex-Portable-4.4.2.exe"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578206",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578206",
         "id": 544578206,
         "node_id": "RA_kwDOT0DQEM4gdZqe",
         "name": "DraconDex-Setup-4.4.2.exe",
@@ -1343,19 +1343,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:11:42Z",
         "updated_at": "2026-09-04T16:11:46Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/v4.4.2/DraconDex-Setup-4.4.2.exe"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/v4.4.2/DraconDex-Setup-4.4.2.exe"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/v4.4.2",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/v4.4.2",
-    "body": "## What's Changed\n* feat: v1.3.0 - nav refactor, project hashtags, UI fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/1\n* feat: add Nexus hub and refactor novel module into Director by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/2\n* feat: add Flutter Android app (DraconDex mobile port) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/3\n* Refactor: Modularize database layer and expand app with new modules by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/4\n* fix(sage): count map table in Director data size by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/5\n* UI/UX: unify modules with Director pattern (Plan v2.5.1) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/6\n* Navigator redesign: multi-link characters, connected-novel pickers, category tab overhaul by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/7\n* Director sidebar & timeline: novel button always visible + connect events to other timelines by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/8\n* Navigator: Director-style world UX with world-owned categories by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/9\n* Add 8 new languages to DraconDex, including a Draconic easter egg by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/10\n* Add new UI themes and switch theme setting to a dropdown by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/11\n* Translate all remaining UI strings on language switch + fix PDF/DOCX export bug by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/12\n* v2.5.7: Navigator world tags (world_tag / world_charactor_tag) + tag save fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/13\n* Architecture cleanup: FK indexes, remove dead renderer.js, split i18n data by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/14\n* Add Windows installer build option (build:installer) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/15\n* Replace Writer module with the v2.7 write_* design by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/16\n* Prepare flutter_app for building and running the APK by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/17\n* Add Artisan module: create projects from templates by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/18\n* Add 20 sky/star/time-of-day themes + live-palette theme picker by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/19\n* Obsidian-like rework: Nexus vaults, Scribe notes, wikilinks, IDE shell by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/20\n* docs: add Architec.md documenting module/submodule structure by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/21\n* DraconDex v3 UI design pass (Obsidian + VS Code reference) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/22\n* Complete v3 design doc (progress.md) with full spec and UI mockups by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/23\n* v3 M1 foundation: module system schema + Nexus nest hub (Phases 1-3) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/24\n* Redo Phases 1-8 to match approved mockups + Phase 9: TimeMap \"Wanderer\" by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/25\n* Nexus onboarding: Welcome modal + first-run coach-marks guide by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/26\n* Live-verify Part 2 round 2 (Artisan wizard, icon crop-import, icon popup) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/27\n* Update Architec.md for the v3 module system by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/28\n* Add CLAUDE.md docs and ux-researcher/ui-researcher skills+agents by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/29\n* Nexus Nest hub: reparent drag-drop, Create submenu, home button, hub scroll/order fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/30\n* v.3.8.1 — Cloud Sync (Supabase) prototype: snapshot sync for Nexus vaults + access keys by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/31\n* v.3.11.2 — Plan.md Part 1+2: Nexus Nest hub polish + cross-version DB import by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/32\n* v.3.11.3 — Part 1: hub guideline/icon alignment, resizable page view, context-menu open-in-new-pane/window, Sage Hut header icon by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/33\n* v.3.17.4 — Plan part 1: re-architecture (file split) + dracondex-file-arch skill by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/34\n* v.4.2.0 — Extension → Plugin ทั้งระบบ + ติดตั้งจากลิงก์ .git ลิงก์เดียว by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/35\n* Plugin Panel API: let plugins dock a page in the Module Inspector slot (v4.3.0) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/36\n* Allow permissions.net to declare loopback http:// origins (v4.4.0) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/37\n* Security: ship vendor/ in builds, enforce OAuth state, add MIT LICENSE by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/39\n* Add repo README by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/38\n* CI: build all three Electron targets and publish them as GitHub releases by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/40\n* CI: fix the two failures blocking the Windows build, and move off Node 20 actions by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/41\n* v.4.4.2 — i18n: complete COMMON_UI_TEXT parity for all 18 locales + enforce it in the checker by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/42\n\n## New Contributors\n* @LDKTC made their first contribution in https://github.com/LDKTC/App-DraconDex/pull/1\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/commits/v4.4.2\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/v4.4.2",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/v4.4.2",
+    "body": "## What's Changed\n* feat: v1.3.0 - nav refactor, project hashtags, UI fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/1\n* feat: add Nexus hub and refactor novel module into Director by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/2\n* feat: add Flutter Android app (DraconDex mobile port) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/3\n* Refactor: Modularize database layer and expand app with new modules by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/4\n* fix(sage): count map table in Director data size by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/5\n* UI/UX: unify modules with Director pattern (Plan v2.5.1) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/6\n* Navigator redesign: multi-link characters, connected-novel pickers, category tab overhaul by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/7\n* Director sidebar & timeline: novel button always visible + connect events to other timelines by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/8\n* Navigator: Director-style world UX with world-owned categories by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/9\n* Add 8 new languages to DraconDex, including a Draconic easter egg by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/10\n* Add new UI themes and switch theme setting to a dropdown by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/11\n* Translate all remaining UI strings on language switch + fix PDF/DOCX export bug by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/12\n* v2.5.7: Navigator world tags (world_tag / world_charactor_tag) + tag save fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/13\n* Architecture cleanup: FK indexes, remove dead renderer.js, split i18n data by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/14\n* Add Windows installer build option (build:installer) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/15\n* Replace Writer module with the v2.7 write_* design by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/16\n* Prepare flutter_app for building and running the APK by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/17\n* Add Artisan module: create projects from templates by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/18\n* Add 20 sky/star/time-of-day themes + live-palette theme picker by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/19\n* Obsidian-like rework: Nexus vaults, Scribe notes, wikilinks, IDE shell by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/20\n* docs: add Architec.md documenting module/submodule structure by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/21\n* DraconDex v3 UI design pass (Obsidian + VS Code reference) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/22\n* Complete v3 design doc (progress.md) with full spec and UI mockups by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/23\n* v3 M1 foundation: module system schema + Nexus nest hub (Phases 1-3) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/24\n* Redo Phases 1-8 to match approved mockups + Phase 9: TimeMap \"Wanderer\" by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/25\n* Nexus onboarding: Welcome modal + first-run coach-marks guide by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/26\n* Live-verify Part 2 round 2 (Artisan wizard, icon crop-import, icon popup) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/27\n* Update Architec.md for the v3 module system by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/28\n* Add CLAUDE.md docs and ux-researcher/ui-researcher skills+agents by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/29\n* Nexus Nest hub: reparent drag-drop, Create submenu, home button, hub scroll/order fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/30\n* v.3.8.1 — Cloud Sync (Supabase) prototype: snapshot sync for Nexus vaults + access keys by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/31\n* v.3.11.2 — Plan.md Part 1+2: Nexus Nest hub polish + cross-version DB import by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/32\n* v.3.11.3 — Part 1: hub guideline/icon alignment, resizable page view, context-menu open-in-new-pane/window, Sage Hut header icon by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/33\n* v.3.17.4 — Plan part 1: re-architecture (file split) + dracondex-file-arch skill by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/34\n* v.4.2.0 — Extension → Plugin ทั้งระบบ + ติดตั้งจากลิงก์ .git ลิงก์เดียว by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/35\n* Plugin Panel API: let plugins dock a page in the Module Inspector slot (v4.3.0) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/36\n* Allow permissions.net to declare loopback http:// origins (v4.4.0) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/37\n* Security: ship vendor/ in builds, enforce OAuth state, add MIT LICENSE by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/39\n* Add repo README by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/38\n* CI: build all three Electron targets and publish them as GitHub releases by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/40\n* CI: fix the two failures blocking the Windows build, and move off Node 20 actions by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/41\n* v.4.4.2 — i18n: complete COMMON_UI_TEXT parity for all 18 locales + enforce it in the checker by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/42\n\n## New Contributors\n* @LDKTC made their first contribution in https://github.com/ZYDRAXYL/DraconDex-APP/pull/1\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/commits/v4.4.2\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382859136",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382859136/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382859136/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.9.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859136",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859136/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859136/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.9.0",
     "id": 382859136,
     "author": {
       "login": "LDKTC",
@@ -1390,7 +1390,7 @@
     "published_at": "2026-09-04T16:05:05Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579608",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579608",
         "id": 544579608,
         "node_id": "RA_kwDOT0DQEM4gdaAY",
         "name": "checksums-sha256.txt",
@@ -1423,10 +1423,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:57Z",
         "updated_at": "2026-09-04T16:12:57Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.9.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.9.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579602",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579602",
         "id": 544579602,
         "node_id": "RA_kwDOT0DQEM4gdaAS",
         "name": "DraconDex-2.9.0-arm64-v8a-release.apk",
@@ -1459,10 +1459,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:57Z",
         "updated_at": "2026-09-04T16:12:58Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.9.0/DraconDex-2.9.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.9.0/DraconDex-2.9.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579599",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579599",
         "id": 544579599,
         "node_id": "RA_kwDOT0DQEM4gdaAP",
         "name": "DraconDex-2.9.0-armeabi-v7a-release.apk",
@@ -1495,10 +1495,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:57Z",
         "updated_at": "2026-09-04T16:12:58Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.9.0/DraconDex-2.9.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.9.0/DraconDex-2.9.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579600",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579600",
         "id": 544579600,
         "node_id": "RA_kwDOT0DQEM4gdaAQ",
         "name": "DraconDex-2.9.0-release.apk",
@@ -1531,10 +1531,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:57Z",
         "updated_at": "2026-09-04T16:12:59Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.9.0/DraconDex-2.9.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.9.0/DraconDex-2.9.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579601",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579601",
         "id": 544579601,
         "node_id": "RA_kwDOT0DQEM4gdaAR",
         "name": "DraconDex-2.9.0-x86_64-release.apk",
@@ -1567,19 +1567,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:57Z",
         "updated_at": "2026-09-04T16:12:58Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.9.0/DraconDex-2.9.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.9.0/DraconDex-2.9.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.9.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.9.0",
-    "body": "## What's Changed\n* Record the flutter-v2.8.1 release, and correct §2.15's root cause by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/77\n* v.4.12.0 — Google OAuth login redone across Electron, Flutter and PWA by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/76\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.8.1...flutter-v2.9.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.9.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.9.0",
+    "body": "## What's Changed\n* Record the flutter-v2.8.1 release, and correct §2.15's root cause by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/77\n* v.4.12.0 — Google OAuth login redone across Electron, Flutter and PWA by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/76\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.8.1...flutter-v2.9.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858856",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858856/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382858856/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.8.1",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858856",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858856/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858856/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.8.1",
     "id": 382858856,
     "author": {
       "login": "LDKTC",
@@ -1614,7 +1614,7 @@
     "published_at": "2026-09-04T16:04:36Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579316",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579316",
         "id": 544579316,
         "node_id": "RA_kwDOT0DQEM4gdZ70",
         "name": "checksums-sha256.txt",
@@ -1647,10 +1647,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:47Z",
         "updated_at": "2026-09-04T16:12:47Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.1/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.1/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579318",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579318",
         "id": 544579318,
         "node_id": "RA_kwDOT0DQEM4gdZ72",
         "name": "DraconDex-2.8.1-arm64-v8a-release.apk",
@@ -1683,10 +1683,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:47Z",
         "updated_at": "2026-09-04T16:12:48Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.1/DraconDex-2.8.1-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.1/DraconDex-2.8.1-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579315",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579315",
         "id": 544579315,
         "node_id": "RA_kwDOT0DQEM4gdZ7z",
         "name": "DraconDex-2.8.1-armeabi-v7a-release.apk",
@@ -1719,10 +1719,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:47Z",
         "updated_at": "2026-09-04T16:12:48Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.1/DraconDex-2.8.1-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.1/DraconDex-2.8.1-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579317",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579317",
         "id": 544579317,
         "node_id": "RA_kwDOT0DQEM4gdZ71",
         "name": "DraconDex-2.8.1-release.apk",
@@ -1755,10 +1755,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:47Z",
         "updated_at": "2026-09-04T16:12:49Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.1/DraconDex-2.8.1-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.1/DraconDex-2.8.1-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579314",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579314",
         "id": 544579314,
         "node_id": "RA_kwDOT0DQEM4gdZ7y",
         "name": "DraconDex-2.8.1-x86_64-release.apk",
@@ -1791,19 +1791,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:47Z",
         "updated_at": "2026-09-04T16:12:49Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.1/DraconDex-2.8.1-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.1/DraconDex-2.8.1-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.8.1",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.8.1",
-    "body": "## What's Changed\n* Flutter APK: make it impossible to publish a debug-signed release by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/74\n* Fix the signing-certificate gate, which was passing every APK by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/75\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.8.0...flutter-v2.8.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.8.1",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.8.1",
+    "body": "## What's Changed\n* Flutter APK: make it impossible to publish a debug-signed release by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/74\n* Fix the signing-certificate gate, which was passing every APK by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/75\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.8.0...flutter-v2.8.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858775",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858775/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382858775/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.8.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858775",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858775/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858775/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.8.0",
     "id": 382858775,
     "author": {
       "login": "LDKTC",
@@ -1838,7 +1838,7 @@
     "published_at": "2026-09-04T16:04:27Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579216",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579216",
         "id": 544579216,
         "node_id": "RA_kwDOT0DQEM4gdZ6Q",
         "name": "checksums-sha256.txt",
@@ -1871,10 +1871,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:42Z",
         "updated_at": "2026-09-04T16:12:42Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579229",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579229",
         "id": 544579229,
         "node_id": "RA_kwDOT0DQEM4gdZ6d",
         "name": "DraconDex-2.8.0-arm64-v8a-release.apk",
@@ -1907,10 +1907,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:42Z",
         "updated_at": "2026-09-04T16:12:43Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.0/DraconDex-2.8.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.0/DraconDex-2.8.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579220",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579220",
         "id": 544579220,
         "node_id": "RA_kwDOT0DQEM4gdZ6U",
         "name": "DraconDex-2.8.0-armeabi-v7a-release.apk",
@@ -1943,10 +1943,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:42Z",
         "updated_at": "2026-09-04T16:12:43Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.0/DraconDex-2.8.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.0/DraconDex-2.8.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579233",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579233",
         "id": 544579233,
         "node_id": "RA_kwDOT0DQEM4gdZ6h",
         "name": "DraconDex-2.8.0-release.apk",
@@ -1979,10 +1979,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:42Z",
         "updated_at": "2026-09-04T16:12:44Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.0/DraconDex-2.8.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.0/DraconDex-2.8.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579217",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579217",
         "id": 544579217,
         "node_id": "RA_kwDOT0DQEM4gdZ6R",
         "name": "DraconDex-2.8.0-x86_64-release.apk",
@@ -2015,19 +2015,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:42Z",
         "updated_at": "2026-09-04T16:12:43Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.8.0/DraconDex-2.8.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.8.0/DraconDex-2.8.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.8.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.8.0",
-    "body": "## What's Changed\n* Bump Flutter app version to 2.7.0+7 and cut APK release by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/71\n* Hide Flutter Google Drive backup UI until OAuth client is set up by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/72\n* v.4.11.0 — BYOS: set up your own Supabase project from inside the app by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/73\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.7.0...flutter-v2.8.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.8.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.8.0",
+    "body": "## What's Changed\n* Bump Flutter app version to 2.7.0+7 and cut APK release by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/71\n* Hide Flutter Google Drive backup UI until OAuth client is set up by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/72\n* v.4.11.0 — BYOS: set up your own Supabase project from inside the app by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/73\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.7.0...flutter-v2.8.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858301",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858301/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382858301/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.7.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858301",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858301/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858301/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.7.0",
     "id": 382858301,
     "author": {
       "login": "LDKTC",
@@ -2062,7 +2062,7 @@
     "published_at": "2026-09-04T16:04:00Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579061",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579061",
         "id": 544579061,
         "node_id": "RA_kwDOT0DQEM4gdZ31",
         "name": "checksums-sha256.txt",
@@ -2095,10 +2095,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:32Z",
         "updated_at": "2026-09-04T16:12:32Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.7.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.7.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579057",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579057",
         "id": 544579057,
         "node_id": "RA_kwDOT0DQEM4gdZ3x",
         "name": "DraconDex-2.7.0-arm64-v8a-release.apk",
@@ -2131,10 +2131,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:32Z",
         "updated_at": "2026-09-04T16:12:33Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.7.0/DraconDex-2.7.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.7.0/DraconDex-2.7.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579060",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579060",
         "id": 544579060,
         "node_id": "RA_kwDOT0DQEM4gdZ30",
         "name": "DraconDex-2.7.0-armeabi-v7a-release.apk",
@@ -2167,10 +2167,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:32Z",
         "updated_at": "2026-09-04T16:12:33Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.7.0/DraconDex-2.7.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.7.0/DraconDex-2.7.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579059",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579059",
         "id": 544579059,
         "node_id": "RA_kwDOT0DQEM4gdZ3z",
         "name": "DraconDex-2.7.0-release.apk",
@@ -2203,10 +2203,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:32Z",
         "updated_at": "2026-09-04T16:12:33Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.7.0/DraconDex-2.7.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.7.0/DraconDex-2.7.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579058",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579058",
         "id": 544579058,
         "node_id": "RA_kwDOT0DQEM4gdZ3y",
         "name": "DraconDex-2.7.0-x86_64-release.apk",
@@ -2239,19 +2239,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:32Z",
         "updated_at": "2026-09-04T16:12:33Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.7.0/DraconDex-2.7.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.7.0/DraconDex-2.7.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.7.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.7.0",
-    "body": "## What's Changed\n* version-update: commit+push on standalone local runs; Flutter 2.6.0 fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/68\n* Flutter: add the Builder shell — Navibar with view + folder-views buttons by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/69\n* Sign release APKs with a persistent keystore for update continuity by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/70\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.6.0...flutter-v2.7.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.7.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.7.0",
+    "body": "## What's Changed\n* version-update: commit+push on standalone local runs; Flutter 2.6.0 fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/68\n* Flutter: add the Builder shell — Navibar with view + folder-views buttons by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/69\n* Sign release APKs with a persistent keystore for update continuity by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/70\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.6.0...flutter-v2.7.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858174",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858174/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382858174/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.6.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858174",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858174/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858174/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.6.0",
     "id": 382858174,
     "author": {
       "login": "LDKTC",
@@ -2286,7 +2286,7 @@
     "published_at": "2026-09-04T16:03:50Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578991",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578991",
         "id": 544578991,
         "node_id": "RA_kwDOT0DQEM4gdZ2v",
         "name": "checksums-sha256.txt",
@@ -2319,10 +2319,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:28Z",
         "updated_at": "2026-09-04T16:12:28Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.6.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.6.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578994",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578994",
         "id": 544578994,
         "node_id": "RA_kwDOT0DQEM4gdZ2y",
         "name": "DraconDex-2.6.0-arm64-v8a-release.apk",
@@ -2355,10 +2355,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:28Z",
         "updated_at": "2026-09-04T16:12:29Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.6.0/DraconDex-2.6.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.6.0/DraconDex-2.6.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578993",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578993",
         "id": 544578993,
         "node_id": "RA_kwDOT0DQEM4gdZ2x",
         "name": "DraconDex-2.6.0-armeabi-v7a-release.apk",
@@ -2391,10 +2391,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:28Z",
         "updated_at": "2026-09-04T16:12:29Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.6.0/DraconDex-2.6.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.6.0/DraconDex-2.6.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578990",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578990",
         "id": 544578990,
         "node_id": "RA_kwDOT0DQEM4gdZ2u",
         "name": "DraconDex-2.6.0-release.apk",
@@ -2427,10 +2427,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:27Z",
         "updated_at": "2026-09-04T16:12:29Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.6.0/DraconDex-2.6.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.6.0/DraconDex-2.6.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578992",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578992",
         "id": 544578992,
         "node_id": "RA_kwDOT0DQEM4gdZ2w",
         "name": "DraconDex-2.6.0-x86_64-release.apk",
@@ -2463,19 +2463,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:28Z",
         "updated_at": "2026-09-04T16:12:29Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.6.0/DraconDex-2.6.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.6.0/DraconDex-2.6.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.6.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.6.0",
-    "body": "## What's Changed\n* Deploy the Flutter-web PWA to GitHub Pages by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/67\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.5.0...flutter-v2.6.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.6.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.6.0",
+    "body": "## What's Changed\n* Deploy the Flutter-web PWA to GitHub Pages by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/67\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.5.0...flutter-v2.6.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858080",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382858080/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382858080/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.5.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858080",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858080/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382858080/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.5.0",
     "id": 382858080,
     "author": {
       "login": "LDKTC",
@@ -2510,7 +2510,7 @@
     "published_at": "2026-09-04T16:03:40Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578926",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578926",
         "id": 544578926,
         "node_id": "RA_kwDOT0DQEM4gdZ1u",
         "name": "checksums-sha256.txt",
@@ -2543,10 +2543,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:23Z",
         "updated_at": "2026-09-04T16:12:24Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.5.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.5.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578924",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578924",
         "id": 544578924,
         "node_id": "RA_kwDOT0DQEM4gdZ1s",
         "name": "DraconDex-2.5.0-arm64-v8a-release.apk",
@@ -2579,10 +2579,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:23Z",
         "updated_at": "2026-09-04T16:12:24Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.5.0/DraconDex-2.5.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.5.0/DraconDex-2.5.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578923",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578923",
         "id": 544578923,
         "node_id": "RA_kwDOT0DQEM4gdZ1r",
         "name": "DraconDex-2.5.0-armeabi-v7a-release.apk",
@@ -2615,10 +2615,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:23Z",
         "updated_at": "2026-09-04T16:12:24Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.5.0/DraconDex-2.5.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.5.0/DraconDex-2.5.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578925",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578925",
         "id": 544578925,
         "node_id": "RA_kwDOT0DQEM4gdZ1t",
         "name": "DraconDex-2.5.0-release.apk",
@@ -2651,10 +2651,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:23Z",
         "updated_at": "2026-09-04T16:12:25Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.5.0/DraconDex-2.5.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.5.0/DraconDex-2.5.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578922",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578922",
         "id": 544578922,
         "node_id": "RA_kwDOT0DQEM4gdZ1q",
         "name": "DraconDex-2.5.0-x86_64-release.apk",
@@ -2687,19 +2687,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:23Z",
         "updated_at": "2026-09-04T16:12:24Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.5.0/DraconDex-2.5.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.5.0/DraconDex-2.5.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.5.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.5.0",
-    "body": "## What's Changed\n* Update-check fixes, in-app APK install, Nexus/status-bar fixes, unified DB schema, Flutter-web PWA by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/65\n* Bump Flutter app version to 2.5.0+5 by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/66\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.4.0...flutter-v2.5.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.5.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.5.0",
+    "body": "## What's Changed\n* Update-check fixes, in-app APK install, Nexus/status-bar fixes, unified DB schema, Flutter-web PWA by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/65\n* Bump Flutter app version to 2.5.0+5 by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/66\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.4.0...flutter-v2.5.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857548",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857548/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382857548/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.4.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857548",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857548/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857548/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.4.0",
     "id": 382857548,
     "author": {
       "login": "LDKTC",
@@ -2734,7 +2734,7 @@
     "published_at": "2026-09-04T16:03:16Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578736",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578736",
         "id": 544578736,
         "node_id": "RA_kwDOT0DQEM4gdZyw",
         "name": "checksums-sha256.txt",
@@ -2767,10 +2767,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:11Z",
         "updated_at": "2026-09-04T16:12:11Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.4.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.4.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578737",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578737",
         "id": 544578737,
         "node_id": "RA_kwDOT0DQEM4gdZyx",
         "name": "DraconDex-2.4.0-arm64-v8a-release.apk",
@@ -2803,10 +2803,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:11Z",
         "updated_at": "2026-09-04T16:12:12Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.4.0/DraconDex-2.4.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.4.0/DraconDex-2.4.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578743",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578743",
         "id": 544578743,
         "node_id": "RA_kwDOT0DQEM4gdZy3",
         "name": "DraconDex-2.4.0-armeabi-v7a-release.apk",
@@ -2839,10 +2839,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:11Z",
         "updated_at": "2026-09-04T16:12:12Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.4.0/DraconDex-2.4.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.4.0/DraconDex-2.4.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578744",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578744",
         "id": 544578744,
         "node_id": "RA_kwDOT0DQEM4gdZy4",
         "name": "DraconDex-2.4.0-release.apk",
@@ -2875,10 +2875,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:11Z",
         "updated_at": "2026-09-04T16:12:13Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.4.0/DraconDex-2.4.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.4.0/DraconDex-2.4.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578745",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578745",
         "id": 544578745,
         "node_id": "RA_kwDOT0DQEM4gdZy5",
         "name": "DraconDex-2.4.0-x86_64-release.apk",
@@ -2911,19 +2911,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:11Z",
         "updated_at": "2026-09-04T16:12:12Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.4.0/DraconDex-2.4.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.4.0/DraconDex-2.4.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.4.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.4.0",
-    "body": "## What's Changed\n* Flutter: Nexus-nest-only navigation, fixed language switching, Electron brand icon by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/64\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.3.0...flutter-v2.4.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.4.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.4.0",
+    "body": "## What's Changed\n* Flutter: Nexus-nest-only navigation, fixed language switching, Electron brand icon by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/64\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.3.0...flutter-v2.4.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857476",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382857476/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382857476/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.3.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857476",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857476/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382857476/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.3.0",
     "id": 382857476,
     "author": {
       "login": "LDKTC",
@@ -2958,7 +2958,7 @@
     "published_at": "2026-09-04T16:03:07Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578631",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578631",
         "id": 544578631,
         "node_id": "RA_kwDOT0DQEM4gdZxH",
         "name": "checksums-sha256.txt",
@@ -2991,10 +2991,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:05Z",
         "updated_at": "2026-09-04T16:12:05Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.3.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.3.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578628",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578628",
         "id": 544578628,
         "node_id": "RA_kwDOT0DQEM4gdZxE",
         "name": "DraconDex-2.3.0-arm64-v8a-release.apk",
@@ -3027,10 +3027,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:05Z",
         "updated_at": "2026-09-04T16:12:08Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.3.0/DraconDex-2.3.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.3.0/DraconDex-2.3.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578627",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578627",
         "id": 544578627,
         "node_id": "RA_kwDOT0DQEM4gdZxD",
         "name": "DraconDex-2.3.0-armeabi-v7a-release.apk",
@@ -3063,10 +3063,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:05Z",
         "updated_at": "2026-09-04T16:12:07Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.3.0/DraconDex-2.3.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.3.0/DraconDex-2.3.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578632",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578632",
         "id": 544578632,
         "node_id": "RA_kwDOT0DQEM4gdZxI",
         "name": "DraconDex-2.3.0-release.apk",
@@ -3099,10 +3099,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:05Z",
         "updated_at": "2026-09-04T16:12:07Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.3.0/DraconDex-2.3.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.3.0/DraconDex-2.3.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544578629",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544578629",
         "id": 544578629,
         "node_id": "RA_kwDOT0DQEM4gdZxF",
         "name": "DraconDex-2.3.0-x86_64-release.apk",
@@ -3135,19 +3135,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:12:05Z",
         "updated_at": "2026-09-04T16:12:06Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.3.0/DraconDex-2.3.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.3.0/DraconDex-2.3.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.3.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.3.0",
-    "body": "## What's Changed\n* v.4.10.2 — Process 4 Part 1: restore .icon base rule + search-bar CSS by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/59\n* v.4.10.3 — Process 4 Part 2: nav rail quick-menu toggle + navbar/left-panel resize fixes by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/60\n* v.4.10.3 — Process 5: workspace nav orientation + module export/import target choice by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/61\n* v.4.10.6 — Process 6 (navbar + Tags + tab-move) + Process 7 Part 1 (toggle animations) by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/62\n* Flutter: v3 module tree (Nexus/Hub) drill-down explorer + APK version bump by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/63\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/v4.10.1...flutter-v2.3.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.3.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.3.0",
+    "body": "## What's Changed\n* v.4.10.2 — Process 4 Part 1: restore .icon base rule + search-bar CSS by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/59\n* v.4.10.3 — Process 4 Part 2: nav rail quick-menu toggle + navbar/left-panel resize fixes by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/60\n* v.4.10.3 — Process 5: workspace nav orientation + module export/import target choice by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/61\n* v.4.10.6 — Process 6 (navbar + Tags + tab-move) + Process 7 Part 1 (toggle animations) by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/62\n* Flutter: v3 module tree (Nexus/Hub) drill-down explorer + APK version bump by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/63\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/v4.10.1...flutter-v2.3.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382859354",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382859354/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382859354/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.10.1",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859354",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859354/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859354/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.10.1",
     "id": 382859354,
     "author": {
       "login": "LDKTC",
@@ -3182,7 +3182,7 @@
     "published_at": "2026-09-04T16:05:25Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579764",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579764",
         "id": 544579764,
         "node_id": "RA_kwDOT0DQEM4gdaC0",
         "name": "checksums-sha256.txt",
@@ -3215,10 +3215,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:06Z",
         "updated_at": "2026-09-04T16:13:06Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.1/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.1/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579771",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579771",
         "id": 544579771,
         "node_id": "RA_kwDOT0DQEM4gdaC7",
         "name": "DraconDex-2.10.1-arm64-v8a-release.apk",
@@ -3251,10 +3251,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:06Z",
         "updated_at": "2026-09-04T16:13:07Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.1/DraconDex-2.10.1-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.1/DraconDex-2.10.1-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579763",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579763",
         "id": 544579763,
         "node_id": "RA_kwDOT0DQEM4gdaCz",
         "name": "DraconDex-2.10.1-armeabi-v7a-release.apk",
@@ -3287,10 +3287,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:06Z",
         "updated_at": "2026-09-04T16:13:07Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.1/DraconDex-2.10.1-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.1/DraconDex-2.10.1-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579765",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579765",
         "id": 544579765,
         "node_id": "RA_kwDOT0DQEM4gdaC1",
         "name": "DraconDex-2.10.1-release.apk",
@@ -3323,10 +3323,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:06Z",
         "updated_at": "2026-09-04T16:13:08Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.1/DraconDex-2.10.1-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.1/DraconDex-2.10.1-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579767",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579767",
         "id": 544579767,
         "node_id": "RA_kwDOT0DQEM4gdaC3",
         "name": "DraconDex-2.10.1-x86_64-release.apk",
@@ -3359,19 +3359,19 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:06Z",
         "updated_at": "2026-09-04T16:13:07Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.1/DraconDex-2.10.1-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.1/DraconDex-2.10.1-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.10.1",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.10.1",
-    "body": "## What's Changed\n* Let the collapsed rail label wrap instead of ellipsizing by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/80\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.10.0...flutter-v2.10.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.10.1",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.10.1",
+    "body": "## What's Changed\n* Let the collapsed rail label wrap instead of ellipsizing by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/80\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.10.0...flutter-v2.10.1\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   },
   {
-    "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382859245",
-    "assets_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/382859245/assets",
-    "upload_url": "https://uploads.github.com/repos/LDKTC/Web-DraconDex/releases/382859245/assets{?name,label}",
-    "html_url": "https://github.com/LDKTC/Web-DraconDex/releases/tag/flutter-v2.10.0",
+    "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859245",
+    "assets_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859245/assets",
+    "upload_url": "https://uploads.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/382859245/assets{?name,label}",
+    "html_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/tag/flutter-v2.10.0",
     "id": 382859245,
     "author": {
       "login": "LDKTC",
@@ -3406,7 +3406,7 @@
     "published_at": "2026-09-04T16:05:15Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579678",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579678",
         "id": 544579678,
         "node_id": "RA_kwDOT0DQEM4gdaBe",
         "name": "checksums-sha256.txt",
@@ -3439,10 +3439,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:01Z",
         "updated_at": "2026-09-04T16:13:01Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.0/checksums-sha256.txt"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.0/checksums-sha256.txt"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579680",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579680",
         "id": 544579680,
         "node_id": "RA_kwDOT0DQEM4gdaBg",
         "name": "DraconDex-2.10.0-arm64-v8a-release.apk",
@@ -3475,10 +3475,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:01Z",
         "updated_at": "2026-09-04T16:13:02Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.0/DraconDex-2.10.0-arm64-v8a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.0/DraconDex-2.10.0-arm64-v8a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579679",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579679",
         "id": 544579679,
         "node_id": "RA_kwDOT0DQEM4gdaBf",
         "name": "DraconDex-2.10.0-armeabi-v7a-release.apk",
@@ -3511,10 +3511,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:01Z",
         "updated_at": "2026-09-04T16:13:02Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.0/DraconDex-2.10.0-armeabi-v7a-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.0/DraconDex-2.10.0-armeabi-v7a-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579685",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579685",
         "id": 544579685,
         "node_id": "RA_kwDOT0DQEM4gdaBl",
         "name": "DraconDex-2.10.0-release.apk",
@@ -3547,10 +3547,10 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:01Z",
         "updated_at": "2026-09-04T16:13:03Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.0/DraconDex-2.10.0-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.0/DraconDex-2.10.0-release.apk"
       },
       {
-        "url": "https://api.github.com/repos/LDKTC/Web-DraconDex/releases/assets/544579676",
+        "url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/releases/assets/544579676",
         "id": 544579676,
         "node_id": "RA_kwDOT0DQEM4gdaBc",
         "name": "DraconDex-2.10.0-x86_64-release.apk",
@@ -3583,12 +3583,12 @@
         "download_count": 0,
         "created_at": "2026-09-04T16:13:01Z",
         "updated_at": "2026-09-04T16:13:03Z",
-        "browser_download_url": "https://github.com/LDKTC/Web-DraconDex/releases/download/flutter-v2.10.0/DraconDex-2.10.0-x86_64-release.apk"
+        "browser_download_url": "https://github.com/ZYDRAXYL/DraconDex-WEB/releases/download/flutter-v2.10.0/DraconDex-2.10.0-x86_64-release.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/tarball/flutter-v2.10.0",
-    "zipball_url": "https://api.github.com/repos/LDKTC/Web-DraconDex/zipball/flutter-v2.10.0",
-    "body": "## What's Changed\n* Flutter tablet/iPad layout: vertical nav rail + hub panel beside the content by @LDKTC in https://github.com/LDKTC/App-DraconDex/pull/79\n\n\n**Full Changelog**: https://github.com/LDKTC/App-DraconDex/compare/flutter-v2.9.0...flutter-v2.10.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
+    "tarball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/tarball/flutter-v2.10.0",
+    "zipball_url": "https://api.github.com/repos/ZYDRAXYL/DraconDex-WEB/zipball/flutter-v2.10.0",
+    "body": "## What's Changed\n* Flutter tablet/iPad layout: vertical nav rail + hub panel beside the content by @LDKTC in https://github.com/ZYDRAXYL/DraconDex-APP/pull/79\n\n\n**Full Changelog**: https://github.com/ZYDRAXYL/DraconDex-APP/compare/flutter-v2.9.0...flutter-v2.10.0\n\n---\n\nMirrored from the DraconDex app repository. Links in the notes above point into that repository and are not public.\n",
     "mentions_count": 1
   }
 ]

@@ -6,21 +6,21 @@
    for everyone behind that IP at once, and every entry point below would
    fall back to a plain link to the Releases page.
 
-   The app's source repository (LDKTC/App-DraconDex) is private, so it has
+   The app's source repository (ZYDRAXYL/DraconDex-APP) is private, so it has
    nothing this site could read directly anyway. Its build workflows mirror
    every release — notes and assets alike — onto THIS repo
-   (LDKTC/Web-DraconDex) as a normal GitHub Release, then snapshot that
+   (ZYDRAXYL/DraconDex-WEB) as a normal GitHub Release, then snapshot that
    release list into assets/data/releases.json via the Contents API (see
    .github/scripts/update-web-releases-json.sh in the app repo). The file's
    shape is the raw GitHub API response, unmodified, so nothing below that
    parses it needed to change when the source moved from a live fetch to a
-   static one. A separate public mirror, LDKTC/Release-DraconDex, still
+   static one. A separate public mirror, ZYDRAXYL/DraconDex-REL, still
    exists — the in-app update check on both the desktop and the Android
    build reads that one, unrelated to this page. */
 (function () {
   "use strict";
 
-  var RELEASE_REPO = "LDKTC/Web-DraconDex";
+  var RELEASE_REPO = "ZYDRAXYL/DraconDex-WEB";
   var STATIC_DATA_URL = "assets/data/releases.json";
   var RELEASES_URL = "https://github.com/" + RELEASE_REPO + "/releases";
   var CACHE_KEY = "dracondex-releases";

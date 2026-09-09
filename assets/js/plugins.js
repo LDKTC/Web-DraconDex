@@ -1,4 +1,4 @@
-/* The official DraconDex plugins published under github.com/LDKTC.
+/* The official DraconDex plugins published under github.com/ZYDRAXYL.
    The baked-in values below mirror each repo's dracondex-plugin.json so the
    page is correct with JavaScript off or GitHub unreachable; on load we
    re-read the live manifests from raw.githubusercontent.com and refresh the
@@ -6,11 +6,11 @@
 (function () {
   "use strict";
 
-  var OWNER = "LDKTC";
+  var OWNER = "ZYDRAXYL";
 
   var PLUGINS = [
     {
-      repo: "DraconDex-Plugin-Claude",
+      repo: "DraconDex-PGI-Claude",
       icon: "message-circle",
       tagline:
         "Chat with Anthropic's Claude models inside DraconDex — as a full window or as a panel docked next to the module you are writing.",
@@ -29,7 +29,7 @@
       needs: "Your own Anthropic API key"
     },
     {
-      repo: "DraconDex-Plugin-Codex",
+      repo: "DraconDex-PGI-Codex",
       icon: "terminal",
       tagline:
         "The same chat surface wired to OpenAI — Codex/GPT models, with the OAuth sign-in flow the app's plugin runtime provides.",
@@ -55,7 +55,7 @@
       needs: "An OpenAI account or API key"
     },
     {
-      repo: "DraconDex-Plugin-Ollama",
+      repo: "DraconDex-PGI-Ollama",
       icon: "server",
       tagline:
         "Talk to models running on your own machine through Ollama. Nothing leaves the computer — the only network permission it asks for is localhost:11434.",
@@ -77,7 +77,7 @@
       needs: "Ollama running locally"
     },
     {
-      repo: "DraconDex-Plugin-Template",
+      repo: "DraconDex-PGI-Template",
       icon: "puzzle",
       tagline:
         "A minimal, working plugin to copy when you want to build your own — one HTML entry point, one table, no permissions requested.",
