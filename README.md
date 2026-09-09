@@ -2,15 +2,15 @@
   <img src="assets/brand/DraconDex_Color-512.png" alt="DraconDex logo" width="140">
 </p>
 
-<h1 align="center">Web-DraconDex</h1>
+<h1 align="center">DraconDex-WEB</h1>
 
 <p align="center">
-  The website for <a href="https://github.com/LDKTC/App-DraconDex">DraconDex</a>,
+  The website for <a href="https://github.com/ZYDRAXYL/DraconDex-APP">DraconDex</a>,
   deployed to GitHub Pages.
 </p>
 
 <p align="center">
-  <strong><a href="https://ldktc.github.io/Web-DraconDex/">ldktc.github.io/Web-DraconDex</a></strong>
+  <strong><a href="https://zydraxyl.github.io/DraconDex-WEB/">zydraxyl.github.io/DraconDex-WEB</a></strong>
 </p>
 
 ---
@@ -91,13 +91,13 @@ under the Windows download button the next time an APK ships last.
 ## Why the release data is a committed file, not a live API call
 
 Release versions and asset sizes change in *another* repository
-(`LDKTC/App-DraconDex`, which is private). Rather than calling that other
+(`ZYDRAXYL/DraconDex-APP`, which is private). Rather than calling that other
 repo's API from every visitor's browser, `assets/js/releases.js` reads a file
 committed straight into **this** repo:
 
 - **`assets/data/releases.json`** is a snapshot of this repo's own GitHub
   Releases — the app repo's build workflows publish each release, notes and
-  assets alike, directly onto `LDKTC/Web-DraconDex` (this repo) as a normal
+  assets alike, directly onto `ZYDRAXYL/DraconDex-WEB` (this repo) as a normal
   GitHub Release, then `.github/scripts/update-web-releases-json.sh` (in the
   app repo) re-reads that list via the Contents API and commits it here as
   this file. Its shape is the raw `GET /repos/.../releases` response,
@@ -105,10 +105,10 @@ committed straight into **this** repo:
   moved from a live fetch to a static one — only the fetch target did.
   Reading a same-origin static file this way means no token, no CORS
   question, and no rate limit: the old approach called
-  `api.github.com/repos/LDKTC/Release-DraconDex/releases` from the browser,
+  `api.github.com/repos/ZYDRAXYL/DraconDex-REL/releases` from the browser,
   which is capped at 60 anonymous requests/hour **per IP** — fine for one
   visitor, but a shared office/campus NAT or a traffic spike could exhaust it
-  for everyone behind that IP at once. `LDKTC/Release-DraconDex` still exists
+  for everyone behind that IP at once. `ZYDRAXYL/DraconDex-REL` still exists
   as a separate public mirror; only the in-app update check
   (`electron/src/db/update.js`, `flutter/lib/data/services/update_service.dart`
   in the app repo) reads it now.
@@ -148,7 +148,7 @@ tab. It needs **Settings → Pages → Source** set to **GitHub Actions** once.
 ## Keeping it in sync with the app
 
 A few things here are copies of facts that live in
-[`LDKTC/App-DraconDex`](https://github.com/LDKTC/App-DraconDex) and need
+[`ZYDRAXYL/DraconDex-APP`](https://github.com/ZYDRAXYL/DraconDex-APP) and need
 updating when that repository changes:
 
 - The color tokens at the top of `assets/css/site.css` (and the theme cycle
@@ -160,14 +160,14 @@ updating when that repository changes:
   `.github/workflows/build-electron.yml` (desktop) and
   `.github/workflows/build-apk.yml` (Android).
 - The Android signing certificate quoted in `download.html`'s `#android`
-  callout — subject `CN=DraconDex, O=LDKTC, C=TH`, SHA-256 `6b1b62e9…c2dc97e8`,
+  callout — subject `CN=DraconDex, O=ZYDRAXYL, C=TH`, SHA-256 `6b1b62e9…c2dc97e8`,
   and the "2.3.0–2.8.0 must uninstall first" caveat — comes from
   `docs/UPDATE.md` §2.16.
 - The browser build behind `#web` — a block inside `download.html`'s Download
   section rather than a section of its own — is a third repository,
-  [`LDKTC/PWA-DraconDex`](https://github.com/LDKTC/PWA-DraconDex), which builds
+  [`ZYDRAXYL/DraconDex-PWA`](https://github.com/ZYDRAXYL/DraconDex-PWA), which builds
   both front-ends for the web and deploys them to
-  [ldktc.github.io/PWA-DraconDex](https://ldktc.github.io/PWA-DraconDex/). What
+  [zydraxyl.github.io/DraconDex-PWA](https://zydraxyl.github.io/DraconDex-PWA/). What
   that page says a browser cannot do comes from its README and
   `docs/BROWSER-BUILD.md`.
 - The manifest limits listed on `plugins.html` come from `docs/PLUGINS.md`.

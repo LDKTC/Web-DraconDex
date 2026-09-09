@@ -1,7 +1,7 @@
 /* ==========================================================================
    DraconDex website — styles
    Color roles mirror the app's design tokens (src/design/tokens/tokens.json
-   in LDKTC/App-DraconDex): "midnight" is the app's default theme, "daylight"
+   in ZYDRAXYL/DraconDex-APP): "midnight" is the app's default theme, "daylight"
    is its light theme, "moonlight" is a third dark-blue variant. Keep these
    in sync with the app when tokens change.
    ========================================================================== */
@@ -835,7 +835,7 @@ th.h-icon .icon {
 }
 
 /* --- screenshots ----------------------------------------------------------
-   App screenshots are 1440x900 PNGs exported from LDKTC/App-DraconDex's
+   App screenshots are 1440x900 PNGs exported from ZYDRAXYL/DraconDex-APP's
    docs/mockups/ design references — see assets/screenshots/README.md. */
 .shot {
   margin: 0 0 0 auto;
