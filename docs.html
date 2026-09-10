@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="docs.meta.title">DraconDex documentation</title>
+    <meta
+      name="description"
+      data-i18n-attr="content:docs.meta.description"
+      content="How DraconDex works — the Nexus and its module tree, what each of the fifteen module kinds is for, and the systems that cut across all of them: wikilinks, custom calendars, packages, plugins, sync, backup and updates."
+    />
+    <link rel="icon" href="assets/brand/DraconDex_Icon.ico" />
+    <link rel="canonical" href="https://zydraxyl.github.io/DraconDex-WEB/docs.html" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/icons.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/strings.th.js"></script>
+    <script src="assets/js/lang.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="./">
+          <img src="assets/brand/DraconDex_Color-64.png" alt="" />
+          <span>DraconDex</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="./" data-i18n="common.nav.home">Home</a>
+          <a href="download.html" data-i18n="common.nav.download">Download</a>
+          <a href="plugins.html" data-i18n="common.nav.plugins">Plugins</a>
+          <a href="docs.html" aria-current="page" data-i18n="common.nav.docs">Docs</a>
+          <a class="nav--wide" href="https://github.com/ZYDRAXYL/DraconDex-APP">GitHub</a>
+          <button class="icon-btn lang-btn" type="button" data-lang-toggle>TH</button>
+          <button class="icon-btn" type="button" data-theme-toggle>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section section--plain" style="padding-top: 48px">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="common.nav.docs">Docs</span>
+            <h1 style="font-size: clamp(1.9rem, 5vw, 2.7rem)" data-i18n="docs.hero.title">
+              How DraconDex works
+            </h1>
+            <p data-i18n="docs.hero.lead">
+              DraconDex has one idea at its centre: a Nexus holds a tree, and
+              every node in that tree picks what kind of thing it is. Learn that
+              and the rest follows. This page covers the tree, the fifteen kinds
+              a node can be, and the systems that cut across all of them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ start -->
+      <section class="section" id="start">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="docs.start.eyebrow">Getting started</span>
+            <h2 data-i18n="docs.start.title">Three steps to a working vault</h2>
+          </div>
+          <ol class="steps">
+            <li data-i18n="docs.start.step1">
+              <strong>Install and open the app.</strong> On first run it asks for
+              a language and a theme — both changeable later in Settings.
+            </li>
+            <li data-i18n="docs.start.step2">
+              <strong>Create a Nexus.</strong> A Nexus is one world, saved as one
+              <code>.ddx</code> file wherever you choose to put it. One novel,
+              one Nexus is the usual arrangement.
+            </li>
+            <li data-i18n="docs.start.step3">
+              <strong>Build the tree.</strong> Add a node, give it a name, pick
+              its kind. Nodes nest as deep as you like — there is no fixed
+              two-level structure to work around.
+            </li>
+          </ol>
+          <p class="small muted" style="margin-top: 20px" data-i18n="docs.start.note">
+            Nothing leaves your machine. There is no account and no server; the
+            cloud features further down are opt-in and use storage you own.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================ tree -->
+      <section class="section" id="tree">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="docs.tree.eyebrow">The core idea</span>
+            <h2 data-i18n="docs.tree.title">A Nexus holds one tree</h2>
+            <p data-i18n="docs.tree.lead">
+              Every node is a module. A module has a name, an icon, a colour, a
+              description written in markdown, and a <strong>kind</strong> that
+              decides what opening it actually shows you. A node can hold other
+              nodes, to any depth.
+            </p>
+          </div>
+          <div class="grid grid--3">
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.tree.pin.title">Pin what you use</h3>
+              <p class="muted small" data-i18n="docs.tree.pin.body">
+                Top-level modules can be pinned to the rail down the side of the
+                window, so the things you open every day are one click away.
+              </p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.tree.handle.title">Give it a handle</h3>
+              <p class="muted small" data-i18n="docs.tree.handle.body">
+                Any module can take a short <code>@handle</code>, unique within
+                the vault. Handles are what the quick switcher searches, so a
+                long name never gets in the way of reaching it.
+              </p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.tree.history.title">Nothing is lost</h3>
+              <p class="muted small" data-i18n="docs.tree.history.body">
+                Modules keep a version history, and the whole app has
+                session-wide undo. Tags and colours cut across the tree when the
+                hierarchy is not the grouping you want.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ kinds -->
+      <section class="section" id="kinds">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="docs.kinds.eyebrow">Reference</span>
+            <h2 data-i18n="docs.kinds.title">The fifteen module kinds</h2>
+            <p data-i18n="docs.kinds.lead">
+              A kind is chosen when the module is created. The name in grey
+              underneath is what the app labels it in the interface — the kind
+              name is what the documentation calls it.
+            </p>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="docs.kinds.th.kind">Kind</th>
+                  <th data-i18n="docs.kinds.th.what">What it is</th>
+                  <th data-i18n="docs.kinds.th.use">When to reach for it</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr>
+              <td><strong>Collector</strong><br /><span class="small muted" data-i18n="docs.kind.collector.realname">Folder</span></td>
+              <td data-i18n="docs.kind.collector.what">An empty folder. It groups children and has nothing to open itself — click it to expand or collapse.</td>
+              <td class="small muted" data-i18n="docs.kind.collector.use">Use it to shape the tree: a “Characters” collector holding one module per character.</td>
+            </tr>
+            <tr>
+              <td><strong>Manager</strong><br /><span class="small muted" data-i18n="docs.kind.manager.realname">Project</span></td>
+              <td data-i18n="docs.kind.manager.what">A container that shows a module's children as Cards, List, Table or Graph.</td>
+              <td class="small muted" data-i18n="docs.kind.manager.use">The default hub for any module that has children. Switch view from the pane head; the choice is remembered per module.</td>
+            </tr>
+            <tr>
+              <td><strong>Inspector</strong><br /><span class="small muted" data-i18n="docs.kind.inspector.realname">Detail</span></td>
+              <td data-i18n="docs.kind.inspector.what">One long-form note, bound to the module's own description field.</td>
+              <td class="small muted" data-i18n="docs.kind.inspector.use">The simplest way to write about a single thing. Supports markdown and [[wikilinks]].</td>
+            </tr>
+            <tr>
+              <td><strong>Classifier</strong><br /><span class="small muted" data-i18n="docs.kind.classifier.realname">Category</span></td>
+              <td data-i18n="docs.kind.classifier.what">Categories, objects and fields in one table — the system the old Director module used.</td>
+              <td class="small muted" data-i18n="docs.kind.classifier.use">Separates object, character and element types. Each element gets a detail page with levels, conditions and dates.</td>
+            </tr>
+            <tr>
+              <td><strong>Locator</strong><br /><span class="small muted" data-i18n="docs.kind.locator.realname">Map</span></td>
+              <td data-i18n="docs.kind.locator.what">A canvas map where an area is a polygon you draw.</td>
+              <td class="small muted" data-i18n="docs.kind.locator.use">Drop a map image, outline regions, and link each one to a module.</td>
+            </tr>
+            <tr>
+              <td><strong>Chronicler</strong><br /><span class="small muted" data-i18n="docs.kind.chronicler.realname">Timeline</span></td>
+              <td data-i18n="docs.kind.chronicler.what">Events on an invented calendar.</td>
+              <td class="small muted" data-i18n="docs.kind.chronicler.use">Creates one timeline when you make the module. You can define your own units of time — see Custom calendars below.</td>
+            </tr>
+            <tr>
+              <td><strong>Wanderer</strong><br /><span class="small muted" data-i18n="docs.kind.wanderer.realname">TimeMap</span></td>
+              <td data-i18n="docs.kind.wanderer.what">Event pins on a Locator map, tied to Chronicler time.</td>
+              <td class="small muted" data-i18n="docs.kind.wanderer.use">Answers “where was this, and when” — scrub time and watch the pins move.</td>
+            </tr>
+            <tr>
+              <td><strong>Narrator</strong><br /><span class="small muted" data-i18n="docs.kind.narrator.realname">Story</span></td>
+              <td data-i18n="docs.kind.narrator.what">A dialogue graph: nodes and edges, a route board.</td>
+              <td class="small muted" data-i18n="docs.kind.narrator.use">One dialogue is an ordered list with two kinds of row — a spoken line, or a branching choice.</td>
+            </tr>
+            <tr>
+              <td><strong>Author</strong><br /><span class="small muted" data-i18n="docs.kind.author.realname">Book</span></td>
+              <td data-i18n="docs.kind.author.what">Chapters down the left, a markdown editor on the right.</td>
+              <td class="small muted" data-i18n="docs.kind.author.use">Outline mode for structure, Reading mode for prose.</td>
+            </tr>
+            <tr>
+              <td><strong>Scribe</strong><br /><span class="small muted" data-i18n="docs.kind.scribe.realname">Chat</span></td>
+              <td data-i18n="docs.kind.scribe.what">Chat-style notes attached to one module — bubbles with timestamps.</td>
+              <td class="small muted" data-i18n="docs.kind.scribe.use">For thinking out loud against a specific thing, rather than a formal note.</td>
+            </tr>
+            <tr>
+              <td><strong>Drafter</strong><br /><span class="small muted" data-i18n="docs.kind.drafter.realname">Doc</span></td>
+              <td data-i18n="docs.kind.drafter.what">A blank markdown page.</td>
+              <td class="small muted" data-i18n="docs.kind.drafter.use">Uses the module's own description field, so there is nothing else to manage.</td>
+            </tr>
+            <tr>
+              <td><strong>Viewer</strong><br /><span class="small muted" data-i18n="docs.kind.viewer.realname">Analys</span></td>
+              <td data-i18n="docs.kind.viewer.what">A read-only lens over a saved filter, as Table, Cards or Board.</td>
+              <td class="small muted" data-i18n="docs.kind.viewer.use">Build the filter once, then look at it from three angles without duplicating anything.</td>
+            </tr>
+            <tr>
+              <td><strong>Connector</strong><br /><span class="small muted" data-i18n="docs.kind.connector.realname">Relation</span></td>
+              <td data-i18n="docs.kind.connector.what">A relationship graph over a saved filter — nodes are items, edges are relations and wikilinks.</td>
+              <td class="small muted" data-i18n="docs.kind.connector.use">Shows how the things you wrote about actually connect.</td>
+            </tr>
+            <tr>
+              <td><strong>Sketcher</strong><br /><span class="small muted" data-i18n="docs.kind.sketcher.realname">Drawing</span></td>
+              <td data-i18n="docs.kind.sketcher.what">A freehand canvas: pen, eraser, multiple pages, PNG export.</td>
+              <td class="small muted" data-i18n="docs.kind.sketcher.use">For the map sketch or the character doodle that does not need to be a real map.</td>
+            </tr>
+            <tr>
+              <td><strong>Designer</strong><br /><span class="small muted" data-i18n="docs.kind.designer.realname">Graph</span></td>
+              <td data-i18n="docs.kind.designer.what">A free-form diagram — shapes, edges, labels, dragged into place.</td>
+              <td class="small muted" data-i18n="docs.kind.designer.use">Thirteen shapes, with a picker behind the “more” button.</td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ systems -->
+      <section class="section" id="systems">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="docs.sys.eyebrow">Across the app</span>
+            <h2 data-i18n="docs.sys.title">Systems every module shares</h2>
+          </div>
+          <div class="grid grid--2">
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.vaults.title">Nexus files</h3>
+              <p class="muted small" data-i18n="docs.sys.vaults.body">Each Nexus is its own <code>.ddx</code> file on your disk, plus one <code>app.ddx</code> holding settings and the vault list. Move a <code>.ddx</code> to another machine and it opens there.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>docs/VAULTS.md</code></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.wikilinks.title">Wikilinks and backlinks</h3>
+              <p class="muted small" data-i18n="docs.sys.wikilinks.body">Type <code>[[a module name]]</code> anywhere markdown is accepted. The link resolves as you type, and the thing you linked to gains a backlink pointing home.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>docs/SYSTEMS.md</code></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.calendars.title">Custom calendars</h3>
+              <p class="muted small" data-i18n="docs.sys.calendars.body">A Chronicler timeline does not have to use Earth months. Define your own units — how many days in a week, how many weeks in a month — and the graphs, the time strip and the calendar view all follow.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>docs/SYSTEMS.md</code></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.packages.title">Themes and language packs</h3>
+              <p class="muted small" data-i18n="docs.sys.packages.body">Beyond the 32 themes and 18 languages built in, the app can install more from the package repository: a theme, a translation, or a view preset. Settings → Plugins → Packages.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>DraconDex-PKG</code></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.plugins.title">Plugins</h3>
+              <p class="muted small" data-i18n="docs.sys.plugins.body">Paste a git repository link and DraconDex shows you what the plugin declares before anything is written. Each one gets its own tables and runs in a separate sandboxed window.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>docs/PLUGINS.md</code></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.sync.title">Cloud Sync</h3>
+              <p class="muted small" data-i18n="docs.sys.sync.body">Off by default and opt-in per install. You bring your own Supabase project, so the data never passes through anyone else's server.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>docs/SYNC.md</code></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.drive.title">Google Drive backup</h3>
+              <p class="muted small" data-i18n="docs.sys.drive.body">The one connected cloud feature: back a vault up to your own Drive and restore it later.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>docs/DRIVE.md</code></p>
+            </article>
+            <article class="card card--pad-lg">
+              <h3 data-i18n="docs.sys.update.title">Update checks</h3>
+              <p class="muted small" data-i18n="docs.sys.update.body">DraconDex tells you when a newer version exists and links to it. It does not download or install anything by itself.</p>
+              <p class="small muted"><span data-i18n="docs.sys.more">In depth</span>: <code>docs/UPDATE.md</code></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================ deeper -->
+      <section class="section" id="deeper">
+        <div class="wrap">
+          <div class="section__head">
+            <span class="eyebrow" data-i18n="docs.deeper.eyebrow">Going deeper</span>
+            <h2 data-i18n="docs.deeper.title">The full documentation set</h2>
+            <p data-i18n="docs.deeper.lead">
+              Everything above is the user's view. The project keeps a much
+              longer technical set — architecture, per-system behaviour,
+              per-file reference and a full changelog — written in Thai, the
+              project's primary language. It lives in the hub repository.
+            </p>
+          </div>
+          <p>
+            <a class="btn btn--primary" href="https://github.com/ZYDRAXYL/DraconDex-APP" data-i18n="docs.deeper.link">
+              Open the hub repository
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__bottom">
+          <span>
+            <a href="./">DraconDex</a> · <span data-i18n="common.footer.built">Built by ZYDRAXYL · MIT licensed</span>
+          </span>
+          <span>
+            <a href="https://github.com/ZYDRAXYL/DraconDex-APP" data-i18n="common.footer.apprepo">App repository</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -27,15 +27,29 @@
   var CACHE_MS = 10 * 60 * 1000;
 
   /* --- release streams ---------------------------------------------------
-     The app repository publishes two independent release lines from the same
-     tag list: the Electron desktop app on `v<x.y.z>` tags (build-electron.yml)
-     and the Flutter Android app on `flutter-v<x.y.z>` tags (build-apk.yml).
-     Their version numbers are unrelated and the newest release overall may be
-     either one, so every consumer here filters by stream first — otherwise an
-     APK release shipping an hour after a desktop one turns the Windows
-     download button into a list of .apk files. */
+     Several independent release lines land in this one mirrored tag list, and
+     their version numbers are unrelated — the newest release overall may be
+     any of them. Every consumer here filters by stream first; otherwise an APK
+     release shipping an hour after a desktop one turns the Windows download
+     button into a list of .apk files.
+
+       v<x.y.z>          desktop   DraconDex-EXE, the Electron app
+       flutter-v<x.y.z>  android   DraconDex-APK, the Flutter app
+       pkg-v<x.y.z>      packages  DraconDex-PKG, theme/language packages
+       sdb-v<x.y.z>      schema    DraconDex-SDB, the shared SQLite schema
+
+     Order matters below: `desktop` is the fallback, so every prefixed stream
+     has to be matched before it. A `pkg-v*` release reaching the desktop
+     stream would offer a 700-byte theme file as a Windows download — which is
+     exactly what happened to `flutter-v*` before it got a branch of its own.
+     The last two are not offered as downloads anywhere; they are recognised so
+     they cannot be mistaken for one. */
   function streamOf(release) {
-    return /^flutter-v/i.test(release.tag_name || "") ? "android" : "desktop";
+    var tag = release.tag_name || "";
+    if (/^flutter-v/i.test(tag)) return "android";
+    if (/^pkg-v/i.test(tag)) return "packages";
+    if (/^sdb-v/i.test(tag)) return "schema";
+    return "desktop";
   }
 
   function inStream(releases, stream) {

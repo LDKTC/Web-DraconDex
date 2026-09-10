@@ -42,12 +42,7 @@
           <a href="./" aria-current="page" data-i18n="common.nav.home">Home</a>
           <a href="download.html" data-i18n="common.nav.download">Download</a>
           <a href="plugins.html" data-i18n="common.nav.plugins">Plugins</a>
-          <a
-            class="nav--wide"
-            href="https://github.com/ZYDRAXYL/DraconDex-APP#readme"
-            data-i18n="common.nav.docs"
-            >Docs</a
-          >
+          <a href="docs.html" data-i18n="common.nav.docs">Docs</a>
           <a class="nav--wide" href="https://github.com/ZYDRAXYL/DraconDex-APP"
             >GitHub</a
           >
@@ -217,9 +212,9 @@
                 map, track a timeline, sketch, or write prose.
               </p>
               <p>
-                <a href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/Architec.md"
+                <a href="docs.html#kinds"
                   data-i18n="home.modules.link"
-                  >Read the architecture notes →</a
+                  >Read about the module kinds →</a
                 >
               </p>
             </div>
@@ -270,14 +265,14 @@
               </figure>
 
               <figure class="mod-slide" data-mod-item>
-                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/manager.png" data-caption="Manager — shows a Major module's children as Cards, List, Table or Recent." data-i18n-attr="data-caption:home.mod.manager.caption">
+                <button type="button" class="mod-slide__img" data-lightbox-trigger data-full="assets/screenshots/manager.png" data-caption="Manager — shows a Major module's children as Cards, List, Table or Graph." data-i18n-attr="data-caption:home.mod.manager.caption">
                   <img src="assets/screenshots/manager.png" alt="Manager module showing a Major module's six children as cards" width="1440" height="900" loading="lazy" draggable="false" />
                 </button>
                 <figcaption>
                   <h3>Manager<span class="mod-slide__realname" data-i18n="home.mod.manager.realname">Project</span></h3>
                   <p class="muted small" data-i18n="home.mod.manager.body">
                     Shows a Major module's children as Cards, List, Table or
-                    Recent — the default hub for any module with kids.
+                    Graph — the default hub for any module with kids.
                   </p>
                 </figcaption>
               </figure>
@@ -682,72 +677,40 @@
         <div class="wrap">
           <div class="section__head">
             <span class="eyebrow" data-i18n="home.docs.eyebrow">Documentation</span>
-            <h2 data-i18n="home.docs.title">Docs live in the app repository</h2>
+            <h2 data-i18n="home.docs.title">Learn how it works</h2>
             <p data-i18n="home.docs.lead">
-              The project keeps detailed, actively-maintained docs — written in
-              Thai, the project's primary language.
+              The docs page covers the Nexus and its module tree, what each of
+              the fifteen module kinds is for, and the systems that cut across
+              all of them — wikilinks, custom calendars, packages, plugins,
+              sync, backup and updates.
             </p>
           </div>
           <div class="grid grid--3">
-            <a
-              class="card card--link"
-              href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/Architec.md"
-            >
-              <h3>Architec.md</h3>
-              <p class="muted small" data-i18n="home.docs.architec">
-                The v3 module-tree architecture, and how each kind maps to
-                files and IPC channels.
+            <a class="card card--link" href="docs.html#tree">
+              <h3 data-i18n="home.docs.tree.title">The module tree</h3>
+              <p class="muted small" data-i18n="home.docs.tree.body">
+                One Nexus holds one tree, nested as deep as you like. Every node
+                picks what kind of thing it is.
               </p>
             </a>
-            <a
-              class="card card--link"
-              href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/SYSTEMS.md"
-            >
-              <h3>SYSTEMS.md</h3>
-              <p class="muted small" data-i18n="home.docs.systems">
-                How each system behaves — Director, Navigator, Hero, Writer,
-                Scribe, Sage, Artisan, wikilinks, the IDE shell.
+            <a class="card card--link" href="docs.html#kinds">
+              <h3 data-i18n="home.docs.kinds.title">Fifteen module kinds</h3>
+              <p class="muted small" data-i18n="home.docs.kinds.body">
+                What each one is and when to reach for it, from a plain folder
+                to a dialogue graph.
               </p>
             </a>
-            <a
-              class="card card--link"
-              href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/PLUGINS.md"
-            >
-              <h3>PLUGINS.md</h3>
-              <p class="muted small" data-i18n="home.docs.plugins">
-                The plugin runtime: manifest format, the sandbox, and an honest
-                account of what it does and does not protect against.
-              </p>
-            </a>
-            <a
-              class="card card--link"
-              href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/DRIVE.md"
-            >
-              <h3>DRIVE.md</h3>
-              <p class="muted small" data-i18n="home.docs.drive">
-                Setting up optional Google Drive backup with your own OAuth
-                client.
-              </p>
-            </a>
-            <a
-              class="card card--link"
-              href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/FILES.md"
-            >
-              <h3>FILES.md</h3>
-              <p class="muted small" data-i18n="home.docs.files">
-                A per-file reference of what lives where in the codebase.
-              </p>
-            </a>
-            <a
-              class="card card--link"
-              href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/CHANGELOG.md"
-            >
-              <h3>CHANGELOG.md</h3>
-              <p class="muted small" data-i18n="home.docs.changelog">
-                What changed and why, session to session.
+            <a class="card card--link" href="docs.html#systems">
+              <h3 data-i18n="home.docs.systems.title">Shared systems</h3>
+              <p class="muted small" data-i18n="home.docs.systems.body">
+                Wikilinks, custom calendars, theme and language packages,
+                plugins, sync and backup.
               </p>
             </a>
           </div>
+          <p style="margin-top: 20px">
+            <a class="btn btn--primary" href="docs.html" data-i18n="home.docs.link">Read the docs</a>
+          </p>
         </div>
       </section>
 
@@ -818,7 +781,7 @@
               </li>
               <li>
                 <a
-                  href="https://github.com/ZYDRAXYL/DraconDex-APP/blob/main/docs/PLUGINS.md"
+                  href="plugins.html"
                   data-i18n="common.footer.plugindocs"
                   >Plugin docs</a
                 >
