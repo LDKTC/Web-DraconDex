@@ -11,6 +11,7 @@ window.DDStrings = {
   "common.nav.download": "ดาวน์โหลด",
   "common.nav.plugins": "ปลั๊กอิน",
   "common.nav.docs": "เอกสาร",
+  "common.nav.transfer": "ส่งต่อ",
 
   "common.footer.tagline": "สร้างโลกนิยายแบบออฟไลน์ สำหรับนักเขียน นักออกแบบเกม และ DM",
   "common.footer.getit": "ดาวน์โหลด",
@@ -388,6 +389,8 @@ window.DDStrings = {
   "docs.sys.sync.body": "ปิดไว้เป็นค่าเริ่มต้น และเลือกเปิดเองทีละเครื่อง คุณเอาโปรเจกต์ Supabase ของตัวเองมาต่อ ข้อมูลจึงไม่เคยผ่านเซิร์ฟเวอร์ของใคร",
   "docs.sys.sync.title": "Cloud Sync",
   "docs.sys.title": "ระบบที่ทุกโมดูลใช้ร่วมกัน",
+  "docs.sys.transfer.body": "ส่ง Nexus ทั้งก้อนไปอีกเครื่องด้วยรหัสกับ PIN ไม่ต้องมีบัญชี ไม่ต้องตั้งค่า ไฟล์ถูกเข้ารหัสก่อนออกจากเครื่อง และสำเนาที่อยู่ตรงกลางถูกลบทันทีที่รับสำเร็จ หรือภายใน 30 นาทีถ้าไม่มีใครมารับ นี่คือการส่งต่อ ไม่ใช่การสำรองข้อมูลและไม่ใช่การซิงก์",
+  "docs.sys.transfer.title": "DDX Transfer",
   "docs.sys.update.body": "DraconDex บอกเมื่อมีเวอร์ชันใหม่และลิงก์ไปให้ แต่ไม่ดาวน์โหลดและไม่ติดตั้งอะไรเองทั้งนั้น",
   "docs.sys.update.title": "การเช็กอัปเดต",
   "docs.sys.vaults.body": "Nexus แต่ละอันเป็นไฟล์ <code>.ddx</code> ของตัวเองบนดิสก์ บวกกับ <code>app.ddx</code> อีกไฟล์ที่เก็บการตั้งค่ากับรายชื่อ vault ย้ายไฟล์ <code>.ddx</code> ไปเครื่องอื่นก็เปิดได้เลย",
