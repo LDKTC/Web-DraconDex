@@ -11,6 +11,7 @@ window.DDStrings = {
   "common.nav.download": "ดาวน์โหลด",
   "common.nav.plugins": "ปลั๊กอิน",
   "common.nav.docs": "เอกสาร",
+  "common.nav.transfer": "ส่งต่อ",
 
   "common.footer.tagline": "สร้างโลกนิยายแบบออฟไลน์ สำหรับนักเขียน นักออกแบบเกม และ DM",
   "common.footer.getit": "ดาวน์โหลด",
